@@ -1,42 +1,37 @@
 #+html_head: <link rel="stylesheet" href="css/org-page.css"/>
-#+title: 謝宇恆 // Xie Yuheng
+#+title: Xie Yuheng // 謝宇恆
 
 - [[https://github.com/xieyuheng][github.com/xieyuheng]]
-- [[./CV.html][CV]] / [[./CV-CN][中文简历]] - [[https://github.com/xieyuheng/paper/blob/master/CV-CN.pdf][.pdf]]
+- [[./CV.html][CV]] // [[./CV-CN][中文简历]] - [[https://github.com/xieyuheng/paper/blob/master/CV-CN.pdf][.pdf]]
+
+* Program
+
+  - [[https://github.com/xieyuheng/cicada][cicada language // 蟬語]]
+    A dependently-typed logic programming language
 
 * Writing
 
-*** Paper
+  - 2018-06-20 [[./writing/dependent-category.html][Dependent category]]
+    A generalization of category to model dependent type system
 
-    - 2018-06-20 [[./writing/dependent-category.html][Dependent category]]
-      A generalization of category to model dependent type system
-
-    - 2016-06-14 [[./writing/function-compose-type-cut.html][Function compose, Type cut, and The algebra of logic]] ([[http://xieyuheng.github.io/paper/function-compose-type-cut.pdf][pdf]]) ([[./writing/function-compose-type-cut--demo][demo]])
-      for the ICFP 2016 at Nara
+  - 2016-06-14 [[./writing/function-compose-type-cut.html][Function compose, Type cut, and The algebra of logic]] ([[http://xieyuheng.github.io/paper/function-compose-type-cut.pdf][pdf]]) ([[./writing/function-compose-type-cut--demo][demo]])
+    for the ICFP 2016 at Nara
 
 * Translation
 
-*** Constructive Mathematics
+  - [[./translation/schizophrenia-in-contemporary-mathematics.html][schizophrenia in contemporary mathematics // 當代數學之精神分裂症 (未完)]]
+    by Errett Bishop, 1973
 
-    - [[./translation/schizophrenia-in-contemporary-mathematics.html][schizophrenia in contemporary mathematics / 當代數學之精神分裂症 (未完)]]
-      by Errett Bishop, 1973
+  - [[./translation/a-constructivist-manifesto.html][a constructivist manifesto // 一個構造主義者的宣言]]
+    by Errett Bishop, 1967
 
-    - [[./translation/a-constructivist-manifesto.html][a constructivist manifesto / 一個構造主義者的宣言]]
-      by Errett Bishop, 1967
+  - [[./translation/is-god-a-taoist.html][is god a taoist // 上帝是道家的嗎]]
+    by Raymond Smullyan, 1977
 
-*** Taoist
-
-    - [[./translation/is-god-a-taoist.html][is god a taoist / 上帝是道家的嗎]]
-      by Raymond Smullyan, 1977
-
-*** Anarchist
-
-    - [[./translation/are-you-an-anarchist.html][are you an anarchist / 你是無政府主義者嗎]]
-      by David Graeber, 2009
+  - [[./translation/are-you-an-anarchist.html][are you an anarchist // 你是無政府主義者嗎]]
+    by David Graeber, 2009
 
 * Lecture
 
-*** Past
-
-    - [[http://the-little-language-designer.github.io/cicada-nymph/course/contents.html][experimental assembly programming experiment]]
-      at SYSU, GuangZhou, 2015
+  - [[http://the-little-language-designer.github.io/cicada-nymph/course/contents.html][experimental assembly programming experiment]]
+    at SYSU, GuangZhou, 2015
