@@ -58,35 +58,38 @@
 /******/ 					"__wbindgen_object_drop_ref": function(p0i32) {
 /******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbindgen_object_drop_ref"](p0i32);
 /******/ 					},
-/******/ 					"__wbg_new_1dde761184eab698": function(p0i32,p1i32) {
-/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_new_1dde761184eab698"](p0i32,p1i32);
+/******/ 					"__wbg_new_baf10398b0d0c64d": function(p0i32,p1i32) {
+/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_new_baf10398b0d0c64d"](p0i32,p1i32);
 /******/ 					},
-/******/ 					"__wbg_call_2a6cef698f23e98a": function(p0i32,p1i32) {
-/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_call_2a6cef698f23e98a"](p0i32,p1i32);
+/******/ 					"__wbg_call_173f04c850a68d5f": function(p0i32,p1i32) {
+/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_call_173f04c850a68d5f"](p0i32,p1i32);
 /******/ 					},
 /******/ 					"__wbindgen_jsval_eq": function(p0i32,p1i32) {
 /******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbindgen_jsval_eq"](p0i32,p1i32);
 /******/ 					},
-/******/ 					"__wbg_self_e5c2c01588a43e6f": function(p0i32) {
-/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_self_e5c2c01588a43e6f"](p0i32);
+/******/ 					"__wbg_self_58232ab37cbe6608": function(p0i32) {
+/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_self_58232ab37cbe6608"](p0i32);
 /******/ 					},
-/******/ 					"__wbg_require_5be5cacaf86ededd": function(p0i32,p1i32) {
-/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_require_5be5cacaf86ededd"](p0i32,p1i32);
+/******/ 					"__wbg_require_4a70cbfd3adc73a8": function(p0i32,p1i32) {
+/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_require_4a70cbfd3adc73a8"](p0i32,p1i32);
 /******/ 					},
-/******/ 					"__wbg_crypto_71eb15957a02ad2b": function(p0i32) {
-/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_crypto_71eb15957a02ad2b"](p0i32);
+/******/ 					"__wbg_crypto_329b714d7e7d321d": function(p0i32) {
+/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_crypto_329b714d7e7d321d"](p0i32);
 /******/ 					},
 /******/ 					"__wbindgen_is_undefined": function(p0i32) {
 /******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbindgen_is_undefined"](p0i32);
 /******/ 					},
-/******/ 					"__wbg_getRandomValues_dd201e73fe7e73ac": function(p0i32) {
-/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_getRandomValues_dd201e73fe7e73ac"](p0i32);
+/******/ 					"__wbg_getRandomValues_2f960218fce3a102": function(p0i32) {
+/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_getRandomValues_2f960218fce3a102"](p0i32);
 /******/ 					},
-/******/ 					"__wbg_getRandomValues_f178bfd87adaf43b": function(p0i32,p1i32,p2i32) {
-/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_getRandomValues_f178bfd87adaf43b"](p0i32,p1i32,p2i32);
+/******/ 					"__wbg_getRandomValues_5581e85fc6616df6": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_getRandomValues_5581e85fc6616df6"](p0i32,p1i32,p2i32);
 /******/ 					},
-/******/ 					"__wbg_randomFillSync_8626db7fa9d07801": function(p0i32,p1i32,p2i32) {
-/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_randomFillSync_8626db7fa9d07801"](p0i32,p1i32,p2i32);
+/******/ 					"__wbg_randomFillSync_355c3fcfa754fa4e": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbg_randomFillSync_355c3fcfa754fa4e"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbindgen_throw": function(p0i32,p1i32) {
+/******/ 						return installedModules["./wasm_modules/cicada_notebook.js"].exports["__wbindgen_throw"](p0i32,p1i32);
 /******/ 					}
 /******/ 				}
 /******/ 			};
@@ -187,7 +190,7 @@
 /******/ 				promises.push(installedWasmModuleData);
 /******/ 			else {
 /******/ 				var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 				var req = fetch(__webpack_require__.p + "" + {"./wasm_modules/cicada_notebook_bg.wasm":"a758ec0d4db4b570326b"}[wasmModuleId] + ".module.wasm");
+/******/ 				var req = fetch(__webpack_require__.p + "" + {"./wasm_modules/cicada_notebook_bg.wasm":"d1bdc274c715be343599"}[wasmModuleId] + ".module.wasm");
 /******/ 				var promise;
 /******/ 				if(importObject instanceof Promise && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 					promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {
@@ -288,7 +291,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"/* textarea { */\\n/*    resize: none; */\\n/* } */\\n\\n.Buffer {\\n    width: 48vw;\\n    height: 88vh;\\n    font-family: Hack, \\\"Noto Mono\\\", Input, Monaco, monofur, Consolas, \\\"Lucida Console\\\", \\\"Andale Mono WT\\\",\\\"Andale Mono\\\",\\\"Lucida Console\\\",\\\"Lucida Sans Typewriter\\\",\\\"DejaVu Sans Mono\\\",\\\"Bitstream Vera Sans Mono\\\",\\\"Liberation Mono\\\",\\\"Nimbus Mono L\\\",Monaco,\\\"Courier New\\\",Courier, monospace;\\n    font-size: 1em;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/index.css?./node_modules/css-loader");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"textarea {\\n    font-family:\\n        \\\"Monaco\\\",\\n        \\\"Input\\\",\\n        \\\"monofur\\\",\\n        \\\"Hack\\\",\\n        \\\"Noto Mono\\\",\\n        \\\"Consolas\\\",\\n        \\\"Lucida Console\\\", \\\"Andale Mono WT\\\",\\n        \\\"Andale Mono\\\", \\\"Lucida Console\\\",\\n        \\\"Lucida Sans Typewriter\\\",\\n        \\\"DejaVu Sans Mono\\\",\\n        \\\"Bitstream Vera Sans Mono\\\",\\n        \\\"Liberation Mono\\\",\\n        \\\"Nimbus Mono L\\\",\\n        \\\"Courier New\\\",\\n        \\\"Courier\\\",\\n        \\\"monospace\\\";\\n}\\n\\nh3 {\\n    color: #888;\\n}\\n\\n.InputBuffer {\\n    font-size: 1em;\\n    border: 0px;\\n    border-left: 4px solid #aaa;\\n    width: 97vw;\\n    height: 40vh;\\n}\\n\\n.OutputBuffer {\\n    font-size: 1em;\\n    border: 0px;\\n    border-left: 4px solid #aae;\\n    width: 97vw;\\n    height: 40vh;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/index.css?./node_modules/css-loader");
 
 /***/ }),
 
@@ -344,7 +347,7 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader!./inde
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"react-dom\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);\nvar nb = Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! ../wasm_modules/cicada_notebook */ \"./wasm_modules/cicada_notebook.js\"));\n\n\n\n\nvar InputBuffer = function (props) {\n    return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"textarea\", { className: \"Buffer\", onChange: props.onChange }, \"// input\");\n};\nvar OutputBuffer = function (props) {\n    return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"textarea\", { className: \"Buffer\", value: props.output });\n};\nvar RunButton = function (props) {\n    return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react__WEBPACK_IMPORTED_MODULE_0__[\"Fragment\"], null,\n        react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"button\", { className: \"RunButton\", onClick: props.onClick }, \"run\"));\n};\nvar NoteBook = function (props) {\n    var _a = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])(\"\"), input = _a[0], setInput = _a[1];\n    var _b = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])(\"// output\"), output = _b[0], setOutput = _b[1];\n    var onClick = function () {\n        setOutput(props.nb.run(input));\n    };\n    var onChange = function (event) {\n        setInput(event.target.value);\n    };\n    return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react__WEBPACK_IMPORTED_MODULE_0__[\"Fragment\"], null,\n        react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"p\", null,\n            react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](RunButton, { onClick: onClick })),\n        react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](InputBuffer, { onChange: onChange }),\n        react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](OutputBuffer, { output: output }));\n};\nnb.then(function (nb) {\n    react_dom__WEBPACK_IMPORTED_MODULE_1__[\"render\"](react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](NoteBook, { nb: nb }), document.getElementById(\"root\"));\n});\n\n\n//# sourceURL=webpack:///./src/index.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"react-dom\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);\nvar cicada = Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! ../wasm_modules/cicada_notebook */ \"./wasm_modules/cicada_notebook.js\"));\n\n\n\n\nvar InputBuffer = function (props) {\n    return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react__WEBPACK_IMPORTED_MODULE_0__[\"Fragment\"], null,\n        react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"textarea\", { className: \"InputBuffer\", autoFocus: props.focus_p, value: props.value, onChange: props.onChange, onKeyDown: props.onKeyDown }));\n};\nvar OutputBuffer = function (props) {\n    return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react__WEBPACK_IMPORTED_MODULE_0__[\"Fragment\"], null,\n        react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"textarea\", { className: \"OutputBuffer\", value: props.value }));\n};\nvar Note = function (props) {\n    var out = react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react__WEBPACK_IMPORTED_MODULE_0__[\"Fragment\"], null);\n    if (props.output != \"\") {\n        out = react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](OutputBuffer, { value: props.output });\n    }\n    return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react__WEBPACK_IMPORTED_MODULE_0__[\"Fragment\"], null,\n        react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", { className: \"Note\" },\n            react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"hr\", null),\n            react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"h3\", null, props.headline),\n            react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](InputBuffer, { focus_p: props.focus_p, value: props.input, onChange: props.onChange, onKeyDown: props.onKeyDown }),\n            out,\n            react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"hr\", null)));\n};\nvar WELCOME_MESSAGE = \"// welcome to cicada-notebook ^-^/\\n// - short keys :\\n//   ctrl + enter -- run\\n//   alt  + enter -- run & open a note\\n\";\nvar Root = function (props) {\n    var _a = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])(props.cicada.CicadaModule.new()), module = _a[0], setModule = _a[1];\n    var _b = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])([\n        { input: WELCOME_MESSAGE, output: \"\" },\n    ]), noteList = _b[0], setNoteList = _b[1];\n    var _c = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])(0), current = _c[0], setCurrent = _c[1];\n    var onKeyDown = function (index) { return function (event) {\n        if (event.key == \"Enter\" && event.ctrlKey) {\n            var module_1 = props.cicada.CicadaModule.new();\n            var length_1 = noteList.length;\n            var list_1 = noteList.slice(0, length_1);\n            list_1.forEach(function (note, i) {\n                if (i <= index) {\n                    list_1[index].output = module_1.run(note.input);\n                }\n            });\n            setNoteList(list_1);\n        }\n        if (event.key == \"Enter\" && event.altKey) {\n            var module_2 = props.cicada.CicadaModule.new();\n            var length_2 = noteList.length;\n            setCurrent(index + 1);\n            var list_2 = noteList.slice(0, index + 1);\n            var succ = noteList.slice(index + 1, length_2);\n            list_2.forEach(function (note, i) {\n                if (i <= index) {\n                    list_2[index].output = module_2.run(note.input);\n                }\n            });\n            list_2.push({ input: \"\", output: \"\" });\n            setNoteList(list_2.concat(succ));\n        }\n    }; };\n    var onChange = function (index) { return function (event) {\n        var length = noteList.length;\n        var list = noteList.slice(0, length);\n        list[index].input = event.target.value;\n        setNoteList(list);\n    }; };\n    var list = noteList.map(function (io, index) {\n        return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react__WEBPACK_IMPORTED_MODULE_0__[\"Fragment\"], null,\n            react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](Note, { headline: \"#\" + (index + 1).toString(), focus_p: index == current, input: io.input, output: io.output, onChange: onChange(index), onKeyDown: onKeyDown(index) }));\n    });\n    return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react__WEBPACK_IMPORTED_MODULE_0__[\"Fragment\"], null, list);\n};\ncicada.then(function (cicada) {\n    react_dom__WEBPACK_IMPORTED_MODULE_1__[\"render\"](react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](Root, { cicada: cicada }), document.getElementById(\"root\"));\n});\n\n\n//# sourceURL=webpack:///./src/index.tsx?");
 
 /***/ }),
 

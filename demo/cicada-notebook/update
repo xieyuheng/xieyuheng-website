@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+update () {
+    rm *.*
+    cp ~/cicada/cicada-notebook/web/dist/* .
+}
+
+main () {
+    for TASK in $@
+    do
+        $TASK
+    done
+}
+
+# main $@
+
+main update
