@@ -2,7 +2,7 @@
 
 update () {
     rm *.*
-    cp ~/cicada/cicada-notebook/web/dist/* .
+    cp -r ~/cicada/cicada-notebook/web/dist/* .
 }
 
 main () {
