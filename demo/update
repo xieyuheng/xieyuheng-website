@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+cicada-notebook () {
+    rm -r cicada-notebook
+    copy ~/cicada/cicada-notebook/web/dist/ cicada-notebook
+}
+
+main () {
+    for TASK in $@
+    do
+        $TASK
+    done
+}
+
+main $@
