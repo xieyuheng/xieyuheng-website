@@ -2,7 +2,7 @@
 
 cicada-notebook () {
     rm -r cicada-notebook
-    copy ~/cicada/cicada-notebook/web/dist/ cicada-notebook
+    copy ~/cicada/cicada-notebook/dist/ cicada-notebook
 }
 
 main () {
