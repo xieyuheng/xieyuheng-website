@@ -6,7 +6,7 @@
 
 * Program
 
-  - [[https://github.com/xieyuheng/cicada][cicada language // 蟬語]] ([[https://xieyuheng.github.io/demo/cicada-notebook][demo]])
+  - [[https://github.com/xieyuheng/cicada][cicada language // 蟬語]] ([[https://xieyuheng.github.io/cicada-notebook][demo]])
     A dependently-typed logic programming language
 
 * Writing
