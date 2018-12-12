@@ -54,18 +54,19 @@
     - 无 :
       - (forth)
     - 前 :
-      - (naked-js) (vanilla-js) (real-dom-api)
-        (react) (vue)
+      - (naked-js) (vanilla-js)
+      - (real-dom-api)
+      - (react) (vue)
 
 ------
 
 ### 语
 
   - jojo's bizarre programming adventure
-    ([repo](https://github.com/xieyuheng/jojo))
+    ([repo](https://github.com/xieyuheng/cicada/tree/master/jojo))
 
-  - a language with fulfilling type system to model category theory
-    (not public yet)
+  - a dependently-typed logic programming language
+    ([repo](https://github.com/xieyuheng/cicada))
 
   - a language to capture the concept of continuum
     (not public yet)
@@ -78,7 +79,7 @@
 ### 文
 
   - (2018-07-22) Semantic of De Bruijn Notation and Bizarre Syntax Adventure
-    ([paper](https://xieyuheng.github.io/jojo/de-bruijn-notation))
+    (not public yet)
     - Discussions about syntax design of programming language.
 
   - (2018-07-18) Fulfilling Type System
