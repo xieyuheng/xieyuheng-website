@@ -19,12 +19,7 @@
 ### 历
 
   - 2015 - 2017 :
-    - 項目 : [cicada language](https://github.com/xieyuheng/cicada)
-    - 学记 : 类型论 范畴论 代数拓扑
-      ([人](https://github.com/xieyuheng/xieyuheng.github.io/tree/master/person))
-      ([题](https://github.com/xieyuheng/xieyuheng.github.io/tree/master/note))
-      ([语](https://github.com/xieyuheng/xieyuheng.github.io/tree/master/lang))
-
+    - 項目 : 蟬語 ([repo](https://github.com/xieyuheng/cicada))
 
   - 2017-10 - 2018-01 :
     - 公司 : ricequant.com, 深圳
