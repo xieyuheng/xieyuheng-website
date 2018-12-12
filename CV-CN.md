@@ -19,8 +19,8 @@
 ### 历
 
   - 2015 - 2017 :
-    - 自由 : 研究 类型论 范畴论 形式语言设计 代数拓扑
-    - 学记 :
+    - 項目 : [cicada language](https://github.com/xieyuheng/cicada)
+    - 学记 : 类型论 范畴论 代数拓扑
       ([人](https://github.com/xieyuheng/xieyuheng.github.io/tree/master/person))
       ([题](https://github.com/xieyuheng/xieyuheng.github.io/tree/master/note))
       ([语](https://github.com/xieyuheng/xieyuheng.github.io/tree/master/lang))
@@ -53,6 +53,9 @@
       - (nodejs) (javascript)
     - 无 :
       - (forth)
+    - 前 :
+      - (naked-js) (vanilla-js) (real-dom-api)
+        (react) (vue)
 
 ------
 
