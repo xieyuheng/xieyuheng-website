@@ -5,7 +5,7 @@
   and either Xie Yuheng or Xie Yuheng.
 
 - [[https://github.com/xieyuheng][github.com/xieyuheng]]
-- [[./CV.html][CV]] // [[./CV-CN][中文简历]] - [[https://github.com/xieyuheng/paper/blob/master/CV-CN.pdf][.pdf]]
+- [[./CV-CN][中文简历]] - [[https://github.com/xieyuheng/paper/blob/master/CV-CN.pdf][.pdf]]
 
 * Program
 
