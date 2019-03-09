@@ -14,6 +14,8 @@
 
 * Writing
 
+  - 2018-07-22 [[./writing/de-bruijn-notation.html][Semantic of De Bruijn Notation and Bizarre Syntax Adventure]]
+
   - 2018-06-20 [[./writing/dependent-category.html][Dependent category]]
     A generalization of category to model dependent type system
 
