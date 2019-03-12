@@ -1,9 +1,6 @@
 #+html_head: <link rel="stylesheet" href="css/org-page.css"/>
 #+title: Xie Yuheng // 謝宇恆
 
-- I am both Xie Yuheng and Xie Yuheng,
-  and either Xie Yuheng or Xie Yuheng.
-
 - [[https://github.com/xieyuheng][github.com/xieyuheng]]
 - [[./CV-CN][中文简历]] - [[https://github.com/xieyuheng/paper/blob/master/CV-CN.pdf][.pdf]]
 
