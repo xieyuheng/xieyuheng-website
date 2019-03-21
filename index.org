@@ -4,11 +4,6 @@
 - [[https://github.com/xieyuheng][github.com/xieyuheng]]
 - [[./CV-CN][中文简历]] - [[https://github.com/xieyuheng/paper/blob/master/CV-CN.pdf][.pdf]]
 
-* Program
-
-  - [[https://github.com/xieyuheng/cicada][cicada language // 蟬語]] ([[https://cicada-notebook.surge.sh][demo]])
-    A dependently-typed logic programming language
-
 * Writing
 
   - 2018-07-22 [[./writing/de-bruijn-notation.html][Semantic of De Bruijn Notation and Bizarre Syntax Adventure]]
