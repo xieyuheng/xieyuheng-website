@@ -18,8 +18,7 @@
 
   - Based on cell complex, I show another list of axioms,
     to capture the concept of connectedness first,
-    and firstly use it to give
-    an alternative definition of continuity.
+    and firstly use it to give an alternative definition of continuity.
 
   - This approach can be traced back to Aristotle,
     in part six of his "Categories".
