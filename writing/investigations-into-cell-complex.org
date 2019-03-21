@@ -16,18 +16,21 @@
     the first impressive use of the axioms
     is the definition of continuity.
 
-  - Another list of axioms
+  - Based on cell complex, I show another list of axioms,
     to capture the concept of connectedness first,
     and firstly use it to give
     an alternative definition of continuity.
 
-  - This traces back to part six of "Categories" by Aristotle
+  - This approach can be traced back to Aristotle,
+    in part six of his "Categories".
 
   - The aim of Algebraic topology is to develop functors
     to distinguish topological spaces.
 
     The functors developed often approach this aim
     by expressing connectedness.
+
+    Thus my design is practical for algebraic topology.
 
 * Abstract
 
