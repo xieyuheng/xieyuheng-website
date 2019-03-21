@@ -7,7 +7,7 @@
 
 * [note]
 
-  - Just like Aristotle, I start by history review and critique.
+  - Just like Aristotle, I start by history reviews and critiques.
 
   - The axioms of topological space
     is motivated by the arithmetization infinitesimal analysis {[[Arithmetization of Analysis, on Wikipedia][1]]}.
@@ -21,12 +21,12 @@
     and firstly use it to give
     an alternative definition of continuity.
 
-  - This traces back to part six of <<Categories>> by Aristotle
+  - This traces back to part six of "Categories" by Aristotle
 
   - The aim of Algebraic topology is to develop functors
     to distinguish topological spaces.
 
-    the functors developed often approach this aim
+    The functors developed often approach this aim
     by expressing connectedness.
 
 * Abstract
@@ -34,4 +34,5 @@
 * References
 
   - <<Arithmetization of Analysis, on Wikipedia>>
+    Arithmetization of Analysis, on Wikipedia
     https://en.wikipedia.org/wiki/Arithmetization_of_analysis
