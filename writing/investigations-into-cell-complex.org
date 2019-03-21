@@ -27,7 +27,7 @@
     to distinguish topological spaces.
 
     The functors developed often approach this aim
-    by expressing connectedness.
+    by using algebraic structures to express connectedness.
 
     Thus my design is practical for algebraic topology.
 
