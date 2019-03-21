@@ -3,8 +3,7 @@
 ### 简
 
   - 名 : 谢宇恒
-  - 生 : 宁夏银川 九二年一月十五日
-  - 籍 : 安徽定远
+  - 生 : 九二年一月十五日
   - 源 : [github.com/xieyuheng](https://github.com/xieyuheng)
   - 邮 : xyheme@gmail.com
 
@@ -18,71 +17,28 @@
 
 ### 历
 
-  - 2015 - 2017 :
-    - 項目 : 蟬語 ([repo](https://github.com/xieyuheng/cicada))
-
   - 2017-10 - 2018-01 :
     - 公司 : ricequant.com, 深圳
-    - 贡献 : python 后端, 量化交易策略
+    - 贡献 : web 后端, 量化交易策略 (python, pandas, numpy, flask, mongodb)
 
   - 2018-03 - 2018-05 :
     - 公司 : inblockchain -- pxn.one, 北京
-    - 贡献 : elixir 后端, graphql API
+    - 贡献 : web 后端, graphql API (elixir, postgresql)
 
   - 2018-11 - 2019-02 :
     - 公司 : 长春理想科技研发部, 北京
-    - 贡献 : 数据挖掘算法 (异常检测与根因分析)
-
-------
-
-### 技
-
-  - 语言设计 :
-    - (类型系统) (语法解析器) (解释器) (编译器)
-    - (形式语言设计) (DSL)
-
-  - 程序语言 :
-    - 静 :
-      - (rust) (haskell)
-      - (c) (scalable-c style) (c++)
-    - 动 :
-      - (scheme) (racket) (lisp) (clojure)
-      - (elixir) (erlang)
-      - (python)
-      - (nodejs) (javascript)
-    - 无 :
-      - (forth)
-    - 前 :
-      - (naked-js) (vanilla-js)
-      - (real-dom-api)
-      - (react) (vue)
-
-------
-
-### 语
-
-  - jojo's bizarre programming adventure
-    ([repo](https://github.com/xieyuheng/cicada/tree/master/jojo))
-
-  - a dependently-typed logic programming language
-    ([repo](https://github.com/xieyuheng/cicada))
-
-  - a language to capture the concept of continuum
-    (not public yet)
-
-  - a forth-like language
-    ([repo](https://github.com/xieyuheng/cicada-nymph))
+    - 贡献 : 数据挖掘算法 (异常检测与根因分析) (python, pandas, numpy)
 
 ------
 
 ### 文
 
   - (2018-07-22) Semantic of De Bruijn Notation and Bizarre Syntax Adventure
-    (not public yet)
+    ([paper](https://xieyuheng.github.io/writing/de-bruijn-notation.html))
     - Discussions about syntax design of programming language.
 
   - (2018-07-18) Fulfilling Type System
-    (not public yet)
+    ([paper](https://xieyuheng.github.io/writing/fulfilling-type-system.html))
     - In which I use partly inhabited typed-record as type,
       and fully inhabited typed-record to inhabits such type.
 
