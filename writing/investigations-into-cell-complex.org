@@ -1,0 +1,37 @@
+#+html_head: <link rel="stylesheet" href="../css/org-page.css"/>
+#+title: Investigations into Cell Complex
+
+- Author : Xie Yuheng
+- Date : Started at 2019-03-22, WIP
+- Keywords : CW complex, Cell complex, Algebraic Topology, Aristotle.
+
+* [note]
+
+  - Just like Aristotle, I start by history review and critique.
+
+  - The axioms of topological space
+    is motivated by the arithmetization infinitesimal analysis {[[Arithmetization of Analysis, on Wikipedia][1]]}.
+
+    The axioms capture the concept of nearness,
+    the first impressive use of the axioms
+    is the definition of continuity.
+
+  - Another list of axioms
+    to capture the concept of connectedness first,
+    and firstly use it to give
+    an alternative definition of continuity.
+
+  - This traces back to part six of <<Categories>> by Aristotle
+
+  - The aim of Algebraic topology is to develop functors
+    to distinguish topological spaces.
+
+    the functors developed often approach this aim
+    by expressing connectedness.
+
+* Abstract
+
+* References
+
+  - <<Arithmetization of Analysis, on Wikipedia>>
+    https://en.wikipedia.org/wiki/Arithmetization_of_analysis

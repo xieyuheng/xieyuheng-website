@@ -6,6 +6,10 @@
 
 * Writing
 
+  - [WIP] [[./writing/de-bruijn-notation.html][Investigations into Cell Complex]]
+    - Cell complex as the foundation of algebraic topology
+    - [[https://github.com/xieyuheng/cell-complex][An implementation in typescript]]
+
   - 2018-07-22 [[./writing/de-bruijn-notation.html][Semantic of De Bruijn Notation and Bizarre Syntax Adventure]]
     - Discussions about syntax design of programming language.
 
