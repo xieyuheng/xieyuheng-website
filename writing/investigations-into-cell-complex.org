@@ -10,7 +10,7 @@
   - Just like Aristotle, I start by history reviews and critiques.
 
   - The axioms of topological space
-    is motivated by the arithmetization of infinitesimal analysis {[[Arithmetization of Analysis, on Wikipedia][1]]}.
+    is motivated by the arithmetization of infinitesimal analysis {[[arith-analysis][1]]}.
 
     The axioms thus developed, capture the concept of nearness,
     the first impressive use of the axioms
@@ -35,6 +35,6 @@
 
 * References
 
-  - <<Arithmetization of Analysis, on Wikipedia>>
-    Arithmetization of Analysis, on Wikipedia
+  - <<arith-analysis>>
+    {1} Arithmetization of Analysis, on Wikipedia
     https://en.wikipedia.org/wiki/Arithmetization_of_analysis
