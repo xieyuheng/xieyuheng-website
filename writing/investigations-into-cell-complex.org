@@ -5,7 +5,7 @@
 - Date : Started at 2019-03-22, WIP
 - Keywords : CW complex, Cell complex, Algebraic Topology, Aristotle.
 
-* [note]
+* Abstract
 
   - Just like Aristotle, I start by history reviews and critiques.
 
@@ -31,7 +31,7 @@
 
     Thus my design is practical for algebraic topology.
 
-* Abstract
+* [todo]
 
 * References
 
