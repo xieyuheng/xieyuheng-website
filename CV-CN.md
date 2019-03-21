@@ -19,9 +19,6 @@
     - 贡献 : 数据挖掘算法 (异常检测与根因分析) (python, pandas, numpy)
 
 ### 文
-  - (2018-07-22) Semantic of De Bruijn Notation and Bizarre Syntax Adventure
-    ([paper](https://xieyuheng.github.io/writing/de-bruijn-notation.html))
-    - Discussions about syntax design of programming language.
   - (2018-07-18) Fulfilling Type System
     ([paper](https://xieyuheng.github.io/writing/fulfilling-type-system.html))
     - In which I use partly inhabited typed-record as type,
