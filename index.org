@@ -6,7 +6,7 @@
 
 * Writing
 
-  - [WIP] [[./writing/de-bruijn-notation.html][Investigations into Cell Complex]]
+  - [WIP] [[./writing/investigations-into-cell-complex.html][Investigations into Cell Complex]]
     - I show how cell complex can be used as the foundation of algebraic topology.
     - [[https://github.com/xieyuheng/cell-complex][An implementation in typescript]]
 
