@@ -9,12 +9,11 @@
 
   - Just like Aristotle, I start by history reviews and critiques.
 
-  - The axioms of topological space
-    is motivated by the arithmetization of infinitesimal analysis {[[arith-analysis][1]]}.
+  - The axioms of topological space is motivated by
+    the arithmetization of infinitesimal analysis {[[arith-analysis][1]]}.
 
     The axioms thus developed, capture the concept of nearness,
-    the first impressive use of the axioms
-    is the definition of continuity.
+    the first impressive use of the axioms is the definition of continuity.
 
   - Based on cell complex, I show another list of axioms,
     to capture the concept of connectedness first,
@@ -39,11 +38,22 @@
     {1} Arithmetization of Analysis, on Wikipedia
     https://en.wikipedia.org/wiki/Arithmetization_of_analysis
 
+    - The arithmetization of analysis
+      was a research program in the foundations of mathematics
+      carried out in the second half of the 19th century.
 
+    - Kronecker originally introduced the term
+      arithmetization of analysis, by which he meant
+      its constructivization in the context of the natural numbers.
+
+    - The meaning of the term later shifted to signify
+      the set-theoretic construction of the real line.
+      Its main proponent was Weierstrass, who argued
+      the geometric foundations of calculus
+      were not solid enough for rigorous work.
 
   - <<Categories>>
-    {2} Categories, By Aristotle
-    Translated by E. M. Edghill
+    {2} Categories, By Aristotle, Translated by E. M. Edghill
 
     - Quantity is either discrete or continuous. Moreover, some quantities
       are such that each part of the whole has a relative position to the
