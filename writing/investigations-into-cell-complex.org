@@ -1,5 +1,5 @@
 #+html_head: <link rel="stylesheet" href="../css/org-page.css"/>
-#+title: Investigations into Cell Complex
+#+title: Investigations into cell complex
 
 - Author : Xie Yuheng
 - Date : Started at 2019-03-22, WIP
