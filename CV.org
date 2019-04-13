@@ -26,10 +26,19 @@
 
 *** 2017-11 -- 2018-02
 
-    - Three months as a python programmer,
-      at a company which builds online quantitative trading system.
+    - RiceQuant.com, China, ShenZhen.
+      web backend, trading strategies
+      (python, pandas, numpy, flask, mongodb)
 
 *** 2018-03 -- 2018-05
 
-    - One month writing elixir and learning cryptography,
-      at a company which builds crypto currency exchange network.
+    - InBlockchain, pxn.one, China, Beijing.
+      web backend, graphql API
+      (elixir, postgresql)
+
+*** 2018-11 -- 2019-02
+
+    - ChangChunLiXiang Tech, China, Beijing
+      data mining algorithms,
+      anomaly detection, root cause analysis
+      (python, pandas, numpy)
