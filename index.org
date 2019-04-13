@@ -30,9 +30,6 @@
   - [[./translation/is-god-a-taoist.html][is god a taoist // 上帝是道家的嗎]]
     by Raymond Smullyan, 1977
 
-  - [[./translation/are-you-an-anarchist.html][are you an anarchist // 你是無政府主義者嗎]]
-    by David Graeber, 2009
-
 * Lecture
 
   - [[http://the-little-language-designer.github.io/cicada-nymph/course/contents.html][experimental assembly programming experiment]]
