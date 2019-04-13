@@ -11,15 +11,15 @@
 
 ### 历
 
-  - 2017-10 - 2018-01 :
-    - 公司 : ricequant.com, 深圳
-    - 贡献 : web 后端, 量化交易策略 (python, pandas, numpy, flask, mongodb)
-  - 2018-03 - 2018-05 :
-    - 公司 : inblockchain -- pxn.one, 北京
-    - 贡献 : web 后端, graphql API (elixir, postgresql)
   - 2018-11 - 2019-02 :
     - 公司 : 长春理想科技研发部, 北京
     - 贡献 : 数据挖掘算法 (异常检测与根因分析) (python, pandas, numpy)
+  - 2018-03 - 2018-05 :
+    - 公司 : inblockchain -- pxn.one, 北京
+    - 贡献 : web 后端, graphql API (elixir, postgresql)
+  - 2017-10 - 2018-01 :
+    - 公司 : ricequant.com, 深圳
+    - 贡献 : web 后端, 量化交易策略 (python, pandas, numpy, flask, mongodb)
 
 ### 文
 

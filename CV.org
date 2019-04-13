@@ -20,15 +20,12 @@
 
 * PROFESSIONAL EXPERIENCE
 
-*** 2015 -- 2017
+*** 2018-11 -- 2019-02
 
-    - Learning programming languages and language design.
-
-*** 2017-11 -- 2018-02
-
-    - RiceQuant.com, China, ShenZhen.
-      web backend, trading strategies
-      (python, pandas, numpy, flask, mongodb)
+    - ChangChunLiXiang Tech, China, Beijing
+      data mining algorithms,
+      anomaly detection, root cause analysis
+      (python, pandas, numpy)
 
 *** 2018-03 -- 2018-05
 
@@ -36,9 +33,12 @@
       web backend, graphql API
       (elixir, postgresql)
 
-*** 2018-11 -- 2019-02
+*** 2017-11 -- 2018-02
 
-    - ChangChunLiXiang Tech, China, Beijing
-      data mining algorithms,
-      anomaly detection, root cause analysis
-      (python, pandas, numpy)
+    - RiceQuant.com, China, ShenZhen.
+      web backend, trading strategies
+      (python, pandas, numpy, flask, mongodb)
+
+*** 2015 -- 2017
+
+    - Learning programming languages and language design.
