@@ -38,7 +38,3 @@
     - RiceQuant.com, China, ShenZhen.
       web backend, trading strategies
       (python, pandas, numpy, flask, mongodb)
-
-*** 2015 -- 2017
-
-    - Learning programming languages and language design.
