@@ -28,16 +28,12 @@
     
   - 2018-07-22 : Semantic of De Bruijn Notation and Bizarre Syntax Adventure
     ([paper](https://xieyuheng.github.io/writing/de-bruijn-notation.html))
-    - Discussions about syntax design of programming language.
 
   - 2018-07-18 : Fulfilling Type System
     ([paper](https://xieyuheng.github.io/writing/fulfilling-type-system.html))
-    - In which I use partly inhabited typed-record as type,
-      and fully inhabited typed-record to inhabits such type.
 
   - 2018-06-20 : Dependent category
     ([paper](https://xieyuheng.github.io/writing/dependent-category.html))
-    - A generalization of category to model dependent type system.
 
   - 2016-06-14 : Function compose, Type cut, and The algebra of logic
     ([paper](https://xieyuheng.github.io/writing/function-compose-type-cut.html))
