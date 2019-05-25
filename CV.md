@@ -1,0 +1,31 @@
+### Info
+
+- Name: Xie Yuheng
+  - Family Name: Xie
+  - Given Name: Yuheng
+- Born: January 15, 1992 in YinChuan, China
+- Citizenship: China
+- Email: xyheme@gmail.com
+- Homepage: [xieyuheng.github.io](https://xieyuheng.github.io)
+- Projects: [github.com/xieyuheng](https://github.com/xieyuheng)
+
+### Education
+
+- B.S. (Mathematics) Sun Yat-sen University, 2015
+
+### Experience
+
+- 2018-11 - 2019-02:
+  - Company: ChangChunLiXiang Tech, China, Beijing
+  - Contribution: data mining algorithms, anomaly detection, root cause analysis
+  - Tech: python, pandas, numpy
+
+- 2018-03 -- 2018-05:
+  - Company: InBlockchain, pxn.one, China, Beijing
+  - Contribution: web backend, graphql API
+  - Tech: elixir, postgresql
+
+- 2017-11 -- 2018-02:
+  - Company: RiceQuant.com, China, ShenZhen
+  - Contribution: web backend, trading strategies
+  - Tech: python, pandas, numpy, flask, mongodb
