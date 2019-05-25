@@ -26,6 +26,8 @@
 
 ### 个人项目
 
+工作之余, 我坚持着的一些目标长远的研究与项目.
+
 #### 拓扑与几何建模
 
 - [cicada](https://github.com/xieyuheng/cicada) -- Libraries and tools for topological and geometric modeling
@@ -48,7 +50,7 @@
   ([paper](https://xieyuheng.github.io/writing/function-compose-type-cut.html))
   ([pdf](http://xieyuheng.github.io/paper/function-compose-type-cut.pdf))
   ([demo](https://xieyuheng.github.io/writing/function-compose-type-cut--demo))
-  - for the ICFP 2016 at Nara
+  - ICFP, 2016, 日本奈良
 
 ### 授课
 
