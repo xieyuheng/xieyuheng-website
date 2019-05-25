@@ -23,10 +23,17 @@
     - 公司 : ricequant.com, 深圳
     - 贡献 : web 后端, 量化交易策略 (python, pandas, numpy, flask, mongodb)
 
-### 文章
+### 个人项目
+
+#### 拓扑与几何建模
+
+  - https://github.com/xieyuheng/cicada
+    Libraries and tools for topological and geometric modeling
 
   - 2019-05-08 : A Recursive Combinatorial Description of cell-complex
     ([paper](https://github.com/xieyuheng/cicada/blob/master/docs/a-recursive-combinatorial-description-of-cell-complex.md))
+
+#### 程序语言设计
 
   - 2018-07-22 : Semantic of De Bruijn Notation and Bizarre Syntax Adventure
     ([paper](https://xieyuheng.github.io/writing/de-bruijn-notation.html))
