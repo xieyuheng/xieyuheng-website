@@ -6,8 +6,8 @@
 - Born: January 15, 1992 in YinChuan, China
 - Citizenship: China
 - Email: xyheme@gmail.com
+- Github: [github.com/xieyuheng](https://github.com/xieyuheng)
 - Homepage: [xieyuheng.github.io](https://xieyuheng.github.io)
-- Projects: [github.com/xieyuheng](https://github.com/xieyuheng)
 
 ### Education
 
@@ -29,3 +29,36 @@
   - Company: RiceQuant.com, China, ShenZhen
   - Contribution: web backend, trading strategies
   - Tech: python, pandas, numpy, flask, mongodb
+
+### Projects
+
+#### Geometric Modeling
+
+- [cicada](https://github.com/xieyuheng/cicada) -- Libraries and tools for topological and geometric modeling
+
+- 2019-05-08: A Recursive Combinatorial Description of cell-complex
+  ([paper](https://github.com/xieyuheng/cicada/blob/master/docs/a-recursive-combinatorial-description-of-cell-complex.md))
+
+#### Programming Language Design
+
+- 2018-07-22: Semantic of De Bruijn Notation and Bizarre Syntax Adventure
+  ([paper](https://xieyuheng.github.io/writing/de-bruijn-notation.html))
+
+- 2018-07-18: Fulfilling Type System
+  ([paper](https://xieyuheng.github.io/writing/fulfilling-type-system.html))
+
+- 2018-06-20: Dependent category
+  ([paper](https://xieyuheng.github.io/writing/dependent-category.html))
+
+- 2016-06-14: Function compose, Type cut, and The algebra of logic
+  ([paper](https://xieyuheng.github.io/writing/function-compose-type-cut.html))
+  ([pdf](http://xieyuheng.github.io/paper/function-compose-type-cut.pdf))
+  ([demo](https://xieyuheng.github.io/writing/function-compose-type-cut--demo))
+  - ICFP 2016, Nara, Japan
+
+### Teachings
+
+- Assembly Language Experiments, SYSU, 2015
+  ([Homepage](http://the-little-language-designer.github.io/cicada-nymph/course/contents.html))
+  ([Group](https://github.com/the-little-language-designer))
+  - Implementing Forth interpreter in assembly language
