@@ -4,6 +4,7 @@
 - 生日 : 九二年一月十五日
 - 邮箱 : xyheme@gmail.com
 - 诸项目 : [github.com/xieyuheng](https://github.com/xieyuheng)
+- 主页 : [xieyuheng.github.io](https://xieyuheng.github.io)
 
 ### 学历
 
@@ -57,21 +58,24 @@
 
 ### 常见问题
 
-#### 你所期待的职位是什么样的?
+#### 你理想的职位是什么样的?
 
-I'm all about culture and the people that make up the company. It's hard to really define something as abstract as culture, but as a general rule, what I look for includes:
+我认为构成公司的团队与文化最重要, 这可能很难定义, 但是我认为良好的团队文化应带包含:
 
-- Working with modern technologies and approaches to problem-solving
-- Permanent roles
-- Strong team unity with opportunities to learn, grow, and support each other
-- Agile development environments
-- Strong career and personal development
-- Independence and empowerment to tackle problems with a level of autonomy
-- High levels of trust in employees
-- Flexible hours
-- Home working options
-- Work-life balance. 40 hours is more than enough time to devote to a working week.
+- 用现代的技术, 以解决实际问题为目标
+- 团结互助的团队, 一起学习与进步
+- 目标长远的职位与个人发展
+- 在解决问题的细节上给以足够的自治
+- 高度信任员工
+- 灵活的工作时间, 必要时有远程工作的可能
+- 生活与工作的平衡, 一周投入 40 小时到工作, 对于高效的程序员来说足够了
 
-#### 你对工资的期待如何?
+#### 你所倾向实用的技术栈如何?
 
-- ><
+对于前端的工作来说我倾向于使用:
+
+- Typescript & Javascript
+- Rreact or Vue
+- CSS – both vanilla and preprocessors (SASS) using modern layouts
+- Good bundlers such as Parcel or Webpack
+- Accessible, semantic HTML
