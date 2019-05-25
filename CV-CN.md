@@ -26,8 +26,6 @@
 
 ### 个人项目
 
-工作之余, 我坚持着的一些目标长远的研究与项目.
-
 #### 拓扑与几何建模
 
 - [cicada](https://github.com/xieyuheng/cicada) -- Libraries and tools for topological and geometric modeling
