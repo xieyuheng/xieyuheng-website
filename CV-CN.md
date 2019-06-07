@@ -1,7 +1,7 @@
 ### 自述
 
-才疏学浅 经历不堪 无意妄言粉饰 若得鄙视 实在抱歉  
-代码诸多 敬待批判 幸得赏识 感激万分  
+才疏学浅 经历不堪 无意妄言粉饰 若得鄙视 实在抱歉
+代码诸多 敬待批判 幸得赏识 感激万分
 
 ### 简介
 
@@ -83,6 +83,6 @@
 
 - Typescript & Javascript
 - React or Vue
-- CSS – both vanilla and preprocessors (SASS) using modern layouts
+- CSS with modern layouts
 - Good bundlers such as Parcel or Webpack
 - Accessible, semantic HTML
