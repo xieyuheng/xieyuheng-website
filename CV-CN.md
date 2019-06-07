@@ -1,3 +1,8 @@
+### 自述
+
+才疏学浅 经历不堪 无意妄言粉饰 若得鄙视 实在抱歉  
+代码诸多 敬待批判 幸得赏识 感激万分  
+
 ### 简介
 
 - 姓名: 谢宇恒
@@ -5,11 +10,6 @@
 - 邮箱: xyheme@gmail.com
 - 诸项目: [github.com/xieyuheng](https://github.com/xieyuheng)
 - 主页: [xieyuheng.github.io](https://xieyuheng.github.io)
-
-### 自述
-
-才疏学浅 经历不堪 无意妄言粉饰 若得鄙视 实在抱歉  
-代码诸多 敬待批判 幸得赏识 感激万分  
 
 ### 学历
 
