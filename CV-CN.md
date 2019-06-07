@@ -82,7 +82,7 @@
 对于前端的工作来说我倾向于使用:
 
 - Typescript & Javascript
-- Rreact or Vue
+- React or Vue
 - CSS – both vanilla and preprocessors (SASS) using modern layouts
 - Good bundlers such as Parcel or Webpack
 - Accessible, semantic HTML
