@@ -29,6 +29,12 @@
   - 公司: ricequant.com, 深圳
   - 贡献: web 后端, 量化交易策略 (python, pandas, numpy, flask, mongodb)
 
+### 授课经历
+
+- 实验性的汇编语言实验 中山大学 2015
+  ([主页](http://the-little-language-designer.github.io/cicada-nymph/course/contents.html))
+  ([讨论小组](https://github.com/the-little-language-designer))
+
 ### 个人项目
 
 #### 拓扑与几何建模
@@ -54,12 +60,6 @@
   ([pdf](http://xieyuheng.github.io/paper/function-compose-type-cut.pdf))
   ([demo](https://xieyuheng.github.io/writing/function-compose-type-cut--demo))
   - ICFP, 2016, 日本奈良
-
-### 授课
-
-- 实验性的汇编语言实验 中山大学 2015
-  ([主页](http://the-little-language-designer.github.io/cicada-nymph/course/contents.html))
-  ([讨论小组](https://github.com/the-little-language-designer))
 
 ### 常见问题
 
