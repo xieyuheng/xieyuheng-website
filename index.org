@@ -2,6 +2,8 @@
 #+title: Xie Yuheng // 謝宇恆
 
 - [[https://github.com/xieyuheng][github.com/xieyuheng]]
+- [[https://codepen.io/xieyuheng][codepen.io/xieyuheng]]
+- [[./CV-CN][中文简历]] - [[https://github.com/xieyuheng/paper/blob/master/CV-CN.pdf][.pdf]]
 
 * Writing
 

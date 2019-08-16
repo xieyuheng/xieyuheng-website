@@ -1,2 +1,0 @@
-- [[https://codepen.io/xieyuheng][codepen.io/xieyuheng]]
-- [[./CV-CN][中文简历]] - [[https://github.com/xieyuheng/paper/blob/master/CV-CN.pdf][.pdf]]
