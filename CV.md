@@ -15,6 +15,16 @@
 
 ### Experience
 
+- 2019-06 - 2019-08:
+  - Company: Tehang, ShenZhen
+  - Contribution:
+    - Teaching colleagues about functional programming (typeclass, monad)
+    - Third party data sync (scala, akka stream, postgres)
+    - International hotel API (scala, akka stream, akka http)
+    - Ontology based data integration solution, design and implementation
+    - Propagator model based web crawler framework, design
+  - Tech: scala, akka stream
+
 - 2018-11 - 2019-02:
   - Company: ChangChunLiXiang Tech, China, Beijing
   - Contribution: data mining algorithms, anomaly detection, root cause analysis
