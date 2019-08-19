@@ -36,3 +36,7 @@
 
   - [[http://the-little-language-designer.github.io/cicada-nymph/course/contents.html][experimental assembly programming experiment]]
     at SYSU, GuangZhou, 2015
+
+* Music
+
+  - [[https://github.com/xieyuheng/music-diary][music-diary]]
