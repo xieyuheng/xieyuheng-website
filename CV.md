@@ -40,6 +40,13 @@
   - Contribution: web backend, trading strategies
   - Tech: python, pandas, numpy, flask, mongodb
 
+### Teachings
+
+- Assembly Language Experiments, SYSU, 2015
+  ([Homepage](http://the-little-language-designer.github.io/cicada-nymph/course/contents.html))
+  ([Group](https://github.com/the-little-language-designer))
+  - Implementing Forth interpreter in assembly language
+
 ### Projects
 
 #### Geometric Modeling
@@ -65,10 +72,3 @@
   ([pdf](http://xieyuheng.github.io/paper/function-compose-type-cut.pdf))
   ([demo](https://xieyuheng.github.io/writing/function-compose-type-cut--demo))
   - ICFP 2016, Nara, Japan
-
-### Teachings
-
-- Assembly Language Experiments, SYSU, 2015
-  ([Homepage](http://the-little-language-designer.github.io/cicada-nymph/course/contents.html))
-  ([Group](https://github.com/the-little-language-designer))
-  - Implementing Forth interpreter in assembly language
