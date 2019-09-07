@@ -43,10 +43,10 @@
 
 #### 拓扑与几何建模
 
-- [cicada](https://github.com/xieyuheng/cicada) -- Libraries and tools for topological and geometric modeling
+- [cell-complex](https://github.com/xieyuheng/cell-complex) -- Libraries and tools for topological and geometric modeling
 
 - 2019-05-08: A Recursive Combinatorial Description of cell-complex
-  ([paper](https://github.com/xieyuheng/cicada/blob/master/docs/a-recursive-combinatorial-description-of-cell-complex.md))
+  ([paper](https://github.com/xieyuheng/cell-complex/blob/master/docs/a-recursive-combinatorial-description-of-cell-complex.md))
 
 #### 程序语言设计
 
