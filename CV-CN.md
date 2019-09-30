@@ -53,9 +53,6 @@
 - 2018-07-22: Semantic of De Bruijn Notation and Bizarre Syntax Adventure
   ([paper](https://xieyuheng.github.io/writing/de-bruijn-notation.html))
 
-- 2018-07-18: Fulfilling Type System
-  ([paper](https://xieyuheng.github.io/writing/fulfilling-type-system.html))
-
 - 2018-06-20: Dependent category
   ([paper](https://xieyuheng.github.io/writing/dependent-category.html))
 
