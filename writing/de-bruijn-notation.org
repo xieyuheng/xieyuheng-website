@@ -13,8 +13,8 @@
 * Translating
 
   - Note that,
-    I use `{...}` for De Bruijn's `(...)`,
-    and `(let ...)` for De Bruijn's `[]`.
+    I use `{...}` for De Bruijn's `(...)`, (quotation)
+    and `(let ...)` for De Bruijn's `[]`. (local variable binding)
 
   - Suppose [ ] is a syntax translating function,
     which translate normal lambda notation to De Bruijn notation.
