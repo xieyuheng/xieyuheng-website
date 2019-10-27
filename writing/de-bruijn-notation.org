@@ -12,28 +12,28 @@
 
 * Translating
 
-  - Note that,
-    I use `{...}` for De Bruijn's `(...)`, (quotation)
-    and `(let ...)` for De Bruijn's `[]`. (local variable binding)
+  - Notation
+    | {...} | quotation              |
+    | []    | local variable binding |
 
-  - Suppose [ ] is a syntax translating function,
+  - Suppose `trans( ... )` is a syntax translating function,
     which translate normal lambda notation to De Bruijn notation.
 
   - The rules :
 
-    1. [ v ] => v
+    1. trans( v ) => v
 
-    2. [ (lambda (v) M) ] => (let v) [ M ]
+    2. trans( (lambda (v) M) ) => [v] trans( M )
 
-    3. [ (M N) ] => {[ N ]} [ M ]
+    3. trans( (M N) ) => { trans( N ) } trans( M )
 
 * Example
 
   - in De Bruijn notation :
-    {M} {N} (let u) {P} (let v) (let w) {Q} z
+    { M } { N } [u] { P } [v] [w] { Q } z
 
   - which is equal to (for example) :
-    {N} (let u) {P} (let v) {M} (let w) {Q} z
+    { N } [u] { P } [v] { M } [w] { Q } z
 
 * Advantage
 
