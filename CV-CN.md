@@ -61,19 +61,3 @@
   ([pdf](http://xieyuheng.github.io/paper/function-compose-type-cut.pdf))
   ([demo](https://xieyuheng.github.io/writing/function-compose-type-cut--demo))
   - ICFP, 2016, 日本奈良
-
-### 常见问题
-
-#### 你理想的职位是什么样的?
-
-我认为构成公司的团队与文化最重要.
-这可能很难定义, 但是我认为良好的团队文化应当包含:
-
-- 以解决实际问题为目标
-- 用现代的技术
-- 团结互助的团队, 一起学习与进步
-- 目标长远的职位与个人发展
-- 在解决问题的细节上给以足够的自治
-- 高度信任员工
-- 灵活的工作时间, 必要时有远程工作的可能
-- 生活与工作的平衡, 一周投入 40 小时到工作, 对于高效的程序员来说足够了
