@@ -1,5 +1,1 @@
-* Blog // 博客
-
-*** In Chinese // 中文
-
-    - 2019-03-09 [[./blog/cn/2019-03-09--new-adventure.html][新的冒險 -- 組合遊戲]]
+- use hexo
