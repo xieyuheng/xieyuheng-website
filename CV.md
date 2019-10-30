@@ -58,12 +58,6 @@
 
 #### Programming Language Design
 
-- 2018-07-22: Semantic of De Bruijn Notation and Bizarre Syntax Adventure
-  ([paper](https://xieyuheng.github.io/writing/de-bruijn-notation.html))
-
-- 2018-06-20: Dependent category
-  ([paper](https://xieyuheng.github.io/writing/dependent-category.html))
-
 - 2016-06-14: Function compose, Type cut, and The algebra of logic
   ([paper](https://xieyuheng.github.io/writing/function-compose-type-cut.html))
   ([pdf](http://xieyuheng.github.io/paper/function-compose-type-cut.pdf))
