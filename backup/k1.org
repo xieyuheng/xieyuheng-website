@@ -1,3 +1,0 @@
-  - [WIP] [[./writing/investigations-into-cell-complex.html][Investigations into Cell Complex]]
-    - I show how to use cell complex as the foundation of algebraic topology.
-    - [[https://github.com/xieyuheng/cell-complex][An implementation in typescript]]
