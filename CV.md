@@ -3,7 +3,7 @@
 - Name: Xie Yuheng
   - Family Name: Xie
   - Given Name: Yuheng
-- Born: January 15, 1992 in YinChuan, China
+- Born: 1992, in China
 - Citizenship: China
 - Email: xyheme@gmail.com
 - Github: [github.com/xieyuheng](https://github.com/xieyuheng)

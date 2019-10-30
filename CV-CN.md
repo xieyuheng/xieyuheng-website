@@ -1,7 +1,7 @@
 ### 简介
 
 - 姓名: 谢宇恒
-- 生日: 九二年一月十五日
+- 出生: 一九九二年
 - 邮箱: xyheme@gmail.com
 - 诸项目: [github.com/xieyuheng](https://github.com/xieyuheng)
 - 主页: [xieyuheng.github.io](https://xieyuheng.github.io)
