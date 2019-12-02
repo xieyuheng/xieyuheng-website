@@ -23,6 +23,9 @@
   - 这是一个 parser generator 框架 <br>
     目前所用的是 Earley parsing 算法 <br>
     可以 在 O(n^3) 复杂度内 处理任意的 上下文无关语法
+  - [cicadoidea/partech](https://github.com/cicadoidea/partech)
+    - 同一个 parser generator 框架 和 Earley parsing 算法 <br>
+      为 js 而重新实现
 - [cat](https://github.com/xieyuheng/cat)
   A categorical semantics library in Agda.
   - 这是为类型系统提供范畴语义而写的
