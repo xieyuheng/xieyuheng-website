@@ -15,7 +15,8 @@
 - [study](https://github.com/xieyuheng/study)
   - 这是一些程序语言实现技术的总结 <br>
     包括 bidirectional type checking <br>
-    还有 normalization by evaluation
+    还有 normalization by evaluation (用于实现 dependent type) <br>
+    等等
 - [partech](https://github.com/xieyuheng/study/blob/master/src/main/scala/xieyuheng/partech)
   - 这是一个 parser generator 框架 <br>
     目前所用的是 Earley parsing 算法 <br>
