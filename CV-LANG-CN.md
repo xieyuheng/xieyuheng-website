@@ -12,6 +12,8 @@
 
 ### 程序语言设计项目经历
 
+(大致按照从最近到过去的时间顺序排列)
+
 - [study](https://github.com/xieyuheng/study)
   - 这是一些程序语言实现技术的总结 <br>
     包括 bidirectional type checking <br>
