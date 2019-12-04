@@ -33,7 +33,7 @@
   Libraries and tools for topological and geometric modeling.
   - 包括一篇形式化 cell-complex 递归结构的论文 <br>
     (cell-complex 是图论在高维度的推广)
-  - 包括一些正系数矩阵的算法 还有同调群的计算 <br>
+  - 包括一些整系数矩阵的算法 还有同调群的计算 <br>
     这算是 代数拓扑与几何建模 <br>
     是我为以我的方式形式化代数拓扑做准备的 <br>
     想要研究的是同伦类型论的缺点
@@ -49,7 +49,7 @@
       语言是用 rust 实现的编译到 wasm 然后在 js 里调用解释器
 - [jojo-rs](https://github.com/xieyuheng/cicada-rs/blob/master/jojo/README.md)
   a dynamic language uses S-expression as meta syntax
-  - 这是一个用 rust 实现的类似 list 的动态语言解释器 <br>
+  - 这是一个用 rust 实现的类似 lisp 的动态语言解释器 <br>
     包括一些数值积分程序的例子
 - [tangle-rs](https://github.com/xieyuheng/tangle-rs)
   a collection of tools to do tangle in rust
@@ -73,7 +73,7 @@
     包括简单 text mode 的驱动 还有简单的键盘驱动
 - [sequent1](https://github.com/xieyuheng/sequent1)
   - 这是用 scheme 实现的 dependent type language 的解释器 <br>
-    用与 ICFP scheme workshop 的演讲
+    用于 ICFP scheme workshop 的演讲
 - [cicada-nymph](https://github.com/xieyuheng/cicada-nymph)
   a forth like language written in fasm assembler
   - 用汇编实现的 类 forth 语言解释器 <br>
