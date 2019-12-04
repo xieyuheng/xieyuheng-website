@@ -59,7 +59,9 @@
   logic programming in elixir
   - 这是在 elixir 中嵌入的类似 minikanren 的逻辑式语言
 - [jojo in cpp](https://github.com/xieyuheng/jojo-history/tree/master/in-cpp)
-  - 这是用 cpp 实现的 类 forth 语言解释器
+  - 这是用 cpp 实现的 类 forth 语言解释器 <br>
+    所谓 "类 forth 语言解释器" 是一种栈式虚拟机 <br>
+    又叫做 threaded code interpreter (线串码解释器) <br>
 - [jojo in c](https://github.com/xieyuheng/jojo-history/tree/master/in-c)
   - 这是用 c 实现的 类 forth 语言解释器
 - [jojo in nodejs](https://github.com/xieyuheng/jojo-history/tree/master/in-nodejs)
