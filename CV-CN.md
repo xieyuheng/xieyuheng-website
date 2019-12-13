@@ -51,8 +51,8 @@
 - 2018-03 - 2018-05:
   - 公司: inblockchain -- pxn.one, 北京
   - 贡献:
-    - web 后端 (elixir, postgresql)
-    - GraphQL API
+    - web 后端 (elixir, phoenix (web framework))
+    - GraphQL API (postgresql, absinthe-graphql)
 - 2017-10 - 2018-01:
   - 公司: ricequant.com, 深圳
   - 贡献:
