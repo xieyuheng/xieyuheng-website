@@ -12,7 +12,7 @@
 
 ### 职业程序员誓词
 
-- 原誓词地址: [https://github.com/xieyuheng/the-programmer-s-oath]()
+- 原誓词地址: [github.com/xieyuheng/the-programmer-s-oath](https://github.com/xieyuheng/the-programmer-s-oath)
 
 为维护职业程序员的荣誉 **竭尽我的能力与判断力** 我承诺:
 
