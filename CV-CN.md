@@ -41,15 +41,12 @@
     - 国际酒店 API (scala, akka stream, akka http)
     - Ontology based 数据整合方案设计与实现
     - Propagator model based 爬虫框架设计
-
 - 2018-11 - 2019-02:
   - 公司: 长春理想科技研发部, 北京
   - 贡献: 数据挖掘算法 (异常检测与根因分析) (python, pandas, numpy)
-
 - 2018-03 - 2018-05:
   - 公司: inblockchain -- pxn.one, 北京
   - 贡献: web 后端, graphql API (elixir, postgresql)
-
 - 2017-10 - 2018-01:
   - 公司: ricequant.com, 深圳
   - 贡献: web 后端, 量化交易策略 (python, pandas, numpy, flask, mongodb)
@@ -65,7 +62,6 @@
 #### 拓扑与几何建模
 
 - [cell-complex](https://github.com/xieyuheng/cell-complex) -- Libraries and tools for topological and geometric modeling
-
 - 2019-05-08: A Recursive Combinatorial Description of cell-complex
   ([paper](http://inner-universe.surge.sh/paper/a-recursive-combinatorial-description-of-cell-complex))
 
@@ -77,9 +73,9 @@
   ([demo](https://xieyuheng.github.io/writing/function-compose-type-cut--demo))
   - ICFP, 2016, 日本奈良
 
-#### 更多的程序语言设计
+#### 更多的程序语言设计 (为应聘程序语言相关职位而列举)
 
-(大致按照从最近到过去的时间顺序排列)
+按照从最近到过去的时间顺序排列
 
 - [study](https://github.com/xieyuheng/study)
   - 程序语言实现技术的总结 <br>
