@@ -43,13 +43,22 @@
     - Propagator model based 爬虫框架设计
 - 2018-11 - 2019-02:
   - 公司: 长春理想科技研发部, 北京
-  - 贡献: 数据挖掘算法 (异常检测与根因分析) (python, pandas, numpy)
+  - 贡献:
+    - 数据挖掘算法 研究, 设计与实现 (python, pandas, numpy) <br>
+    - 主要研究题目包括:
+      - 异常检测 (anomaly detection)
+      - 根因分析 (root cause analysis)
 - 2018-03 - 2018-05:
   - 公司: inblockchain -- pxn.one, 北京
-  - 贡献: web 后端, graphql API (elixir, postgresql)
+  - 贡献:
+    - web 后端 (elixir, postgresql)
+    - GraphQL API
 - 2017-10 - 2018-01:
   - 公司: ricequant.com, 深圳
-  - 贡献: web 后端, 量化交易策略 (python, pandas, numpy, flask, mongodb)
+  - 贡献:
+    - 爬虫 (python, scrapy, mongodb)
+    - web 后端 (python, flask)
+    - 量化交易策略 (python, pandas, numpy)
 
 ### 授课经历
 
