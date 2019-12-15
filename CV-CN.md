@@ -60,6 +60,8 @@
     - web 后端 (python, flask)
     - 量化交易策略 (python, pandas, numpy)
 
+Alas, my dear reader, for nothing is more constant in life than change.
+
 ### 授课经历
 
 - 实验性的汇编语言实验 中山大学 2015
