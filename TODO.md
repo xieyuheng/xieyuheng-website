@@ -1,0 +1,2 @@
+- setup vercel
+- setup vue
