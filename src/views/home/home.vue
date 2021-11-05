@@ -16,7 +16,12 @@
       <router-link class="link" :to="{ path: '/courses' }">courses</router-link>.
     </p>
 
-    <p>Are you curious about my <em>inner universe</em>?</p>
+    <p>
+      Curious? Welcome to my
+      <a href="http://github.com/xieyuheng/inner"
+        >inner universe<icon-external-link class="p-px w-5" /></a
+      >.
+    </p>
   </div>
 </template>
 
@@ -27,7 +32,7 @@ import { Component, Vue } from "vue-property-decorator"
   name: "home",
   // prettier-ignore
   components: {
-
+    "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
   },
 })
 export default class extends Vue {}
@@ -36,5 +41,9 @@ export default class extends Vue {}
 <style scoped>
 .link {
   @apply font-sans font-bold underline;
+}
+
+a {
+  @apply font-sans font-bold underline inline-flex items-center;
 }
 </style>
