@@ -1,4 +1,3 @@
-- setup prettier
 - setup TailwindCSS
 - setup `types/`
 - setup `views/routes.ts`

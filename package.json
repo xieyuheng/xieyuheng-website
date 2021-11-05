@@ -4,9 +4,17 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "watch": "tsc --noEmit --watch",
+    "format": "prettier src --write"
+  },
+  "prettier": {
+    "semi": false,
+    "trailingComma": "es5"
   },
   "dependencies": {
+    "prettier": "^2.4.1",
+    "prettier-plugin-tailwind-css": "^1.5.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
