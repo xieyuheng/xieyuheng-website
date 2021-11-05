@@ -1,6 +1,8 @@
 <template>
   <div class="flex flex-col space-y-4 font-serif text-xl">
-    <p>I am Xie Yuheng, a programmer.</p>
+    <h1 class="font-sans text-2xl font-bold">Hi, I'm Xie Yuheng ^-^/</h1>
+
+    <p>I am a programmer.</p>
 
     <p>
       I share my ideas about programming, mathematics and philosophy through my

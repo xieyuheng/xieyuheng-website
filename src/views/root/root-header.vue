@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="py-1 text-3xl font-bold">Xie Yuheng</h1>
+    <h1 class="py-1 text-3xl font-bold">
+      <router-link :to="{ path: '/' }"> Xie Yuheng </router-link>
+    </h1>
     <ul class="flex space-x-4 font-sans text-xl text-gray-700">
       <li class="hover:text-gray-400">
         <router-link :to="{ path: '/notes' }"> NOTES </router-link>
