@@ -1,2 +1,3 @@
-- setup `views/routes.ts`
+- fix naming conventions
+
 - clean `old/` dir
