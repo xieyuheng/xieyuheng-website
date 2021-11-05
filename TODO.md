@@ -1,5 +1,3 @@
-- `views/errors/page-not-found.vue`
-
 - `views/root/root-header.vue` -- links to home and other routes
 
 - `views/root/root-header.vue` -- logo
