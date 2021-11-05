@@ -1,4 +1,4 @@
 - rename `app.vue` to `root.vue`
-- rename `registerServiceWorker` to `plugins/register-service-worker`
+
 - setup `views/routes.ts`
 - clean `old/` dir
