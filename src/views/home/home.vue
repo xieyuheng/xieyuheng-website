@@ -1,6 +1,13 @@
 <template>
   <div>
-    <h1>Xie Yuheng</h1>
+    <p>I am Xie Yuheng, a programmer.</p>
+
+    <p>
+      I share my ideas about programming, mathematics and philosophy through my
+      notes, projects, translations and papers.
+    </p>
+
+    <p>Curious about my inner universe? Check out my notes.</p>
   </div>
 </template>
 
