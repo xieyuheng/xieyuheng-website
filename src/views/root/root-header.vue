@@ -1,9 +1,16 @@
 <template>
   <div>
-    <h1 class="py-1 text-3xl font-bold">
-      <router-link :to="{ path: '/' }"> Xie Yuheng </router-link>
-    </h1>
-    <ul class="flex space-x-4 font-sans text-xl text-gray-700">
+    <div class="relative flex">
+      <router-link :to="{ path: '/' }">
+        <root-logo class="p-2 md:absolute md:top-4 md:-left-20 rounded-full" />
+      </router-link>
+
+      <h1 class="py-1 text-3xl font-bold">
+        <router-link :to="{ path: '/' }"> Xie Yuheng </router-link>
+      </h1>
+    </div>
+
+    <ul class="flex flex-wrap justify-between font-sans text-xl text-gray-700">
       <li class="hover:text-gray-400">
         <router-link :to="{ path: '/notes' }"> NOTES </router-link>
       </li>
@@ -29,7 +36,7 @@ import { Component, Vue } from "vue-property-decorator"
   name: "root-header",
   // prettier-ignore
   components: {
-
+    "root-logo": require("@/views/root/root-logo.vue").default,
   },
 })
 export default class extends Vue {}

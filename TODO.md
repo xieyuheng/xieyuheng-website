@@ -1,6 +1,4 @@
-- `views/root/root-header.vue` -- logo
-
-- `views/root/root-layout.vue` -- improve mobile layout
+- `views/root/root-logo.vue`
 
 - `views/translations`
 
