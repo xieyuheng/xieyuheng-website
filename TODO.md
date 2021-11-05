@@ -1,5 +1,3 @@
-- rename `views/root/root.vue` to `views/root/root-layout.vue`
-
 - `views/root/root-layout.vue`
 - `views/root/root-header.vue`
 - `views/root/root-footer.vue`
