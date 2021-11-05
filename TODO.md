@@ -1,4 +1,3 @@
-- setup TailwindCSS
 - setup `types/`
 - setup `views/routes.ts`
 - clean `old/` dir
