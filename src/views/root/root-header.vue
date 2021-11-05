@@ -2,7 +2,14 @@
   <div>
     <div class="relative flex items-center">
       <router-link :to="{ path: '/' }">
-        <root-logo class="pr-3 md:absolute md:top-4 md:-left-20 rounded-full" />
+        <root-logo
+          class="
+            md:absolute md:top-0 md:w-20 md:-left-32
+            w-10
+            mr-3
+            rounded-full
+          "
+        />
       </router-link>
 
       <h1 class="py-1 text-3xl font-bold">
@@ -10,20 +17,31 @@
       </h1>
     </div>
 
-    <ul class="flex flex-wrap justify-between font-sans text-xl text-gray-700">
-      <li class="hover:text-gray-400">
+    <ul
+      class="
+        flex flex-wrap
+        justify-between
+        py-2
+        font-sans
+        text-xl text-gray-400
+      "
+    >
+      <li class="hover:text-gray-900">
         <router-link :to="{ path: '/notes' }"> NOTES </router-link>
       </li>
-      <li class="hover:text-gray-400">
+      <li class="hover:text-gray-900">
         <router-link :to="{ path: '/projects' }"> PROJECTS </router-link>
       </li>
-      <li class="hover:text-gray-400">
+      <li class="hover:text-gray-900">
         <router-link :to="{ path: '/translations' }">
           TRANSLATIONS
         </router-link>
       </li>
-      <li class="hover:text-gray-400">
+      <li class="hover:text-gray-900">
         <router-link :to="{ path: '/papers' }"> PAPERS </router-link>
+      </li>
+      <li class="hover:text-gray-900">
+        <router-link :to="{ path: '/courses' }"> COURSES </router-link>
       </li>
     </ul>
   </div>

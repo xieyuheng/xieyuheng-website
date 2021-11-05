@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-full"> LOGO </div>
+  <img src="../../assets/images/xieyuheng-square.jpg" />
 </template>
 
 <script lang="ts">

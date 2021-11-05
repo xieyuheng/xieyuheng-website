@@ -1,5 +1,3 @@
-- `views/root/root-logo.vue`
-
 - `views/translations`
 
 - `views/CV-CN`
