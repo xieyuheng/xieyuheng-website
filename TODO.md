@@ -1,4 +1,3 @@
-- setup vercel
 - setup prettier
 - setup TailwindCSS
 - setup `types/`
