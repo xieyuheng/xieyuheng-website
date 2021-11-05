@@ -2,7 +2,7 @@
   <div class="flex flex-col space-y-4 font-serif text-xl">
     <h1 class="font-sans text-2xl font-bold">Hi, I'm Xie Yuheng ^-^/</h1>
 
-    <p>I am a programmer.</p>
+    <p>I am a programmer, and I work as a full-stack web developer.</p>
 
     <!-- prettier-ignore -->
     <p>
@@ -14,6 +14,15 @@
       <router-link class="link" :to="{ path: '/papers' }">papers</router-link>
       and
       <router-link class="link" :to="{ path: '/courses' }">courses</router-link>.
+    </p>
+
+    <p>
+      Right now I'm working on
+      <a href="https://cicada-lang.org"
+        >Cicada Language<icon-external-link class="p-px w-5" /></a
+      >, a <em>dependently typed programming language</em> and
+      <em>interactive theorem prover</em>. <br />
+      Check out its website, and maybe, join our community :)
     </p>
 
     <p>
