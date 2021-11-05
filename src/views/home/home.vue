@@ -26,7 +26,7 @@
     </p>
 
     <p>
-      Curious? Welcome to my
+      Curious? Come to see my
       <a href="http://github.com/xieyuheng/inner"
         >inner universe<icon-external-link class="p-px w-5" /></a
       >.
