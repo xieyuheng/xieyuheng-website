@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <h1>{{ msg }}</h1>
   </div>
 </template>
@@ -7,8 +7,10 @@
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator"
 
-@Component
-export default class HelloWorld extends Vue {
+@Component({
+  name: "hello-world",
+})
+export default class extends Vue {
   @Prop() msg!: string
 }
 </script>
