@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="relative flex">
+    <div class="relative flex items-center">
       <router-link :to="{ path: '/' }">
-        <root-logo class="p-2 md:absolute md:top-4 md:-left-20 rounded-full" />
+        <root-logo class="pr-3 md:absolute md:top-4 md:-left-20 rounded-full" />
       </router-link>
 
       <h1 class="py-1 text-3xl font-bold">
