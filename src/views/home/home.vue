@@ -16,7 +16,7 @@
       <router-link class="link" :to="{ path: '/courses' }">courses</router-link>.
     </p>
 
-    <p>Curious about my inner universe? Check out my notes.</p>
+    <p>Are you curious about my <em>inner universe</em>?</p>
   </div>
 </template>
 
