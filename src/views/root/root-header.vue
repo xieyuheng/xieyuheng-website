@@ -1,7 +1,6 @@
 <template>
-  <div class="flex flex-col md:py-14 max-w-2xl px-6 py-6 mx-auto">
-    <root-header />
-    <router-view />
+  <div>
+    <h1 class="text-2xl font-bold">Xie Yuheng</h1>
   </div>
 </template>
 
@@ -9,10 +8,10 @@
 import { Component, Vue } from "vue-property-decorator"
 
 @Component({
-  name: "root-layout",
+  name: "root-header",
   // prettier-ignore
   components: {
-    "root-header": require("@/views/root/root-header.vue").default,
+
   },
 })
 export default class extends Vue {}
