@@ -4,35 +4,20 @@
 - 出生: 一九九二年
 - 邮箱: xyheme@gmail.com
 - 诸项目: [github.com/xieyuheng](https://github.com/xieyuheng)
-- 主页: [xieyuheng.github.io](https://xieyuheng.github.io)
+- 主页: [xieyuheng.com](https://xieyuheng.com)
 
 ### 学历
 
 - 2015: 学士 数学与应用数学 中山大学
 
-### 职业程序员誓词
-
-- 原誓词地址: [github.com/xieyuheng/the-programmer-s-oath](https://github.com/xieyuheng/the-programmer-s-oath)
-
-为维护职业程序员的荣誉 **竭尽我的能力与判断力** 我承诺:
-
-1. 我不创作有害的代码
-2. 我所创作的代码总是我最佳的工作 <br>
-   不论是行为还是结构方面 我都不蓄意积累代码中的缺陷
-3. 每个发布 我都给出快速明确且可重复的证明 <br>
-   以证明代码的各个方面都符合意图
-4. 我频繁地逐步地发布 以避免阻碍同伴的进展
-5. 我抓住所有机会 无畏而坚决地改进我的创作 <br>
-   我绝不使我的创作降质
-6. 我尽我所能保持并提高自己和同伴的创作力 <br>
-   我不做有损创造力之事
-7. 我持续确保同伴能代替我 并且我能代替同伴
-8. 我给出诚实的估计 诚实于我的估量 并诚实于其准确性 <br>
-   我不做没把握的估计
-9. 我不断的学习以改善我的技艺
-
 ### 工作经历
 
+- 2019-12 - 2021-11:
+  - 公司: 风变科技, 深圳
+  - 贡献:
+    - 作为程序语言工程师，设计并研发创作交互式课程所用的语言
+    - 开创了交互式课程创作平台「课灵小馆」，成为了公司新的主打产品
+    - 开创「思索」项目，以探索「主动回顾」和「间隔重复」等等认知心理学技术在教学中的应用
 - 2019-06 - 2019-08:
   - 公司: 特航航空, 深圳
   - 贡献:
@@ -59,8 +44,6 @@
     - 爬虫 (python, scrapy, mongodb)
     - web 后端 (python, flask)
     - 量化交易策略 (python, pandas, numpy)
-
-Alas, my dear reader, for nothing is more constant in life than change.
 
 ### 授课经历
 
