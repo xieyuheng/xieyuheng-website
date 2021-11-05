@@ -3,11 +3,17 @@
     <div class="relative flex items-center">
       <router-link :to="{ path: '/' }">
         <root-logo
-          class="md:absolute md:top-0 md:w-20 md:-left-32 w-10 rounded-full"
+          class="
+            2md:absolute 2md:top-0 2md:w-20
+            lg:-left-32
+            2md:-left-28
+            w-10
+            rounded-full
+          "
         />
       </router-link>
 
-      <h1 class="py-1 text-3xl font-bold md:ml-0 ml-3">
+      <h1 class="py-1 text-3xl font-bold 2md:ml-0 ml-3">
         <router-link :to="{ path: '/' }"> Xie Yuheng </router-link>
       </h1>
     </div>

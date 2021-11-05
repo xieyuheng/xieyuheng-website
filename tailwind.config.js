@@ -5,10 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Linux Biolinum O", "sans-serif"],
-      serif: [
-        "Linux Libertine O",
-        "serif",
-      ],
+      serif: ["Linux Libertine O", "serif"],
       narration: [
         "EBGaramond",
         // "BodoniModa",
@@ -23,6 +20,9 @@ module.exports = {
       ],
     },
     extend: {
+      screens: {
+        "2md": "880px",
+      },
       colors: {
         gray: colors.warmGray,
         orange: colors.orange,
