@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-col space-y-4 font-serif text-xl">
     <p>I am Xie Yuheng, a programmer.</p>
 
     <p>

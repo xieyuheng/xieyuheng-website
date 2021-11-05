@@ -1,5 +1,3 @@
-- `views/root/root-header.vue` -- links to home and other routes
-
 - `views/root/root-header.vue` -- logo
 
 - `views/root/root-layout.vue` -- improve mobile layout
