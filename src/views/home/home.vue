@@ -4,9 +4,16 @@
 
     <p>I am a programmer.</p>
 
+    <!-- prettier-ignore -->
     <p>
-      I share my ideas about programming, mathematics and philosophy through my
-      notes, projects, translations and papers.
+      I share my ideas about <em>programming</em>, <em>mathematics</em> and
+      <em>philosophy</em> through my
+      <router-link class="link" :to="{ path: '/notes' }">notes</router-link>,
+      <router-link class="link" :to="{ path: '/projects' }">projects</router-link>,
+      <router-link class="link" :to="{ path: '/translations' }">translations</router-link>,
+      <router-link class="link" :to="{ path: '/papers' }">papers</router-link>
+      and
+      <router-link class="link" :to="{ path: '/courses' }">courses</router-link>.
     </p>
 
     <p>Curious about my inner universe? Check out my notes.</p>
@@ -25,3 +32,9 @@ import { Component, Vue } from "vue-property-decorator"
 })
 export default class extends Vue {}
 </script>
+
+<style scoped>
+.link {
+  @apply font-sans font-bold underline;
+}
+</style>
