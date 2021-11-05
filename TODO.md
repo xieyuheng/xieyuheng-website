@@ -1,2 +1,8 @@
 - setup vercel
-- setup vue
+- setup prettier
+- setup TailwindCSS
+- setup `types/`
+- setup `views/routes.ts`
+- clean `old/` dir
+- rename `app.vue` to `root.vue`
+- rename `registerServiceWorker` to `plugins/register-service-worker`
