@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hello-world msg="welcome" />
+    <h1>Xie Yuheng</h1>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ import { Component, Vue } from "vue-property-decorator"
   name: "home",
   // prettier-ignore
   components: {
-    "hello-world": require("@/components/hello-world.vue").default,
+
   },
 })
 export default class extends Vue {}
