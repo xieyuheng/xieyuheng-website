@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from "vue-property-decorator"
-import { NoteState as State } from "./note-state"
+import { NoteState as State } from "@/views/notes/note-state"
 
 @Component({
   name: "note-layout",

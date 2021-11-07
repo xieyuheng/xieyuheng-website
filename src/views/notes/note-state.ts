@@ -19,4 +19,8 @@ export class NoteState {
     )
     return new NoteState({ files, notes })
   }
+
+  get pageNames(): Array<string> {
+    return this.notes.map((note) => note.path)
+  }
 }
