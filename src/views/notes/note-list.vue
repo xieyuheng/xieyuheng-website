@@ -1,6 +1,9 @@
 <template>
   <div class="flex flex-col space-y-4 font-serif text-xl">
     <h1 class="font-sans text-2xl font-bold">Notes</h1>
+
+    <p>My zettelkasten-like notes.</p>
+
   </div>
 </template>
 
