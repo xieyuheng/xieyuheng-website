@@ -3,33 +3,33 @@ import { GitFileStore } from "@enchanterjs/enchanter/lib/git-file-store"
 import postmark, { Nodes } from "@xieyuheng/postmark"
 const Path = require("path")
 
-export class ArticleState {
-  articleId: GitPath
+export class NoteState {
+  noteId: GitPath
   files: GitFileStore
   text: string
   pageName: string
 
   constructor(opts: {
-    articleId: GitPath
+    noteId: GitPath
     files: GitFileStore
     text: string
     pageName: string
   }) {
-    this.articleId = opts.articleId
+    this.noteId = opts.noteId
     this.files = opts.files
     this.text = opts.text
     this.pageName = opts.pageName
   }
 
-  // static async build(opts: { articleId: string }): Promise<ArticleState> {
-  //   const articleId = GitPath.decode(opts.articleId)
-  //   const files = articleId.upward().createGitFileStore()
-  //   const pageName = articleId.path
-  //   const text = await files.getOrFail(Path.basename(pageName))
-  //   return new ArticleState({ articleId, files, text, pageName })
-  // }
+  static async build(opts: { noteId: string }): Promise<NoteState> {
+    const noteId = GitPath.decode(opts.noteId)
+    const files = noteId.upward().createGitFileStore()
+    const pageName = noteId.path
+    const text = await files.getOrFail(Path.basename(pageName))
+    return new NoteState({ noteId, files, text, pageName })
+  }
 
-  // get document(): Nodes.Document {
-  //   return app.postmarkParser.parseDocument(this.text)
-  // }
+  get document(): Nodes.Document {
+    return app.postmarkParser.parseDocument(this.text)
+  }
 }
