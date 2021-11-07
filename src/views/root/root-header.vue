@@ -27,13 +27,20 @@
       >
         <router-link :to="{ path: '/' }"> Xie Yuheng </router-link>
 
-        <div class="flex items-center mr-3">
+        <div class="flex items-center space-x-2 mr-3">
+          <a
+            href="https://space.bilibili.com/550104600"
+            target="_blank"
+            title="bilibili ~ 小药壶"
+          >
+            <icon-bilibili-line class="hover:text-gray-900 w-6 text-gray-400" />
+          </a>
           <a
             href="https://github.com/xieyuheng"
             target="_blank"
-            title="GitHub @xieyuheng"
+            title="github ~ xieyuheng"
           >
-            <icon-github class="hover:text-gray-900 w-6 text-gray-400" />
+            <icon-github class="hover:text-gray-900 w-5 text-gray-400" />
           </a>
         </div>
       </div>
@@ -78,6 +85,7 @@ import { Component, Vue } from "vue-property-decorator"
   components: {
     "root-logo": require("@/views/root/root-logo.vue").default,
     "icon-github": require("@/components/icons/icon-github.vue").default,
+    "icon-bilibili-line": require("@/components/icons/icon-bilibili-line.vue").default,
   },
 })
 export default class extends Vue {}
