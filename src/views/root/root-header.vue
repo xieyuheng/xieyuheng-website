@@ -29,7 +29,7 @@
 
         <div class="flex items-center mr-3">
           <a href="https://github.com/xieyuheng" target="_blank">
-            <icon-github class="w-6 text-gray-400 hover:text-gray-900" />
+            <icon-github class="hover:text-gray-900 w-6 text-gray-400" />
           </a>
         </div>
       </div>
@@ -37,8 +37,8 @@
 
     <ul
       class="
-        flex flex-wrap
         md:justify-between
+        flex flex-wrap
         py-2
         font-sans
         text-xl text-gray-400
