@@ -4,15 +4,27 @@
 
     <p>My zettelkasten-like notes.</p>
 
-    <ul>
-      <li v-for="note in state.notes" :key="note.id" class="flex flex-col py-2">
-        <div class="flex items-baseline space-x-2 text-sm text-gray-500">
-          <div>{{ note.id }}</div>
-          <div v-if="note.date">{{ note.date }}</div>
+    <ul class="py-8">
+      <li v-for="note in state.notes" :key="note.id" class="flex flex-col py-3">
+        <div
+          class="
+            flex
+            items-baseline
+            justify-between
+            py-1
+            space-x-2
+            font-sans
+            text-sm
+          "
+        >
+          <div class="text-xs italic font-bold text-gray-500">
+            {{ note.id }}
+          </div>
+          <div class="text-gray-500" v-if="note.date">{{ note.date }}</div>
         </div>
 
         <router-link :to="{ path: `/notes/${note.path}` }">
-          <h1 class="hover:text-gray-500 text-lg">
+          <h1 class="hover:text-gray-500 font-sans font-bold">
             {{ note.document.attributes.title }}
           </h1>
         </router-link>
