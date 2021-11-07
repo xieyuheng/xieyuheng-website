@@ -19,6 +19,7 @@
     <p>
       Right now I'm working on
       <a href="https://cicada-lang.org"
+         target="_blank"
         >Cicada Language<icon-external-link class="p-px w-5" /></a
       >, a <em>dependently typed programming language</em> and
       <em>interactive theorem prover</em>. <br />
@@ -28,6 +29,7 @@
     <p>
       Curious? Come to see my
       <a href="http://github.com/xieyuheng/inner"
+         target="_blank"
         >inner universe<icon-external-link class="p-px w-5" /></a
       >.
     </p>
