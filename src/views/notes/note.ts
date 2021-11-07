@@ -14,7 +14,7 @@ export class Note {
     this.id = this.path.split("-")[0]
   }
 
-  get date(): string | undefined{
+  get date(): string | undefined {
     return this.document.attributes.date
       ? ut.formatDate(this.document.attributes.date)
       : undefined

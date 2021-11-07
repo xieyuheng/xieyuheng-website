@@ -1,7 +1,6 @@
-- `views/notes/note` render `md-document`
-
-- `views/notes/note-list` support search
+- `views/notes/note-list` improve list style
 - `views/notes/note-list` intro of zettelkasten
+- `views/notes/note-list` support search
 
 - `views/projects` -- project list, summary and link to project home pages
 

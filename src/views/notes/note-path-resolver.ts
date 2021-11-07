@@ -1,6 +1,5 @@
 import { PathResolver } from "@/vendor/postmark/models/path-resolver"
 
-
 export class NotePathResolver extends PathResolver {
   baseURL: string
 

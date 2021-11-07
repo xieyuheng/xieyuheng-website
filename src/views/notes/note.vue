@@ -1,5 +1,5 @@
 <template>
-  <md-document :document="document" :path-resolver="pathResolver" />
+  <md-document :document="note.document" :path-resolver="pathResolver" />
 </template>
 
 <script lang="ts">
@@ -23,7 +23,7 @@ export default class extends Vue {
     baseURL: this.baseURL,
   })
 
-  get document() {
+  get note() {
     return this.state.notes.find((node) => node.path === this.path)
   }
 }

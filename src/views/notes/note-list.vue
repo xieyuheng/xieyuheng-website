@@ -7,14 +7,14 @@
     <ul>
       <li v-for="note in state.notes" :key="note.id" class="flex flex-col py-2">
         <div
-          class="text-gray-500 text-sm flex flex-row items-baseline space-x-2"
+          class="flex flex-row items-baseline space-x-2 text-sm text-gray-500"
         >
           <div>{{ note.id }}</div>
           <div v-if="note.date">{{ note.date }}</div>
         </div>
 
         <router-link :to="{ path: `/notes/${note.path}` }">
-          <h1 class="text-lg hover:text-gray-500">
+          <h1 class="hover:text-gray-500 text-lg">
             {{ note.document.attributes.title }}
           </h1>
         </router-link>
