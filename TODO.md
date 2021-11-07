@@ -1,6 +1,7 @@
-- `views/notes/note-layout` load contents from `inner` repo
+- `views/notes/note-list` list zettelkasten, jump to `note`
 
-- `views/notes/note-list` list zettelkasten
+- `views/notes/note` render `md-document`
+
 - `views/notes/note-list` support search
 
 - `views/projects` -- project list, summary and link to project home pages

@@ -4,11 +4,15 @@
 
     <p>My zettelkasten-like notes.</p>
 
+    <ul>
+      <li v-for="(text, path) in state.notes" :key="path">{{ path }}</li>
+    </ul>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator"
+import { Component, Vue, Prop } from "vue-property-decorator"
+import { NoteState as State } from "./note-state"
 
 @Component({
   name: "note-list",
@@ -17,7 +21,9 @@ import { Component, Vue } from "vue-property-decorator"
     "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
   },
 })
-export default class extends Vue {}
+export default class extends Vue {
+  @Prop() state!: State
+}
 </script>
 
 <style scoped>

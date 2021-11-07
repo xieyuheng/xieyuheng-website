@@ -1,35 +1,27 @@
 import { GitPath } from "@enchanterjs/enchanter/lib/git-path"
 import { GitFileStore } from "@enchanterjs/enchanter/lib/git-file-store"
 import postmark, { Nodes } from "@xieyuheng/postmark"
-const Path = require("path")
 
 export class NoteState {
-  noteId: GitPath
   files: GitFileStore
-  text: string
-  pageName: string
+  notes: Record<string, string>
 
   constructor(opts: {
-    noteId: GitPath
     files: GitFileStore
-    text: string
-    pageName: string
+    notes: Record<string, string>
   }) {
-    this.noteId = opts.noteId
     this.files = opts.files
-    this.text = opts.text
-    this.pageName = opts.pageName
+    this.notes = opts.notes
   }
 
-  static async build(opts: { noteId: string }): Promise<NoteState> {
-    const noteId = GitPath.decode(opts.noteId)
-    const files = noteId.upward().createGitFileStore()
-    const pageName = noteId.path
-    const text = await files.getOrFail(Path.basename(pageName))
-    return new NoteState({ noteId, files, text, pageName })
+  static async build(): Promise<NoteState> {
+    const gitPath = GitPath.decode("xieyuheng/inner@gitlab.com/-/notes")
+    const files = gitPath.createGitFileStore()
+    const notes = await files.all()
+    return new NoteState({ files, notes })
   }
 
-  get document(): Nodes.Document {
-    return app.postmarkParser.parseDocument(this.text)
+  document(text: string): Nodes.Document {
+    return app.postmarkParser.parseDocument(text)
   }
 }

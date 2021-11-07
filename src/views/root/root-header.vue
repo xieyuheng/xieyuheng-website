@@ -27,7 +27,7 @@
       >
         <router-link :to="{ path: '/' }"> Xie Yuheng </router-link>
 
-        <div class="flex items-center space-x-2 mr-3">
+        <div class="flex items-center mr-3 space-x-2">
           <a
             href="https://space.bilibili.com/550104600"
             target="_blank"
