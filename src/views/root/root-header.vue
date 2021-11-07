@@ -13,9 +13,26 @@
         />
       </router-link>
 
-      <h1 class="py-1 text-3xl font-bold 2md:ml-0 ml-3">
+      <div
+        class="
+          flex
+          justify-between
+          py-1
+          text-3xl
+          font-bold
+          2md:ml-0
+          ml-3
+          w-full
+        "
+      >
         <router-link :to="{ path: '/' }"> Xie Yuheng </router-link>
-      </h1>
+
+        <div class="flex items-center mr-3">
+          <a href="https://github.com/xieyuheng" target="_blank">
+            <icon-github class="w-6 text-gray-400 hover:text-gray-900" />
+          </a>
+        </div>
+      </div>
     </div>
 
     <ul
@@ -56,6 +73,7 @@ import { Component, Vue } from "vue-property-decorator"
   // prettier-ignore
   components: {
     "root-logo": require("@/views/root/root-logo.vue").default,
+    "icon-github": require("@/components/icons/icon-github.vue").default,
   },
 })
 export default class extends Vue {}
