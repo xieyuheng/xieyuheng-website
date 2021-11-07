@@ -1,3 +1,5 @@
+- `views/notes/note-page-navbar`
+
 - `views/notes/note-list` improve list style
 - `views/notes/note-list` intro of zettelkasten
 - `views/notes/note-list` support search
