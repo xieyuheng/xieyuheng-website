@@ -5,7 +5,11 @@
     <p>My zettelkasten-like notes.</p>
 
     <ul>
-      <li v-for="(text, path) in state.notes" :key="path">{{ path }}</li>
+      <li v-for="note in state.notes"
+          :key="note.id"
+          class="">
+        {{ note.path }}
+      </li>
     </ul>
   </div>
 </template>
