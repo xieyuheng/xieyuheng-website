@@ -1,6 +1,5 @@
-- `views/notes` -- zettelkasten system
-
-- `views/notes` -- search
+- `views/notes/note-list` load contents from `inner` repo -- list zettelkasten
+- `views/notes/note-list` support search
 
 - `views/projects` -- project list, summary and link to project home pages
 
