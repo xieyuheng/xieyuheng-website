@@ -28,7 +28,11 @@
         <router-link :to="{ path: '/' }"> Xie Yuheng </router-link>
 
         <div class="flex items-center mr-3">
-          <a href="https://github.com/xieyuheng" target="_blank">
+          <a
+            href="https://github.com/xieyuheng"
+            target="_blank"
+            title="GitHub @xieyuheng"
+          >
             <icon-github class="hover:text-gray-900 w-6 text-gray-400" />
           </a>
         </div>
