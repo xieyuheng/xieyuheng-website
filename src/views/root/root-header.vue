@@ -27,7 +27,7 @@
       >
         <router-link :to="{ path: '/' }"> Xie Yuheng </router-link>
 
-        <div class="flex items-center mr-3 space-x-2">
+        <div class="flex items-center space-x-2">
           <a
             href="https://space.bilibili.com/550104600"
             target="_blank"
@@ -48,8 +48,8 @@
 
     <ul
       class="
-        md:justify-between
         flex flex-wrap
+        justify-between
         py-2
         font-sans
         text-xl text-gray-400
@@ -93,6 +93,6 @@ export default class extends Vue {}
 
 <style scoped>
 li {
-  @apply hover:text-gray-900 pr-3;
+  @apply hover:text-gray-900;
 }
 </style>
