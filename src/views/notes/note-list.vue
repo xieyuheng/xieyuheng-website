@@ -5,10 +5,19 @@
     <p>My zettelkasten-like notes.</p>
 
     <ul>
-      <li v-for="note in state.notes"
-          :key="note.id"
-          class="">
-        {{ note.path }}
+      <li v-for="note in state.notes" :key="note.id" class="flex flex-col py-2">
+        <div
+          class="text-gray-500 text-sm flex flex-row items-baseline space-x-2"
+        >
+          <div>{{ note.id }}</div>
+          <div v-if="note.date">{{ note.date }}</div>
+        </div>
+
+        <router-link :to="{ path: `/notes/${note.path}` }">
+          <h1 class="text-lg hover:text-gray-500">
+            {{ note.document.attributes.title }}
+          </h1>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -29,13 +38,3 @@ export default class extends Vue {
   @Prop() state!: State
 }
 </script>
-
-<style scoped>
-.link {
-  @apply font-sans font-bold underline;
-}
-
-a {
-  @apply inline-flex items-center font-sans font-bold underline;
-}
-</style>

@@ -1,13 +1,11 @@
 import { PathResolver } from "@/vendor/postmark/models/path-resolver"
-import { GitPath } from "@enchanterjs/enchanter/lib/git-path"
+
 
 export class NotePathResolver extends PathResolver {
-  noteId: GitPath
   baseURL: string
 
-  constructor(opts: { noteId: GitPath; baseURL: string }) {
+  constructor(opts: { baseURL: string }) {
     super()
-    this.noteId = opts.noteId
     this.baseURL = opts.baseURL
   }
 
@@ -17,8 +15,7 @@ export class NotePathResolver extends PathResolver {
     } else if (path.startsWith("#")) {
       return path
     } else {
-      const id = this.noteId.resolve(path).encode()
-      return `${this.baseURL}/${id}`
+      return `${this.baseURL}/${path}`
     }
   }
 

@@ -1,6 +1,5 @@
 <template>
-  <div>TODO</div>
-  <!-- <md-document :document="state.document" :path-resolver="pathResolver" /> -->
+  <md-document :document="document" :path-resolver="pathResolver" />
 </template>
 
 <script lang="ts">
@@ -16,14 +15,16 @@ import { NotePathResolver } from "./note-path-resolver"
   },
 })
 export default class extends Vue {
-  @Prop() noteId!: string
   @Prop() baseURL!: string
-
+  @Prop() path!: string
   @Prop() state!: State
 
-  // pathResolver = new NotePathResolver({
-  //   noteId: this.state.noteId,
-  //   baseURL: this.baseURL,
-  // })
+  pathResolver = new NotePathResolver({
+    baseURL: this.baseURL,
+  })
+
+  get document() {
+    return this.state.notes.find((node) => node.path === this.path)
+  }
 }
 </script>

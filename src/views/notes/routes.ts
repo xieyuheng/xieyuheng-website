@@ -13,6 +13,7 @@ export const routes: Array<RouteConfig> = [
         path: "/notes/*",
         component: () => import("@/views/notes/note.vue"),
         props: (route) => ({
+          path: route.params.pathMatch,
           baseURL: `${window.location.origin}/notes`,
         }),
       },
