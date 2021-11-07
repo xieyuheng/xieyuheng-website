@@ -31,5 +31,10 @@ export default class extends Vue {
   get note() {
     return this.state.notes.find((node) => node.path === this.path)
   }
+
+  @Watch("path")
+  scrollToTop(): void {
+    window.scrollTo(0, 0)
+  }
 }
 </script>

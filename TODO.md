@@ -1,5 +1,3 @@
-- `views/notes/note-page` jump to top on route change
-
 - `views/notes/note-list` improve list style
 - `views/notes/note-list` intro of zettelkasten
 - `views/notes/note-list` support search
