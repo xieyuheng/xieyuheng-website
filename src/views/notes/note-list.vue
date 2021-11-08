@@ -49,7 +49,7 @@
         </button>
         <div
           v-if="searchInput"
-          class="py-1 pl-2 text-sm font-bold font-sans text-gray-500"
+          class="py-1 pl-2 font-sans text-sm font-bold text-gray-500"
         >
           <div v-if="notes.length === 0">found no notes</div>
           <div v-else-if="notes.length === 1">found 1 note</div>
@@ -57,7 +57,7 @@
         </div>
       </form>
 
-      <div class="self-start pt-2 flex justify-end space-x-2 text-gray-500">
+      <div class="flex self-start justify-end pt-2 space-x-2 text-gray-500">
         <button v-if="sortDirection" @click="toggleSort()">
           <icon-sort-descending class="hover:text-gray-900 w-5" />
         </button>
