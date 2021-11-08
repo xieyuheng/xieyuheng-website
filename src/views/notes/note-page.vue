@@ -1,7 +1,7 @@
 <template>
   <div v-if="note">
     <note-page-navbar :pageName="path" :state="state" />
-    <md-document :document="note.document" />
+    <md-document :document="note.document" :key="note.id" />
     <note-page-navbar :pageName="path" :state="state" />
   </div>
   <div v-else>

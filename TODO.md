@@ -1,4 +1,4 @@
-- `vendor/postmark` fix `attributes.keywords` view
+- improve notes loading style
 - `views/notes/note-list` show `attributes.keywords`
 - `views/notes/note-list` search by `keywords`
 
