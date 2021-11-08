@@ -1,5 +1,6 @@
-- be able to order notes
 - cache `notes` in `rootState`
+
+- be able to order notes
 
 - `views/notes/note-list` support search
 

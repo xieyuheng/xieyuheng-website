@@ -1,6 +1,6 @@
 import { GitPath } from "@enchanterjs/enchanter/lib/git-path"
 import { GitFileStore } from "@enchanterjs/enchanter/lib/git-file-store"
-import { Note } from "./note"
+import { Note } from "@/views/notes/note"
 
 export class NoteState {
   files: GitFileStore
