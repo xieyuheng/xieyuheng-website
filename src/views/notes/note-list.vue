@@ -101,7 +101,7 @@
           <div
             v-for="(keyword, index) in note.document.attributes.keywords"
             :key="index"
-            class="text-gray-500"
+            class="text-gray-500 italic"
           >
             <!-- TODO search by keywords -->
             <!-- <span class="hover:text-gray-900">{{ keyword }}</span> -->
