@@ -3,7 +3,7 @@
     <pre>{{ error }}</pre>
   </div>
   <div v-else-if="!state">
-    <div>Loading ...</div>
+    <div>Loading notes ...</div>
   </div>
   <router-view v-else :state="state" />
 </template>
