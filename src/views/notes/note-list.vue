@@ -23,7 +23,25 @@
       </p>
     </div>
 
-    <ul class="py-8">
+    <div class="flex justify-between">
+      <div>
+        <!-- SEARCH -->
+      </div>
+      <div class="flex justify-end py-2 space-x-2 text-gray-500">
+        <button
+          v-if="sortAscending"
+          title="Ascending sort"
+          @click="toggleSort()"
+        >
+          <icon-sort-ascending class="hover:text-gray-900 w-5" />
+        </button>
+        <button v-else title="Descending sort" @click="toggleSort()">
+          <icon-sort-descending class="hover:text-gray-900 w-5" />
+        </button>
+      </div>
+    </div>
+
+    <ul class="py-2">
       <li v-for="note in state.notes" :key="note.id" class="flex flex-col py-3">
         <div
           class="
@@ -61,9 +79,23 @@ import { NoteState as State } from "./note-state"
   // prettier-ignore
   components: {
     "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
+    "icon-sort-ascending": require("@/components/icons/icon-sort-ascending.vue").default,
+    "icon-sort-descending": require("@/components/icons/icon-sort-descending.vue").default,
   },
 })
 export default class extends Vue {
   @Prop() state!: State
+
+  sortAscending: boolean = true
+
+  toggleSort(): void {
+    this.sortAscending = !this.sortAscending
+
+    if (this.sortAscending) {
+      this.state.notes.sort((x, y) => (x.id > y.id ? 1 : -1))
+    } else {
+      this.state.notes.sort((x, y) => (x.id < y.id ? 1 : -1))
+    }
+  }
 }
 </script>
