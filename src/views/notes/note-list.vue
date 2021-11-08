@@ -42,7 +42,7 @@
     </div>
 
     <ul class="py-2">
-      <li v-for="note in state.notes" :key="note.id" class="flex flex-col py-3">
+      <li v-for="note in state.notes" :key="note.id" class="flex flex-col py-4">
         <div
           class="
             flex
