@@ -28,15 +28,11 @@
         <!-- SEARCH -->
       </div>
       <div class="flex justify-end py-2 space-x-2 text-gray-500">
-        <button
-          v-if="sortAscending"
-          title="Ascending sort"
-          @click="toggleSort()"
-        >
-          <icon-sort-ascending class="hover:text-gray-900 w-5" />
-        </button>
-        <button v-else title="Descending sort" @click="toggleSort()">
+        <button v-if="sortDirection" @click="toggleSort()">
           <icon-sort-descending class="hover:text-gray-900 w-5" />
+        </button>
+        <button v-else @click="toggleSort()">
+          <icon-sort-ascending class="hover:text-gray-900 w-5" />
         </button>
       </div>
     </div>
@@ -86,12 +82,12 @@ import { NoteState as State } from "./note-state"
 export default class extends Vue {
   @Prop() state!: State
 
-  sortAscending: boolean = true
+  sortDirection: boolean = true
 
   toggleSort(): void {
-    this.sortAscending = !this.sortAscending
+    this.sortDirection = !this.sortDirection
 
-    if (this.sortAscending) {
+    if (this.sortDirection) {
       this.state.notes.sort((x, y) => (x.id > y.id ? 1 : -1))
     } else {
       this.state.notes.sort((x, y) => (x.id < y.id ? 1 : -1))
