@@ -1,8 +1,11 @@
 <template>
-  <div>
+  <div v-if="note">
     <note-page-navbar :pageName="path" :state="state" />
     <md-document :document="note.document" :path-resolver="pathResolver" />
     <note-page-navbar :pageName="path" :state="state" />
+  </div>
+  <div v-else>
+    <page-not-found />
   </div>
 </template>
 
@@ -17,6 +20,7 @@ import { NotePathResolver } from "@/views/notes/note-path-resolver"
   components: {
     ...require("@/vendor/postmark/md-nodes").components,
     "note-page-navbar": require("@/views/notes/note-page-navbar.vue").default,
+    "page-not-found": require("@/views/errors/page-not-found.vue").default,
   },
 })
 export default class extends Vue {
