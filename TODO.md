@@ -1,3 +1,6 @@
+- be able to order notes
+- cache `notes` in `rootState`
+
 - `views/notes/note-list` support search
 
 - `views/projects` -- project list, summary and link to project home pages
