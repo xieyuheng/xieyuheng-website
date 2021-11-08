@@ -83,7 +83,9 @@
           <div class="text-xs italic font-bold text-gray-500">
             {{ note.id }}
           </div>
-          <div class="text-gray-500" v-if="note.date">{{ note.date }}</div>
+          <div class="text-gray-500" v-if="note.date">
+            {{ note.date }}
+          </div>
         </div>
 
         <router-link :to="{ path: `/notes/${note.path}` }">
@@ -91,6 +93,24 @@
             {{ note.document.attributes.title }}
           </h1>
         </router-link>
+
+        <div
+          class="text-base flex flex-wrap space-x-2"
+          v-if="note.document.attributes.keywords"
+        >
+          <div
+            v-for="(keyword, index) in note.document.attributes.keywords"
+            :key="index"
+            class="text-gray-500"
+          >
+            <!-- TODO search by keywords -->
+            <!-- <span class="hover:text-gray-900">{{ keyword }}</span> -->
+            <span>{{ keyword }}</span>
+            <span>{{
+              index < note.document.attributes.keywords.length - 1 ? "," : ""
+            }}</span>
+          </div>
+        </div>
       </li>
     </ul>
   </div>
