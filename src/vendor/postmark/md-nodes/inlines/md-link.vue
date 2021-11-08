@@ -1,11 +1,11 @@
 <template>
   <!-- NOTE A link starts with `http` is viewed as an external link. -->
   <a
-    v-if="state.pathResolver.isExternal(node.href)"
+    v-if="isExternal(node.href)"
     class="inline-flex items-center font-sans underline"
-    :href="state.pathResolver.resolve(node.href)"
+    :href="node.href"
     :title="node.title"
-    :target="state.pathResolver.target(node.href)"
+    :target="target(node.href)"
     ><md-node
       style="font-family: inherit"
       v-for="(child, index) in node.children"
@@ -43,5 +43,17 @@ import { MdDocumentState as State } from "../md-document-state"
 export default class extends Vue {
   @Prop() state!: State
   @Prop() node!: Nodes.Link
+
+  isExternal(path: string): boolean {
+    return path.startsWith("http://") || path.startsWith("https://")
+  }
+
+  target(path: string): string {
+    if (this.isExternal(path)) {
+      return "_blank"
+    } else {
+      return "_self"
+    }
+  }
 }
 </script>
