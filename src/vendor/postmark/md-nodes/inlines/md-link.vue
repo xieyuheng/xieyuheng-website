@@ -1,6 +1,7 @@
 <template>
   <!-- NOTE A link starts with `http` is viewed as an external link. -->
   <a
+    v-if="state.pathResolver.isExternal(node.href)"
     class="inline-flex items-center font-sans underline"
     :href="state.pathResolver.resolve(node.href)"
     :title="node.title"
@@ -10,10 +11,20 @@
       v-for="(child, index) in node.children"
       :key="index"
       :state="state"
-      :node="child" /><icon-external-link
-      v-if="state.pathResolver.isExternal(node.href)"
-      class="p-1"
+      :node="child" /><icon-external-link class="p-1"
   /></a>
+  <router-link
+    v-else
+    class="inline-flex items-center font-sans underline"
+    :to="node.href"
+    :title="node.title"
+    ><md-node
+      style="font-family: inherit"
+      v-for="(child, index) in node.children"
+      :key="index"
+      :state="state"
+      :node="child"
+  /></router-link>
 </template>
 
 <script lang="ts">
