@@ -23,11 +23,41 @@
       </p>
     </div>
 
-    <div class="flex justify-between">
-      <div>
-        <!-- SEARCH -->
-      </div>
-      <div class="flex justify-end py-2 space-x-2 text-gray-500">
+    <div class="flex justify-between pt-4 pb-2">
+      <form @submit.prevent="search()" class="flex flex-wrap items-center">
+        <input
+          v-model.trim="searchInput"
+          required
+          class="
+            focus:outline-none focus:ring-2 focus:ring-gray-300
+            placeholder-opacity-60
+            px-3
+            py-1
+            font-sans
+            text-lg
+            font-bold
+            text-gray-800
+            placeholder-gray-800
+            bg-gray-200
+            rounded-lg
+          "
+          placeholder="Search ..."
+          spellcheck="false"
+        />
+        <button class="text-gray-500" type="submit">
+          <icon-search class="w-5 ml-2" />
+        </button>
+        <div
+          v-if="searchInput"
+          class="py-1 pl-2 text-sm font-bold font-sans text-gray-500"
+        >
+          <div v-if="notes.length === 0">found no notes</div>
+          <div v-else-if="notes.length === 1">found 1 note</div>
+          <div v-else>found {{ notes.length }} notes</div>
+        </div>
+      </form>
+
+      <div class="self-start pt-2 flex justify-end space-x-2 text-gray-500">
         <button v-if="sortDirection" @click="toggleSort()">
           <icon-sort-descending class="hover:text-gray-900 w-5" />
         </button>
@@ -37,8 +67,8 @@
       </div>
     </div>
 
-    <ul class="py-2">
-      <li v-for="note in state.notes" :key="note.id" class="flex flex-col py-4">
+    <ul class="pb-2">
+      <li v-for="note in notes" :key="note.id" class="pb-7 flex flex-col">
         <div
           class="
             flex
@@ -75,6 +105,7 @@ import { NoteState as State } from "./note-state"
   // prettier-ignore
   components: {
     "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
+    "icon-search": require("@/components/icons/icon-search.vue").default,
     "icon-sort-ascending": require("@/components/icons/icon-sort-ascending.vue").default,
     "icon-sort-descending": require("@/components/icons/icon-sort-descending.vue").default,
   },
@@ -82,16 +113,33 @@ import { NoteState as State } from "./note-state"
 export default class extends Vue {
   @Prop() state!: State
 
+  searchInput: string = ""
   sortDirection: boolean = true
+
+  get notes() {
+    let notes = [...this.state.notes]
+
+    if (this.sortDirection) {
+      notes = notes.sort((x, y) => (x.id > y.id ? 1 : -1))
+    } else {
+      notes = notes.sort((x, y) => (x.id < y.id ? 1 : -1))
+    }
+
+    if (this.searchInput) {
+      notes = notes.filter((note) =>
+        note.document.attributes.title.includes(this.searchInput)
+      )
+    }
+
+    return notes
+  }
 
   toggleSort(): void {
     this.sortDirection = !this.sortDirection
+  }
 
-    if (this.sortDirection) {
-      this.state.notes.sort((x, y) => (x.id > y.id ? 1 : -1))
-    } else {
-      this.state.notes.sort((x, y) => (x.id < y.id ? 1 : -1))
-    }
+  sear() {
+    // TODO
   }
 }
 </script>
