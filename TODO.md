@@ -1,5 +1,3 @@
-- `views/cv` -- link to pdf -- `/cv/zh.pdf`
-
 # translations
 
 - `views/translations`
