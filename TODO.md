@@ -1,4 +1,4 @@
-- `/notes` add `/projects` -- add "loading from ..."
+- `/projects` -- loading "from ..."
 - `views/cv` -- do not need layout
 - `views/cv` -- load content from inner repo
 - `views/cv` -- link to pdf -- `/cv/zh.pdf` and `/cv/en.pdf`

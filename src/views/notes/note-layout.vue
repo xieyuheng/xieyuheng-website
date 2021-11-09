@@ -2,8 +2,13 @@
   <div v-if="error">
     <pre>{{ error }}</pre>
   </div>
-  <div v-else-if="!state">
-    <div class="text-xl text-gray-600">Loading notes ...</div>
+  <div v-else-if="state">
+    <div class="text-xl text-gray-600">
+      <p>Loading notes ...</p>
+      <p class="py-2 text-base">
+        from <span class="font-bold">{{ gitPath }}</span>
+      </p>
+    </div>
   </div>
   <router-view v-else :state="state" />
 </template>
@@ -22,9 +27,12 @@ export default class NoteLayout extends Vue {
   state: State | null = null
   error: unknown | null = null
 
+  gitPath = "xieyuheng/inner@gitlab.com/-/notes"
+
   async mounted(): Promise<void> {
     try {
       this.state = await State.build({
+        gitPath: this.gitPath,
         cache: this.rootState.cache,
       })
     } catch (error) {
