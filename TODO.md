@@ -1,6 +1,6 @@
-# translations
+- `/translations` setup route
 
-- `views/translations`
+- `views/translations/translation-layout` -- load docs from inner repo
 
 # papers
 
