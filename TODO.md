@@ -1,6 +1,4 @@
-- `views/cv/zh` fix projects section's links
-
-- `views/cv` -- link to pdf -- `/cv/zh.pdf` and `/cv/en.pdf`
+- `views/cv` -- link to pdf -- `/cv/zh.pdf`
 
 # translations
 
