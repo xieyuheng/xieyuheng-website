@@ -13,6 +13,8 @@
         <router-link class="link" :to="{ path: '/resume/en' }">
           English
         </router-link>
+        /
+        <a class="link" href="/resume/en.pdf"> .pdf </a>
       </li>
     </ul>
   </div>
