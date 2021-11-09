@@ -1,5 +1,3 @@
-- [refactor] extract helper method from `NoteState.build` and `ProjectState.build`
-
 # cv
 
 - `views/CV-CN` & `views/CV`
