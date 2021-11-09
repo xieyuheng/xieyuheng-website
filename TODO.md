@@ -1,3 +1,13 @@
+# projects
+
+- `views/projects` -- project list, load content from inner repo
+
+# cv
+
+- `views/CV-CN` & `views/CV`
+
+# notes
+
 - `views/notes/note-list` search -- by content -- show match lines
 - `views/notes/note-list` search -- highlight match parts in title
 
@@ -5,14 +15,10 @@
 
 - markdown headline support chinese slug
 
-- `/projects` -- setup route
+# translations
 
-- `views/projects` -- project list, summary and link to project home pages
-- `views/projects` -- intro
-
-  A project can be a wonderful journey, where we aiming to get somewhere, while also enjoy being on the road.
-  Don't do a project, dance with it!
-
-- `views/CV-CN` & `views/CV`
 - `views/translations`
+
+# papers
+
 - `views/papers`

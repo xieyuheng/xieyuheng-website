@@ -95,16 +95,19 @@
         </router-link>
 
         <div
-          class="text-base flex flex-wrap space-x-2"
+          class="flex flex-wrap space-x-2 text-base"
           v-if="note.document.attributes.keywords"
         >
           <div
             v-for="(keyword, index) in note.document.attributes.keywords"
             :key="index"
-            class="text-gray-500 italic"
+            class="italic text-gray-500"
           >
-            <!-- TODO search by keywords -->
-            <!-- <span class="hover:text-gray-900">{{ keyword }}</span> -->
+                    v-if="note.document.attr
+            ds"
+        >
+          <div
+            v-for="(keyword, index
             <span>{{ keyword }}</span>
             <span>{{
               index < note.document.attributes.keywords.length - 1 ? "," : ""
