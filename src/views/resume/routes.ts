@@ -15,4 +15,9 @@ export const routes: Array<RouteConfig> = [
       },
     ],
   },
+  { path: "/cv", redirect: "/resume" },
+  { path: "/cv/zh", redirect: "/resume/zh" },
+  { path: "/cv/zh.pdf", redirect: "/resume/zh.pdf" },
+  { path: "/cv/en", redirect: "/resume/en" },
+  { path: "/cv/en.pdf", redirect: "/resume/en.pdf" },
 ]
