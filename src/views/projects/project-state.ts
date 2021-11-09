@@ -10,7 +10,7 @@ export class ProjectState {
   }
 
   static async build(opts: {
-    gitPath: string,
+    gitPath: string
     cache: {
       projects?: { readme: string }
     }
