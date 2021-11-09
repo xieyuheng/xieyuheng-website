@@ -75,6 +75,9 @@
       <li>
         <router-link :to="{ path: '/courses' }"> COURSES </router-link>
       </li>
+      <li>
+        <router-link :to="{ path: '/resume' }"> RESUME </router-link>
+      </li>
     </ul>
   </div>
 </template>
