@@ -3,7 +3,7 @@
     <h1 class="font-sans text-2xl font-bold">Projects</h1>
 
     <div class="py-2 pl-4 italic text-gray-600 border-l-4 border-gray-300">
-      <p class="font-bold text-2xl py-2">proj·ect</p>
+      <p class="py-2 text-2xl font-bold">proj·ect</p>
 
       <p>
         A planned endeavor, usually with a specific goal and accomplished in
