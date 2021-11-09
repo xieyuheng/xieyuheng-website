@@ -1,4 +1,5 @@
-- `/resume` links to `zh` and `en`
+- `/root/root-header` link to resume
+- `/resume/resume-list` links to `zh` and `en`
 
 - `/translations` setup route
 

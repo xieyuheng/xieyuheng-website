@@ -6,6 +6,10 @@ export const routes: Array<RouteConfig> = [
     component: () => import("@/views/resume/resume-layout.vue"),
     children: [
       {
+        path: "/resume",
+        component: () => import("@/views/resume/resume-list.vue"),
+      },
+      {
         path: "/resume/zh",
         component: () => import("@/views/resume/resume-zh.vue"),
       },
