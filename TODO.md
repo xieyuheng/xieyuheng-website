@@ -10,9 +10,8 @@
 - `views/projects` -- project list, summary and link to project home pages
 - `views/projects` -- intro
 
-  A project can be a wonderful journey, where we aiming to get there, while also enjoy being on the road.
-  Don't do a project, and more importantly don't let a project do you.
-  Dance with it!
+  A project can be a wonderful journey, where we aiming to get somewhere, while also enjoy being on the road.
+  Don't do a project, dance with it!
 
 - `views/CV-CN` & `views/CV`
 - `views/translations`
