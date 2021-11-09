@@ -1,4 +1,4 @@
-- `/resume/resume-list` links to `zh` and `en`
+- `/resume/resume` en.pdf
 
 - `/translations` setup route
 

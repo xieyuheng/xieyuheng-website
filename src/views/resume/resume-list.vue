@@ -1,6 +1,20 @@
 <template>
   <div class="flex flex-col space-y-4 font-serif text-xl">
     <h1 class="font-sans text-2xl font-bold">Résumé</h1>
+    <ul class="px-6">
+      <li class="py-1 list-disc">
+        <router-link class="link" :to="{ path: '/resume/zh' }">
+          中文
+        </router-link>
+        /
+        <a class="link" href="/resume/zh.pdf"> .pdf </a>
+      </li>
+      <li class="py-1 list-disc">
+        <router-link class="link" :to="{ path: '/resume/en' }">
+          English
+        </router-link>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -20,3 +34,13 @@ export default class extends Vue {
   @Prop() state!: State
 }
 </script>
+
+<style scoped>
+.link {
+  @apply font-sans underline;
+}
+
+a {
+  @apply inline-flex items-center font-sans underline;
+}
+</style>
