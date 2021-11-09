@@ -1,6 +1,8 @@
 # projects
 
-- `views/projects` -- project list, load content from inner repo
+- `vendor/postmark` -- should do not render document.attributes when there is no attributes at all
+
+- `views/projects` -- cache projects readme
 
 # cv
 

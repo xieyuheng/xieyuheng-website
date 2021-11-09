@@ -103,11 +103,7 @@
             :key="index"
             class="italic text-gray-500"
           >
-                    v-if="note.document.attr
-            ds"
-        >
-          <div
-            v-for="(keyword, index
+            v-if="note.document.attr ds" > <div v-for="(keyword, index
             <span>{{ keyword }}</span>
             <span>{{
               index < note.document.attributes.keywords.length - 1 ? "," : ""

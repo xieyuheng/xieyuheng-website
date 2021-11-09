@@ -1,13 +1,17 @@
 <template>
-  <div class="flex flex-col space-y-4 font-serif text-xl">
-    <h1 class="font-sans text-2xl font-bold">Projects</h1>
+  <div class="flex flex-col font-serif text-xl">
+    <div class="flex flex-col space-y-4">
+      <h1 class="font-sans text-2xl font-bold">Projects</h1>
 
-    <p>
-      A project can be a wonderful journey, where we aiming to get somewhere,
-      while also enjoy being on the road.
-    </p>
+      <p>
+        A project can be a wonderful journey, where we aiming to get somewhere,
+        while also enjoy being on the road.
+      </p>
 
-    <p>Don't do a project, dance with it!</p>
+      <p>Don't do a project, dance with it!</p>
+    </div>
+
+    <md-document :document="state.readmeDocument" />
   </div>
 </template>
 
@@ -19,6 +23,7 @@ import { ProjectState as State } from "./project-state"
   name: "project-list",
   // prettier-ignore
   components: {
+    ...require("@/vendor/postmark/md-nodes").components,
     "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
   },
 })
