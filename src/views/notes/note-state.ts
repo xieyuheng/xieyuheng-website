@@ -3,11 +3,9 @@ import { GitFileStore } from "@enchanterjs/enchanter/lib/git-file-store"
 import { Note } from "@/views/notes/note"
 
 export class NoteState {
-  files: GitFileStore
   notes: Array<Note>
 
-  constructor(opts: { files: GitFileStore; notes: Array<Note> }) {
-    this.files = opts.files
+  constructor(opts: { notes: Array<Note> }) {
     this.notes = opts.notes
   }
 
@@ -16,18 +14,19 @@ export class NoteState {
   }): Promise<NoteState> {
     const { cache } = opts
 
+    const notes = cache.notes || (await this.loadNotes())
+    cache.notes = notes
+
+    return new NoteState({ notes })
+  }
+
+  static async loadNotes(): Promise<Array<Note>> {
     const gitPath = GitPath.decode("xieyuheng/inner@gitlab.com/-/notes")
     const files = gitPath.createGitFileStore()
 
-    const notes =
-      cache.notes ||
-      Object.entries(await files.all()).map(
-        ([path, text]) => new Note({ path, text })
-      )
-
-    cache.notes = notes
-
-    return new NoteState({ files, notes })
+    return Object.entries(await files.all()).map(
+      ([path, text]) => new Note({ path, text })
+    )
   }
 
   get pageNames(): Array<string> {

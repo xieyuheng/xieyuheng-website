@@ -16,15 +16,16 @@ export class ProjectState {
   }): Promise<ProjectState> {
     const { cache } = opts
 
-    const gitPath = GitPath.decode("xieyuheng/inner@gitlab.com/-/projects")
-    const files = gitPath.createGitFileStore()
-
-    const readme =
-      opts.cache.projects?.readme || (await files.getOrFail("README.md"))
-
+    const readme = opts.cache.projects?.readme || (await this.loadReadme())
     cache.projects = { readme }
 
     return new ProjectState({ readme })
+  }
+
+  static async loadReadme(): Promise<string> {
+    const gitPath = GitPath.decode("xieyuheng/inner@gitlab.com/-/projects")
+    const files = gitPath.createGitFileStore()
+    return await files.getOrFail("README.md")
   }
 
   get readmeDocument(): Nodes.Document {
