@@ -2,7 +2,7 @@
   <div v-if="error">
     <pre>{{ error }}</pre>
   </div>
-  <div v-else-if="state">
+  <div v-else-if="!state">
     <div class="text-xl text-gray-600">
       <p>Loading notes ...</p>
       <p class="py-2 text-base">

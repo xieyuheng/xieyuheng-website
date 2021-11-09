@@ -16,6 +16,7 @@ export class NoteState {
     const { cache, gitPath } = opts
 
     const notes = cache.notes || (await this.loadNotes({ gitPath }))
+
     cache.notes = notes
 
     return new NoteState({ notes })
