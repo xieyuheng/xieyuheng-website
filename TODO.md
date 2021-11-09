@@ -1,4 +1,5 @@
-- `views/cv` -- do not need layout
+- `views/cv/zh` fix projects section's links
+
 - `views/cv` -- link to pdf -- `/cv/zh.pdf` and `/cv/en.pdf`
 
 # translations
