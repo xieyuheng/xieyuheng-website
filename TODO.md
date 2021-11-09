@@ -1,9 +1,7 @@
-# cv
-
-- `/cv` setup route -- `/cv/zh` and `/cv/en`
-
+- `/notes` add `/projects` -- add "loading from ..."
+- `views/cv` -- do not need layout
 - `views/cv` -- load content from inner repo
-- `views/cv` -- link to pdf
+- `views/cv` -- link to pdf -- `/cv/zh.pdf` and `/cv/en.pdf`
 
 # translations
 
