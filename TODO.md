@@ -1,3 +1,7 @@
+- `/resume` links to `zh` and `en`
+
+- redirect `/cv` to `/resume`
+
 - `/translations` setup route
 
 - `views/translations/translation-layout` -- load docs from inner repo

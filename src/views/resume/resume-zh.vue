@@ -6,10 +6,10 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator"
-import { CvState as State } from "./cv-state"
+import { ResumeState as State } from "./resume-state"
 
 @Component({
-  name: "cv-zh",
+  name: "resume-zh",
   // prettier-ignore
   components: {
     ...require("@/vendor/postmark/md-nodes").components,

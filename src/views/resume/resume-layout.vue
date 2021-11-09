@@ -16,10 +16,10 @@
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from "vue-property-decorator"
 import { RootState } from "@/views/root/root-state"
-import { CvState as State } from "@/views/cv/cv-state"
+import { ResumeState as State } from "@/views/resume/resume-state"
 
 @Component({
-  name: "cv-layout",
+  name: "resume-layout",
 })
 export default class NoteLayout extends Vue {
   @Prop() rootState!: RootState
@@ -27,7 +27,7 @@ export default class NoteLayout extends Vue {
   state: State | null = null
   error: unknown | null = null
 
-  gitPath = "xieyuheng/inner@gitlab.com/-/cv"
+  gitPath = "xieyuheng/inner@gitlab.com/-/resume"
 
   async mounted(): Promise<void> {
     try {

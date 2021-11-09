@@ -43,7 +43,7 @@
             <icon-github class="hover:text-gray-900 w-5 text-gray-400" />
           </a>
           <a href="mailto:xyheme@gmail.com" title="email ~ xyheme@gmail.com">
-            <icon-mail class="hover:text-gray-900  w-6 text-gray-400" />
+            <icon-mail class="hover:text-gray-900 w-6 text-gray-400" />
           </a>
         </div>
       </div>

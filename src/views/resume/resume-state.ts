@@ -7,19 +7,19 @@ type Texts = {
   en: string
 }
 
-export class CvState {
+export class ResumeState {
   texts: Texts
 
   constructor(opts: { texts: Texts }) {
     this.texts = opts.texts
   }
 
-  static async build(opts: { gitPath: string }): Promise<CvState> {
+  static async build(opts: { gitPath: string }): Promise<ResumeState> {
     const { gitPath } = opts
 
     const texts = await this.loadTexts({ gitPath })
 
-    return new CvState({ texts })
+    return new ResumeState({ texts })
   }
 
   static async loadTexts(opts: {
