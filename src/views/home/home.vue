@@ -20,7 +20,7 @@
       Right now I'm working on
       <a href="https://cicada-lang.org" target="_blank"
         >Cicada Language<icon-external-link class="w-5 p-px" /></a
-      >, a <em>programming language</em> and <em>theorem prover</em>. <br />
+      >, both a <em>programming language</em> and a <em>theorem prover</em>.
       Check out its website, and maybe, join our community :)
     </p>
 
