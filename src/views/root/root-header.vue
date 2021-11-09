@@ -42,6 +42,9 @@
           >
             <icon-github class="hover:text-gray-900 w-5 text-gray-400" />
           </a>
+          <a href="mailto:xyheme@gmail.com" title="email ~ xyheme@gmail.com">
+            <icon-mail class="hover:text-gray-900  w-6 text-gray-400" />
+          </a>
         </div>
       </div>
     </div>
@@ -86,6 +89,7 @@ import { Component, Vue } from "vue-property-decorator"
     "root-logo": require("@/views/root/root-logo.vue").default,
     "icon-github": require("@/components/icons/icon-github.vue").default,
     "icon-bilibili-line": require("@/components/icons/icon-bilibili-line.vue").default,
+    "icon-mail": require("@/components/icons/icon-mail.vue").default,
   },
 })
 export default class extends Vue {}
