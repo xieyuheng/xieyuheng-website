@@ -1,6 +1,23 @@
 # cv
 
-- `views/CV-CN` & `views/CV`
+- `/cv` setup route -- `/cv/zh` and `/cv/en`
+
+- `views/cv` -- load content from inner repo
+- `views/cv` -- link to pdf
+
+# translations
+
+- `views/translations`
+
+# papers
+
+- `views/papers`
+
+# courses
+
+- `views/courses`
+
+- about TDD & TCR
 
 # notes
 
@@ -10,11 +27,3 @@
 - `views/notes/note-list` search by keywords
 
 - markdown headline support chinese slug
-
-# translations
-
-- `views/translations`
-
-# papers
-
-- `views/papers`
