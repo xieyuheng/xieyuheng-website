@@ -14,16 +14,18 @@ export class NoteState {
   static async build(opts: {
     cache: { notes?: Array<Note> }
   }): Promise<NoteState> {
+    const { cache } = opts
+
     const gitPath = GitPath.decode("xieyuheng/inner@gitlab.com/-/notes")
     const files = gitPath.createGitFileStore()
 
     const notes =
-      opts.cache.notes ||
+      cache.notes ||
       Object.entries(await files.all()).map(
         ([path, text]) => new Note({ path, text })
       )
 
-    opts.cache.notes = notes
+    cache.notes = notes
 
     return new NoteState({ files, notes })
   }

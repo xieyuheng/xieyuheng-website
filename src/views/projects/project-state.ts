@@ -9,10 +9,20 @@ export class ProjectState {
     this.readme = opts.readme
   }
 
-  static async build(opts: { cache: {} }): Promise<ProjectState> {
+  static async build(opts: {
+    cache: {
+      projects?: { readme: string }
+    }
+  }): Promise<ProjectState> {
+    const { cache } = opts
+
     const gitPath = GitPath.decode("xieyuheng/inner@gitlab.com/-/projects")
     const files = gitPath.createGitFileStore()
-    const readme = await files.getOrFail("README.md")
+
+    const readme =
+      opts.cache.projects?.readme || (await files.getOrFail("README.md"))
+
+    cache.projects = { readme }
 
     return new ProjectState({ readme })
   }

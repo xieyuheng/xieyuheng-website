@@ -1,6 +1,5 @@
-# projects
-
-- `views/projects` -- cache projects readme
+- `views/projects` -- improve intro
+- [refactor] extract helper method from `NoteState.build` and `ProjectState.build`
 
 # cv
 
