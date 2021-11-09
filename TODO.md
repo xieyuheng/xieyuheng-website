@@ -1,7 +1,5 @@
 # projects
 
-- `vendor/postmark` -- should do not render document.attributes when there is no attributes at all
-
 - `views/projects` -- cache projects readme
 
 # cv
