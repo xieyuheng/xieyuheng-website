@@ -4,7 +4,7 @@
 
     <p>My personal study notes, organized as a <em>zettelkasten</em>.</p>
 
-    <div class="py-2 pl-4 italic text-gray-600 border-l-4 border-gray-300">
+    <div class="py-2 pl-4 text-gray-600 border-l-4 border-gray-300">
       <p>
         A zettelkasten consists of many individual notes with ideas and other
         short pieces of information that are taken down as they occur or are
