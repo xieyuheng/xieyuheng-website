@@ -26,7 +26,7 @@
             {{ document.attributes.author }}
           </div>
 
-          <div class="text-gray-500 text-base" v-if="document.attributes.date">
+          <div class="text-base text-gray-500" v-if="document.attributes.date">
             {{ formatDate(document.attributes.date) }}
           </div>
         </div>

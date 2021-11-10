@@ -1,5 +1,3 @@
-- `views/papers/paper-page` -- render text
-
 - `views/courses/course-layout` -- load inner courses
 - `views/courses/course-list` -- load inner courses
 - `views/courses/course-page` -- render text
