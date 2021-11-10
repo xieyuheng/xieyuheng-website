@@ -68,7 +68,7 @@
     </div>
 
     <ul class="pb-2">
-      <li v-for="note in notes" :key="note.id" class="pb-7 flex flex-col">
+      <li v-for="note in notes" :key="note.id" class="pb-8 flex flex-col">
         <div
           class="
             flex

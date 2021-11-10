@@ -26,13 +26,20 @@
       <li
         v-for="{ path, document } in state.documents"
         :key="path"
-        class="pb-7 flex flex-col"
+        class="pb-8 flex flex-col"
       >
         <router-link :to="{ path: `/translations/${path}` }">
           <h1 class="hover:text-gray-500 font-sans font-bold">
             {{ document.attributes.title }}
           </h1>
         </router-link>
+
+        <div
+          class="flex text-gray-600 flex-wrap text-base"
+          v-if="document.attributes.author"
+        >
+          {{ document.attributes.author }}
+        </div>
 
         <div
           class="flex flex-wrap space-x-2 text-base"
