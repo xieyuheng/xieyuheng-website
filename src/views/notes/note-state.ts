@@ -11,13 +11,17 @@ export class NoteState {
 
   static async build(opts: {
     gitPath: string
-    cache: { notes?: Array<Note> }
+    cache: {
+      notes?: {
+        notes: Array<Note>
+      }
+    }
   }): Promise<NoteState> {
     const { cache, gitPath } = opts
 
-    const notes = cache.notes || (await this.loadNotes({ gitPath }))
+    const notes = cache.notes?.notes || (await this.loadNotes({ gitPath }))
 
-    cache.notes = notes
+    cache.notes = { notes }
 
     return new NoteState({ notes })
   }

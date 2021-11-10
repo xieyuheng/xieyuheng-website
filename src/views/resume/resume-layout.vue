@@ -4,7 +4,7 @@
   </div>
   <div v-else-if="!state">
     <div class="text-xl text-gray-600">
-      <p>Loading cv ...</p>
+      <p>Loading résumé ...</p>
       <p class="py-2 text-base">
         from <span class="font-bold">{{ gitPath }}</span>
       </p>
