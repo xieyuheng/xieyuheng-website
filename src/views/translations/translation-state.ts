@@ -36,5 +36,10 @@ export class TranslationState {
     return await files.all()
   }
 
-  // get documents() 
+  get documents(): Array<{ path: string; document: Nodes.Document }> {
+    return Object.entries(this.texts).map(([path, text]) => ({
+      path,
+      document: app.postmarkParser.parseDocument(text),
+    }))
+  }
 }
