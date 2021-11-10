@@ -14,10 +14,22 @@ export class ResumeState {
     this.texts = opts.texts
   }
 
-  static async build(opts: { gitPath: string }): Promise<ResumeState> {
-    const { gitPath } = opts
+  static async build(opts: {
+    gitPath: string
+    cache: {
+      resume?: {
+        texts: {
+          zh: string
+          en: string
+        }
+      }
+    }
+  }): Promise<ResumeState> {
+    const { gitPath, cache } = opts
 
-    const texts = await this.loadTexts({ gitPath })
+    const texts = cache.resume?.texts || (await this.loadTexts({ gitPath }))
+
+    cache.resume = { texts }
 
     return new ResumeState({ texts })
   }
