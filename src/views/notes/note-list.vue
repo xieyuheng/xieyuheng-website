@@ -112,15 +112,17 @@
 
         <div
           v-if="searchInput && note.matchLines(searchInput).length > 0"
-          class="overflow-x-auto"
+          class="overflow-x-auto py-2"
         >
-          <div class="text-orange-500 font-sans font-bold text-base">
-            Matched line(s)
+          <div class="text-amber-500 font-sans font-bold text-base">
+            Matched line<span v-if="note.matchLines(searchInput).length > 1"
+              >s</span
+            >
           </div>
           <pre
             v-for="{ lineNumber, line } in note.matchLines(searchInput)"
             class="flex text-sm text-gray-700"
-          ><span class="text-orange-500 font-bold">{{ lineNumber }}</span>: <span>{{ line }}</span></pre>
+          ><span class="text-amber-500 font-bold">{{ lineNumber }}</span>: <span v-html="decoratMatchedLine(line, searchInput)"></span></pre>
         </div>
       </li>
     </ul>
@@ -130,6 +132,7 @@
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator"
 import { NoteState as State } from "./note-state"
+import rr from "@xieyuheng/readable-regular-expression"
 
 @Component({
   name: "note-list",
@@ -163,6 +166,13 @@ export default class extends Vue {
     }
 
     return notes
+  }
+
+  decoratMatchedLine(line: string, word: string): string {
+    return line.replace(
+      rr.escape(word),
+      `<span class="text-amber-500 font-bold">${word}</span>`
+    )
   }
 
   toggleSort(): void {
