@@ -34,7 +34,6 @@
 import { Component, Prop, Vue } from "vue-property-decorator"
 import { MdDocumentState as State } from "../md-document-state"
 import { Node, Nodes } from "@xieyuheng/postmark"
-import { paramCase } from "change-case"
 
 @Component({
   name: "md-headline",
@@ -48,7 +47,14 @@ export default class extends Vue {
   @Prop() node!: Nodes.Headline
 
   get fragmentId(): string {
-    return paramCase(this.node.children.map((child) => child.format()).join(""))
+    const text = this.node.children.map((child) => child.format()).join("")
+
+    return text
+      .trim()
+      .toLowerCase()
+      .replace(/[^\p{Letter}\- ]+/ug, "")
+      .replace(/\s/ug, "-")
+      .replace(/\-+$/, "")
   }
 }
 </script>
