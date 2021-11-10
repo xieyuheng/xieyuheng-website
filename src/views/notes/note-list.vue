@@ -156,7 +156,7 @@ export default class extends Vue {
     this.sortDirection = !this.sortDirection
   }
 
-  sear() {
+  search() {
     // TODO
   }
 }
