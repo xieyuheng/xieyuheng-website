@@ -4,7 +4,7 @@
 
     <ul class="pt-6 pb-2">
       <li
-        v-for="{ path, document } in state.documents"
+        v-for="{ path, document } in documents"
         :key="path"
         class="flex flex-col pb-10"
       >
@@ -65,6 +65,10 @@ import * as ut from "@/ut"
 })
 export default class extends Vue {
   @Prop() state!: State
+
+  get documents() {
+    return this.state.documents.filter(({ path }) => !path.includes("/"))
+  }
 
   formatDate(date: Date): string {
     return ut.formatDate(date)
