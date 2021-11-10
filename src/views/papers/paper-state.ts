@@ -36,10 +36,9 @@ export class PaperState {
   }
 
   get documents(): Array<{ path: string; document: Nodes.Document }> {
-    return Object.entries(this.texts)
-      .map(([path, text]) => ({
-        path,
-        document: app.postmarkParser.parseDocument(text),
-      }))
+    return Object.entries(this.texts).map(([path, text]) => ({
+      path,
+      document: app.postmarkParser.parseDocument(text),
+    }))
   }
 }

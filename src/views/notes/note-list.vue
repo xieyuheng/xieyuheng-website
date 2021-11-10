@@ -109,6 +109,19 @@
             }}</span>
           </div>
         </div>
+
+        <div
+          v-if="searchInput && note.matchLines(searchInput).length > 0"
+          class="overflow-x-auto"
+        >
+          <div class="text-orange-500 font-sans font-bold text-base">
+            Matched lines:
+          </div>
+          <pre
+            v-for="{ lineNumber, line } in note.matchLines(searchInput)"
+            class="flex text-base text-gray-700"
+          ><span class="text-orange-500 font-bold">{{ lineNumber }}</span>: <span>{{ line }}</span></pre>
+        </div>
       </li>
     </ul>
   </div>
@@ -144,8 +157,10 @@ export default class extends Vue {
     }
 
     if (this.searchInput) {
-      notes = notes.filter((note) =>
-        note.document.attributes.title.includes(this.searchInput)
+      notes = notes.filter(
+        (note) =>
+          note.document.attributes.title.includes(this.searchInput) ||
+          note.matchLines(this.searchInput).length > 0
       )
     }
 

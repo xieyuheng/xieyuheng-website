@@ -19,4 +19,15 @@ export class Note {
       ? ut.formatDate(this.document.attributes.date)
       : undefined
   }
+
+  matchLines(word: string): Array<{ lineNumber: number; line: string }> {
+    const lines: Array<{ lineNumber: number; line: string }> = []
+    for (const [index, line] of this.text.split("\n").entries()) {
+      if (line.includes(word)) {
+        lines.push({ lineNumber: index + 1, line })
+      }
+    }
+
+    return lines
+  }
 }
