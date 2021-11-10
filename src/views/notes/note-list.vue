@@ -132,7 +132,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from "vue-property-decorator"
+import { Component, Vue, Prop, Watch } from "vue-property-decorator"
 import { NoteState as State } from "./note-state"
 import rr from "@xieyuheng/readable-regular-expression"
 
@@ -183,6 +183,26 @@ export default class extends Vue {
 
   search() {
     // TODO
+  }
+
+  @Watch("$route", { immediate: true })
+  updateSearchInput(): void {
+    const query: any = this.$route.query
+    if (query.search !== this.searchInput) {
+      this.searchInput = query.search
+    }
+  }
+
+  @Watch("searchInput", { immediate: true })
+  updateRoute(): void {
+    const query: any = this.$route.query
+    if (query.search !== this.searchInput) {
+      this.$router
+        .push({ path: "/notes", query: { search: this.searchInput } })
+        .catch((error) => {
+          if (error.name !== "NavigationDuplicated") throw error
+        })
+    }
   }
 }
 </script>
