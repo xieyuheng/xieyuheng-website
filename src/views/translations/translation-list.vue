@@ -2,7 +2,22 @@
   <div class="flex flex-col space-y-4 font-serif text-xl">
     <h1 class="font-sans text-2xl font-bold">Translations</h1>
 
-    <ul class="pb-2">
+    <div class="py-2 pl-4 text-gray-600 border-l-4 border-gray-300">
+      <p>達其志，通其欲：東方曰寄，南方曰象，西方曰狄鞮，北方曰譯。</p>
+
+      <p class="py-3 flex justify-end">
+        <a
+          href="https://ctext.org/liji/wang-zhi/zh"
+          target="_blank"
+          class="inline-flex py-px underline"
+        >
+          -- 禮記 · 王制
+          <icon-external-link class="w-5 p-px" />
+        </a>
+      </p>
+    </div>
+
+    <ul class="pt-6 pb-2">
       <li
         v-for="{ path, document } in state.documents"
         :key="path"
@@ -30,19 +45,8 @@
           </div>
         </div>
 
-        <div
-          class="
-            hover:text-gray-900
-            self-end
-            text-xs
-            italic
-            font-bold
-            text-gray-500
-          "
-        >
-          <router-link :to="{ path: `/translations/${path}` }">
-            {{ path }}
-          </router-link>
+        <div class="self-end text-xs italic font-bold text-gray-500">
+          {{ path }}
         </div>
       </li>
     </ul>

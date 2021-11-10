@@ -1,7 +1,3 @@
-- `views/translations/translation-list` -- intro
-
-# papers
-
 - `views/papers`
 
 # courses

@@ -14,6 +14,9 @@ export class RootState {
         en: string
       }
     }
+    translations?: {
+      texts: Record<string, string>
+    }
   } = {}
 
   static async build(): Promise<RootState> {
