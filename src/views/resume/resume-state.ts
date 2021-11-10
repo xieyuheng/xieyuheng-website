@@ -18,10 +18,7 @@ export class ResumeState {
     gitPath: string
     cache: {
       resume?: {
-        texts: {
-          zh: string
-          en: string
-        }
+        texts: Texts
       }
     }
   }): Promise<ResumeState> {
