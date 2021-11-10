@@ -4,8 +4,6 @@
 
 # courses
 
-- `/courses` -- setup routes
-
 - `views/courses`
 
 - about TDD & TCR
