@@ -34,6 +34,7 @@
 import { Component, Prop, Vue } from "vue-property-decorator"
 import { MdDocumentState as State } from "../md-document-state"
 import { Node, Nodes } from "@xieyuheng/postmark"
+import * as ut from "@/ut"
 
 @Component({
   name: "md-headline",
@@ -48,13 +49,7 @@ export default class extends Vue {
 
   get fragmentId(): string {
     const text = this.node.children.map((child) => child.format()).join("")
-
-    return text
-      .trim()
-      .toLowerCase()
-      .replace(/[^\p{Letter}\- ]+/ug, "")
-      .replace(/\s/ug, "-")
-      .replace(/\-+$/, "")
+    return ut.slug(text)
   }
 }
 </script>
