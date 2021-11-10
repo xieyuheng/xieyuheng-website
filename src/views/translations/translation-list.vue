@@ -74,9 +74,6 @@ import { TranslationState as State } from "./translation-state"
   // prettier-ignore
   components: {
     "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
-    "icon-search": require("@/components/icons/icon-search.vue").default,
-    "icon-sort-ascending": require("@/components/icons/icon-sort-ascending.vue").default,
-    "icon-sort-descending": require("@/components/icons/icon-sort-descending.vue").default,
   },
 })
 export default class extends Vue {
