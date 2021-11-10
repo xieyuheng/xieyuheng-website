@@ -1,5 +1,7 @@
-- `views/translations/translation-layout` -- load docs from inner repo
-- `views/translations/translation-list`
+- `views/translations/translation-layout` -- `cache.translations`
+- `views/translations/translation-list` -- list translations
+- `views/translations/translation-list` -- intro
+- `views/translations/translation-page` -- render text
 
 # papers
 
