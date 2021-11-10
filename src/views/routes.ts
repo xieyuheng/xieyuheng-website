@@ -5,6 +5,7 @@ export const routes: Array<RouteConfig> = [
   ...require("@/views/notes/routes").routes,
   ...require("@/views/projects/routes").routes,
   ...require("@/views/translations/routes").routes,
+  ...require("@/views/papers/routes").routes,
   ...require("@/views/resume/routes").routes,
   { path: "*", component: () => import("@/views/errors/page-not-found.vue") },
 ]
