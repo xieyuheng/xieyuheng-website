@@ -5,7 +5,7 @@
     <div class="py-2 pl-4 text-gray-600 border-l-4 border-gray-300">
       <p>達其志，通其欲：東方曰寄，南方曰象，西方曰狄鞮，北方曰譯。</p>
 
-      <p class="py-3 flex justify-end">
+      <p class="flex justify-end py-3">
         <a
           href="https://ctext.org/liji/wang-zhi/zh"
           target="_blank"
@@ -16,6 +16,11 @@
         </a>
       </p>
     </div>
+
+    <img
+      class="w-36 self-center py-4"
+      src="../../assets/images/wikipedia-translation.svg"
+    />
 
     <ul class="pt-6 pb-2">
       <li
