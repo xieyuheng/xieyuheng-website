@@ -1,5 +1,3 @@
-- `views/resume/resume-layout` cache loaded files
-
 - `/translations` setup route
 
 - `views/translations/translation-layout` -- load docs from inner repo

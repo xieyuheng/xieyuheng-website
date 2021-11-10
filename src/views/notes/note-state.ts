@@ -9,16 +9,9 @@ export class NoteState {
     this.notes = opts.notes
   }
 
-  static async build(opts: {
-    gitPath: string
-    cache: { notes?: Array<Note> }
-  }): Promise<NoteState> {
-    const { cache, gitPath } = opts
-
-    const notes = cache.notes || (await this.loadNotes({ gitPath }))
-
-    cache.notes = notes
-
+  static async build(opts: { gitPath: string }): Promise<NoteState> {
+    const { gitPath } = opts
+    const notes = await this.loadNotes({ gitPath })
     return new NoteState({ notes })
   }
 

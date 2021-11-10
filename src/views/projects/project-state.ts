@@ -9,18 +9,10 @@ export class ProjectState {
     this.readme = opts.readme
   }
 
-  static async build(opts: {
-    gitPath: string
-    cache: {
-      projects?: { readme: string }
-    }
-  }): Promise<ProjectState> {
-    const { cache, gitPath } = opts
+  static async build(opts: { gitPath: string }): Promise<ProjectState> {
+    const { gitPath } = opts
 
-    const readme =
-      opts.cache.projects?.readme || (await this.loadReadme({ gitPath }))
-
-    cache.projects = { readme }
+    const readme = await this.loadReadme({ gitPath })
 
     return new ProjectState({ readme })
   }

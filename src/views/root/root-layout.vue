@@ -1,7 +1,9 @@
 <template>
   <div v-if="state" class="md:py-10 flex flex-col max-w-2xl px-6 py-6 mx-auto">
     <root-header class="my-3" />
-    <router-view class="my-6" :rootState="state" />
+    <keep-alive>
+      <router-view class="my-6" :rootState="state" :key="$route.fullPath" />
+    </keep-alive>
   </div>
 </template>
 
