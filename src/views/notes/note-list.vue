@@ -112,17 +112,19 @@
 
         <div
           v-if="searchInput && note.matchLines(searchInput).length > 0"
-          class="overflow-x-auto py-2"
+          class="py-2"
         >
           <div class="text-amber-500 font-sans font-bold text-base">
             Matched line<span v-if="note.matchLines(searchInput).length > 1"
               >s</span
             >
           </div>
-          <pre
-            v-for="{ lineNumber, line } in note.matchLines(searchInput)"
-            class="flex text-sm text-gray-700"
-          ><span class="text-amber-500 font-bold">{{ lineNumber }}</span>: <span v-html="decoratMatchedLine(line, searchInput)"></span></pre>
+          <div class="overflow-x-auto">
+            <pre
+              v-for="{ lineNumber, line } in note.matchLines(searchInput)"
+              class="flex text-sm text-gray-700"
+            ><span class="text-amber-500 font-bold">{{ lineNumber }}</span>: <span v-html="decoratMatchedLine(line, searchInput)"></span></pre>
+          </div>
         </div>
       </li>
     </ul>
