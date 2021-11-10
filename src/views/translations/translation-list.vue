@@ -32,12 +32,12 @@
 
         <div
           class="
+            hover:text-gray-900
             self-end
             text-xs
             italic
             font-bold
             text-gray-500
-            hover:text-gray-900
           "
         >
           <router-link :to="{ path: `/translations/${path}` }">

@@ -1,5 +1,4 @@
 - `views/translations/translation-list` -- intro
-- `views/translations/translation-page` -- render text
 
 # papers
 
