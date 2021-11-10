@@ -17,9 +17,12 @@ export class TranslationState {
       }
     }
   }): Promise<TranslationState> {
-    const { gitPath } = opts
+    const { gitPath, cache } = opts
 
-    const texts = await this.loadTexts({ gitPath })
+    const texts =
+      cache.translations?.texts || (await this.loadTexts({ gitPath }))
+
+    cache.translations = { texts }
 
     return new TranslationState({ texts })
   }
