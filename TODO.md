@@ -1,4 +1,3 @@
-- `views/papers/paper-list` -- load inner papers
 - `views/papers/paper-page` -- render text
 
 - `views/courses/course-layout` -- load inner courses

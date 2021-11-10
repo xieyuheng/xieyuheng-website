@@ -34,6 +34,10 @@
           </h1>
         </router-link>
 
+        <div class="self-end text-xs italic font-bold text-gray-500">
+          {{ path }}
+        </div>
+
         <div
           class="flex flex-wrap text-base text-gray-600"
           v-if="document.attributes.author"
@@ -55,10 +59,6 @@
               index < document.attributes.keywords.length - 1 ? "," : ""
             }}</span>
           </div>
-        </div>
-
-        <div class="self-end text-xs italic font-bold text-gray-500">
-          {{ path }}
         </div>
       </li>
     </ul>

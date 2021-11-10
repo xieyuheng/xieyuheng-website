@@ -35,8 +35,6 @@ export default class NoteLayout extends Vue {
         gitPath: this.gitPath,
         cache: this.rootState.cache,
       })
-
-      console.log(this.state.texts)
     } catch (error) {
       this.error = error
     }
