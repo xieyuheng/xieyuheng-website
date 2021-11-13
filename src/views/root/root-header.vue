@@ -72,8 +72,11 @@
       <li>
         <router-link :to="{ path: '/papers' }"> PAPERS </router-link>
       </li>
+      <!-- <li>
+           <router-link :to="{ path: '/courses' }"> COURSES </router-link>
+           </li> -->
       <li>
-        <router-link :to="{ path: '/courses' }"> COURSES </router-link>
+        <router-link :to="{ path: '/live' }"> LIVE </router-link>
       </li>
       <li>
         <router-link :to="{ path: '/resume' }"> RESUME </router-link>
