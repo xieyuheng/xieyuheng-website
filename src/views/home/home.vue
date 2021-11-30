@@ -11,9 +11,8 @@
       <router-link class="link" :to="{ path: '/notes' }">notes</router-link>,
       <router-link class="link" :to="{ path: '/projects' }">projects</router-link>,
       <router-link class="link" :to="{ path: '/translations' }">translations</router-link>,
-      <router-link class="link" :to="{ path: '/papers' }">papers</router-link>
       and
-      <router-link class="link" :to="{ path: '/courses' }">courses</router-link>.
+      <router-link class="link" :to="{ path: '/papers' }">papers</router-link>.
     </p>
 
     <p>
