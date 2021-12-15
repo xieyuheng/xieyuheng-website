@@ -1,7 +1,10 @@
 const colors = require("tailwindcss/colors")
 
 module.exports = {
-  purge: ["./src/**/*.vue"],
+  purge: [
+    "./src/**/*.vue",
+    "./node_modules/@xieyuheng/postmark-components-vue2/src/**/*.vue",
+  ],
   theme: {
     fontFamily: {
       sans: ["Linux Biolinum O", "sans-serif"],
