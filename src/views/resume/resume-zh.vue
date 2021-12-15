@@ -12,7 +12,7 @@ import { ResumeState as State } from "./resume-state"
   name: "resume-zh",
   // prettier-ignore
   components: {
-    ...require("@/vendor/postmark/md-nodes").components,
+    ...require("@xieyuheng/postmark-components-vue2").components,
   },
 })
 export default class extends Vue {

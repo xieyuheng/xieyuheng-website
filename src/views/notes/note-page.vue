@@ -17,7 +17,7 @@ import { NoteState as State } from "@/views/notes/note-state"
   name: "note-page",
   // prettier-ignore
   components: {
-    ...require("@/vendor/postmark/md-nodes").components,
+    ...require("@xieyuheng/postmark-components-vue2").components,
     "note-page-navbar": require("@/views/notes/note-page-navbar.vue").default,
     "page-not-found": require("@/views/errors/page-not-found.vue").default,
   },

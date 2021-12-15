@@ -15,7 +15,7 @@ import { PaperState as State } from "@/views/papers/paper-state"
   name: "paper-page",
   // prettier-ignore
   components: {
-    ...require("@/vendor/postmark/md-nodes").components,
+    ...require("@xieyuheng/postmark-components-vue2").components,
     "page-not-found": require("@/views/errors/page-not-found.vue").default,
   },
 })

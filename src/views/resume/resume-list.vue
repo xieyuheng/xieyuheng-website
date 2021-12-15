@@ -28,7 +28,7 @@ import { ResumeState as State } from "./resume-state"
   name: "resume-list",
   // prettier-ignore
   components: {
-    ...require("@/vendor/postmark/md-nodes").components,
+    ...require("@xieyuheng/postmark-components-vue2").components,
     "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
   },
 })
