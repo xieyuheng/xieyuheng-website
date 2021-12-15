@@ -10,8 +10,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Watch } from "vue-property-decorator"
 import { NoteState as State } from "@/views/notes/note-state"
+import { Component, Prop, Vue, Watch } from "vue-property-decorator"
 
 @Component({
   name: "note-page",

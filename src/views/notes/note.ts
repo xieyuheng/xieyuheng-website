@@ -1,5 +1,5 @@
-import postmark, { Nodes } from "@xieyuheng/postmark"
 import * as ut from "@/ut"
+import { Nodes } from "@xieyuheng/postmark"
 
 export class Note {
   path: string

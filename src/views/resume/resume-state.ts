@@ -1,5 +1,4 @@
 import { GitPath } from "@enchanterjs/enchanter/lib/git-path"
-import { GitFileStore } from "@enchanterjs/enchanter/lib/git-file-store"
 import { Nodes } from "@xieyuheng/postmark"
 
 type Texts = {

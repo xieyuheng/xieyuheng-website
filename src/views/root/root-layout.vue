@@ -6,8 +6,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator"
 import { RootState as State } from "@/views/root/root-state"
+import { Component, Vue } from "vue-property-decorator"
 
 @Component({
   name: "root-layout",

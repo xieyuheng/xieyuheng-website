@@ -52,9 +52,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from "vue-property-decorator"
-import { PaperState as State } from "./paper-state"
 import * as ut from "@/ut"
+import { Component, Prop, Vue } from "vue-property-decorator"
+import { PaperState as State } from "./paper-state"
 
 @Component({
   name: "paper-list",

@@ -14,9 +14,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Watch } from "vue-property-decorator"
-import { RootState } from "@/views/root/root-state"
 import { ResumeState as State } from "@/views/resume/resume-state"
+import { RootState } from "@/views/root/root-state"
+import { Component, Prop, Vue } from "vue-property-decorator"
 
 @Component({
   name: "resume-layout",

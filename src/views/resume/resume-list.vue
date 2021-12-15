@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from "vue-property-decorator"
+import { Component, Prop, Vue } from "vue-property-decorator"
 import { ResumeState as State } from "./resume-state"
 
 @Component({

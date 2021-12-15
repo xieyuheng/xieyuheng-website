@@ -14,9 +14,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Watch } from "vue-property-decorator"
-import { RootState } from "@/views/root/root-state"
 import { NoteState as State } from "@/views/notes/note-state"
+import { RootState } from "@/views/root/root-state"
+import { Component, Prop, Vue } from "vue-property-decorator"
 
 @Component({
   name: "note-layout",

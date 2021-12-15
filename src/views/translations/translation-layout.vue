@@ -14,9 +14,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Watch } from "vue-property-decorator"
 import { RootState } from "@/views/root/root-state"
 import { TranslationState as State } from "@/views/translations/translation-state"
+import { Component, Prop, Vue } from "vue-property-decorator"
 
 @Component({
   name: "translation-layout",

@@ -28,19 +28,7 @@
         <input
           v-model.trim="searchInput"
           required
-          class="
-            focus:outline-none focus:ring-2 focus:ring-gray-300
-            placeholder-opacity-60
-            px-3
-            py-1
-            font-sans
-            text-lg
-            font-bold
-            text-gray-800
-            placeholder-gray-800
-            bg-gray-200
-            rounded-lg
-          "
+          class="focus:outline-none focus:ring-2 focus:ring-gray-300 placeholder-opacity-60 px-3 py-1 font-sans text-lg font-bold text-gray-800 placeholder-gray-800 bg-gray-200 rounded-lg"
           placeholder="Search ..."
           spellcheck="false"
         />
@@ -70,15 +58,7 @@
     <ul class="pb-2">
       <li v-for="note in notes" :key="note.id" class="flex flex-col pb-8">
         <div
-          class="
-            flex
-            items-baseline
-            justify-between
-            py-1
-            space-x-2
-            font-sans
-            text-sm
-          "
+          class="flex items-baseline justify-between py-1 space-x-2 font-sans text-sm"
         >
           <div class="text-xs italic font-bold text-gray-500">
             {{ note.id }}
@@ -132,9 +112,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop, Watch } from "vue-property-decorator"
-import { NoteState as State } from "./note-state"
 import rr from "@xieyuheng/readable-regular-expression"
+import { Component, Prop, Vue, Watch } from "vue-property-decorator"
+import { NoteState as State } from "./note-state"
 
 @Component({
   name: "note-list",

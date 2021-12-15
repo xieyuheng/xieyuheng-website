@@ -8,8 +8,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Watch } from "vue-property-decorator"
 import { TranslationState as State } from "@/views/translations/translation-state"
+import { Component, Prop, Vue, Watch } from "vue-property-decorator"
 
 @Component({
   name: "translation-page",

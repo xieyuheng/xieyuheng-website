@@ -8,8 +8,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Watch } from "vue-property-decorator"
 import { PaperState as State } from "@/views/papers/paper-state"
+import { Component, Prop, Vue, Watch } from "vue-property-decorator"
 
 @Component({
   name: "paper-page",

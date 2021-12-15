@@ -3,27 +3,12 @@
     <div class="relative flex items-center">
       <router-link :to="{ path: '/' }">
         <root-logo
-          class="
-            2md:absolute 2md:top-0 2md:w-20
-            lg:-left-32
-            2md:-left-28
-            w-10
-            rounded-full
-          "
+          class="2md:absolute 2md:top-0 2md:w-20 lg:-left-32 2md:-left-28 w-10 rounded-full"
         />
       </router-link>
 
       <div
-        class="
-          flex
-          justify-between
-          py-1
-          text-3xl
-          font-bold
-          2md:ml-0
-          ml-3
-          w-full
-        "
+        class="flex justify-between py-1 text-3xl font-bold 2md:ml-0 ml-3 w-full"
       >
         <router-link :to="{ path: '/' }"> Xie Yuheng </router-link>
 
@@ -50,13 +35,7 @@
     </div>
 
     <ul
-      class="
-        flex flex-wrap
-        justify-between
-        py-2
-        font-sans
-        text-xl text-gray-400
-      "
+      class="flex flex-wrap justify-between py-2 font-sans text-xl text-gray-400"
     >
       <li>
         <router-link :to="{ path: '/notes' }"> NOTES </router-link>
