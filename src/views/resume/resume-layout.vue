@@ -27,7 +27,7 @@ export default class NoteLayout extends Vue {
   state: State | null = null
   error: unknown | null = null
 
-  link = "xieyuheng/inner@gitlab.com/-/resume"
+  link = "gitlab.com/xieyuheng/inner/-/resume"
 
   async mounted(): Promise<void> {
     try {
