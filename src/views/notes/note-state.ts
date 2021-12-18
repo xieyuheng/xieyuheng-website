@@ -1,5 +1,5 @@
 import { Note } from "@/views/notes/note"
-import { GitPath } from "@enchanterjs/enchanter/lib/git-path"
+import { GitLink } from "@enchanterjs/enchanter/lib/git-link"
 
 export class NoteState {
   notes: Array<Note>
@@ -9,25 +9,25 @@ export class NoteState {
   }
 
   static async build(opts: {
-    gitPath: string
+    link: string
     cache: {
       notes?: {
         notes: Array<Note>
       }
     }
   }): Promise<NoteState> {
-    const { cache, gitPath } = opts
+    const { cache, link } = opts
 
-    const notes = cache.notes?.notes || (await this.loadNotes({ gitPath }))
+    const notes = cache.notes?.notes || (await this.loadNotes({ link }))
 
     cache.notes = { notes }
 
     return new NoteState({ notes })
   }
 
-  static async loadNotes(opts: { gitPath: string }): Promise<Array<Note>> {
-    const gitPath = GitPath.decode(opts.gitPath)
-    const files = gitPath.createGitFileStore()
+  static async loadNotes(opts: { link: string }): Promise<Array<Note>> {
+    const link = GitLink.decode(opts.link)
+    const files = link.createGitFileStore()
 
     return Object.entries(await files.all()).map(
       ([path, text]) => new Note({ path, text })

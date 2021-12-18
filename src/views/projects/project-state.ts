@@ -1,4 +1,4 @@
-import { GitPath } from "@enchanterjs/enchanter/lib/git-path"
+import { GitLink } from "@enchanterjs/enchanter/lib/git-link"
 import { Nodes } from "@xieyuheng/postmark"
 
 export class ProjectState {
@@ -9,24 +9,24 @@ export class ProjectState {
   }
 
   static async build(opts: {
-    gitPath: string
+    link: string
     cache: {
       projects?: { readme: string }
     }
   }): Promise<ProjectState> {
-    const { cache, gitPath } = opts
+    const { cache, link } = opts
 
     const readme =
-      opts.cache.projects?.readme || (await this.loadReadme({ gitPath }))
+      opts.cache.projects?.readme || (await this.loadReadme({ link }))
 
     cache.projects = { readme }
 
     return new ProjectState({ readme })
   }
 
-  static async loadReadme(opts: { gitPath: string }): Promise<string> {
-    const gitPath = GitPath.decode(opts.gitPath)
-    const files = gitPath.createGitFileStore()
+  static async loadReadme(opts: { link: string }): Promise<string> {
+    const link = GitLink.decode(opts.link)
+    const files = link.createGitFileStore()
     return await files.getOrFail("README.md")
   }
 

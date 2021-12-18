@@ -1,4 +1,4 @@
-import { GitPath } from "@enchanterjs/enchanter/lib/git-path"
+import { GitLink } from "@enchanterjs/enchanter/lib/git-link"
 import { Nodes } from "@xieyuheng/postmark"
 
 type Texts = {
@@ -14,16 +14,16 @@ export class ResumeState {
   }
 
   static async build(opts: {
-    gitPath: string
+    link: string
     cache: {
       resume?: {
         texts: Texts
       }
     }
   }): Promise<ResumeState> {
-    const { gitPath, cache } = opts
+    const { link, cache } = opts
 
-    const texts = cache.resume?.texts || (await this.loadTexts({ gitPath }))
+    const texts = cache.resume?.texts || (await this.loadTexts({ link }))
 
     cache.resume = { texts }
 
@@ -31,10 +31,10 @@ export class ResumeState {
   }
 
   static async loadTexts(opts: {
-    gitPath: string
+    link: string
   }): Promise<{ zh: string; en: string }> {
-    const gitPath = GitPath.decode(opts.gitPath)
-    const files = gitPath.createGitFileStore()
+    const link = GitLink.decode(opts.link)
+    const files = link.createGitFileStore()
     const zh = await files.getOrFail("zh.md")
     const en = await files.getOrFail("en.md")
 

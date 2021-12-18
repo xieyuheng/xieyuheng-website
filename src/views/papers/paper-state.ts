@@ -1,4 +1,4 @@
-import { GitPath } from "@enchanterjs/enchanter/lib/git-path"
+import { GitLink } from "@enchanterjs/enchanter/lib/git-link"
 import { Nodes } from "@xieyuheng/postmark"
 
 export class PaperState {
@@ -9,16 +9,16 @@ export class PaperState {
   }
 
   static async build(opts: {
-    gitPath: string
+    link: string
     cache: {
       papers?: {
         texts: Record<string, string>
       }
     }
   }): Promise<PaperState> {
-    const { gitPath, cache } = opts
+    const { link, cache } = opts
 
-    const texts = cache.papers?.texts || (await this.loadTexts({ gitPath }))
+    const texts = cache.papers?.texts || (await this.loadTexts({ link }))
 
     cache.papers = { texts }
 
@@ -26,10 +26,10 @@ export class PaperState {
   }
 
   static async loadTexts(opts: {
-    gitPath: string
+    link: string
   }): Promise<Record<string, string>> {
-    const gitPath = GitPath.decode(opts.gitPath)
-    const files = gitPath.createGitFileStore()
+    const link = GitLink.decode(opts.link)
+    const files = link.createGitFileStore()
 
     return await files.all()
   }

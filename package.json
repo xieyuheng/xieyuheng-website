@@ -13,11 +13,11 @@
     "trailingComma": "es5"
   },
   "dependencies": {
-    "@enchanterjs/enchanter": "^0.1.30",
-    "@xieyuheng/postmark": "^0.2.3",
+    "@enchanterjs/enchanter": "^0.1.31",
+    "@xieyuheng/postmark": "^0.2.4",
     "@xieyuheng/postmark-components-vue2": "^0.2.4",
     "@xieyuheng/readable-regular-expression": "^0.0.13",
-    "@xieyuheng/ty": "^0.1.9",
+    "@xieyuheng/ty": "^0.1.10",
     "register-service-worker": "^1.7.2",
     "vue": "^2.6.14",
     "vue-class-component": "^7.2.6",

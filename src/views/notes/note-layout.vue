@@ -6,7 +6,7 @@
     <div class="text-xl text-gray-600">
       <p>Loading notes ...</p>
       <p class="py-2 text-base">
-        from <span class="font-bold">{{ gitPath }}</span>
+        from <span class="font-bold">{{ link }}</span>
       </p>
     </div>
   </div>
@@ -27,12 +27,12 @@ export default class NoteLayout extends Vue {
   state: State | null = null
   error: unknown | null = null
 
-  gitPath = "xieyuheng/inner@gitlab.com/-/notes"
+  link = "xieyuheng/inner@gitlab.com/-/notes"
 
   async mounted(): Promise<void> {
     try {
       this.state = await State.build({
-        gitPath: this.gitPath,
+        link: this.link,
         cache: this.rootState.cache,
       })
     } catch (error) {
