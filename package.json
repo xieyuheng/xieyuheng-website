@@ -13,9 +13,9 @@
     "trailingComma": "es5"
   },
   "dependencies": {
-    "@enchanterjs/enchanter": "^0.1.31",
+    "@enchanterjs/enchanter": "^0.1.33",
     "@xieyuheng/postmark": "^0.2.4",
-    "@xieyuheng/postmark-components-vue2": "^0.2.4",
+    "@xieyuheng/postmark-components-vue2": "^0.2.6",
     "@xieyuheng/readable-regular-expression": "^0.0.13",
     "@xieyuheng/ty": "^0.1.10",
     "register-service-worker": "^1.7.2",
