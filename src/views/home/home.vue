@@ -19,8 +19,10 @@
       Right now I'm working on
       <a href="https://cicada-lang.org" target="_blank"
         >Cicada Language<icon-external-link class="w-5 p-px" /></a
-      >, both a <em>programming language</em> and a <em>theorem prover</em>.
-      Check out its website, and maybe, join our community :)
+      >, and
+      <a href="https://readonly.link" target="_blank"
+        >Readonly.Link<icon-external-link class="w-5 p-px" /></a
+      >.
     </p>
 
     <p>
