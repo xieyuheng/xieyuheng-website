@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [
+  content: [
     "./src/**/*.vue",
     "./node_modules/@xieyuheng/postmark-components-vue2/src/**/*.vue",
   ],
