@@ -9,6 +9,15 @@ module.exports = {
       serif: ["Linux Libertine O", "serif"],
       mono: ["Fira Code", "monospace"],
     },
-    extend: { screens: { "2md": "880px" } },
+    extend: {
+      screens: {
+        "2md": "880px",
+      },
+    },
+    extend: {
+      colors: {
+        gray: colors.stone,
+      },
+    },
   },
 }
