@@ -10,9 +10,8 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue"
-import { RootState as State } from "@/views/root/root-state"
-
-import RootHeader from "@/views/root/RootHeader.vue"
+import { RootState as State } from "./root-state"
+import RootHeader from "./RootHeader.vue"
 
 const state = ref<State | null>(null)
 

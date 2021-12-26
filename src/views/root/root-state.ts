@@ -1,4 +1,4 @@
-import { Note } from "@/views/notes/note"
+import { Note } from "../notes/note"
 
 export class RootState {
   cache: {

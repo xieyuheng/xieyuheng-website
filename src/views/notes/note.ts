@@ -1,5 +1,5 @@
-import * as ut from "@/ut"
 import { Nodes } from "@xieyuheng/postmark"
+import * as ut from "../../ut"
 
 export class Note {
   path: string

@@ -67,7 +67,7 @@
 
 <script setup lang="ts">
 import { TranslationState as State } from "./translation-state"
-import IconExternalLink from "@/components/icons/IconExternalLink.vue"
+import IconExternalLink from "../../components/icons/IconExternalLink.vue"
 
 const props = defineProps<{ state: State }>()
 </script>

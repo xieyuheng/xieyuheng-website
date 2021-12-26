@@ -14,8 +14,8 @@
 </template>
 
 <script setup lang="ts">
-import { PaperState as State } from "@/views/papers/paper-state"
-import { RootState } from "@/views/root/root-state"
+import { PaperState as State } from "./paper-state"
+import { RootState } from "../root/root-state"
 import { ref, onMounted } from "vue"
 
 const props = defineProps<{ rootState: RootState }>()

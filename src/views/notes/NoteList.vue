@@ -117,10 +117,10 @@ import { useRoute, useRouter } from "vue-router"
 import { NoteState as State } from "./note-state"
 import rr from "@xieyuheng/readable-regular-expression"
 
-import IconExternalLink from "@/components/icons/IconExternalLink.vue"
-import IconSearch from "@/components/icons/IconSearch.vue"
-import IconSortAscending from "@/components/icons/IconSortAscending.vue"
-import IconSortDescending from "@/components/icons/IconSortDescending.vue"
+import IconExternalLink from "../../components/icons/IconExternalLink.vue"
+import IconSearch from "../../components/icons/IconSearch.vue"
+import IconSortAscending from "../../components/icons/IconSortAscending.vue"
+import IconSortDescending from "../../components/icons/IconSortDescending.vue"
 
 const props = defineProps<{ state: State }>()
 

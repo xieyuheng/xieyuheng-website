@@ -65,10 +65,10 @@
 </template>
 
 <script setup lang="ts">
-import RootLogo from "@/views/root/RootLogo.vue"
-import IconGithub from "@/components/icons/IconGithub.vue"
-import IconBilibiliLine from "@/components/icons/IconBilibiliLine.vue"
-import IconMail from "@/components/icons/IconMail.vue"
+import RootLogo from "./RootLogo.vue"
+import IconGithub from "../../components/icons/IconGithub.vue"
+import IconBilibiliLine from "../../components/icons/IconBilibiliLine.vue"
+import IconMail from "../../components/icons/IconMail.vue"
 </script>
 
 <style scoped>

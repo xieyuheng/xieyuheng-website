@@ -15,8 +15,8 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue"
-import { ResumeState as State } from "@/views/resume/resume-state"
-import { RootState } from "@/views/root/root-state"
+import { ResumeState as State } from "./resume-state"
+import { RootState } from "../root/root-state"
 
 const props = defineProps<{ rootState: RootState }>()
 

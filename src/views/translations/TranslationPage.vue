@@ -9,9 +9,9 @@
 
 <script setup lang="ts">
 import { ref, computed, watch } from "vue"
-import { TranslationState as State } from "@/views/translations/translation-state"
+import { TranslationState as State } from "./translation-state"
 import { components as Md } from "@xieyuheng/postmark-components-vue3"
-import PageNotFound from "@/views/errors/PageNotFound.vue"
+import PageNotFound from "../errors/PageNotFound.vue"
 
 const props = defineProps<{ path: string; state: State }>()
 

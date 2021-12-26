@@ -3,15 +3,12 @@ import { RouteRecordRaw } from "vue-router"
 export const routes: Array<RouteRecordRaw> = [
   {
     path: "/papers",
-    component: () => import("@/views/papers/PaperLayout.vue"),
+    component: () => import("./PaperLayout.vue"),
     children: [
-      {
-        path: "/papers",
-        component: () => import("@/views/papers/PaperList.vue"),
-      },
+      { path: "/papers", component: () => import("./PaperList.vue") },
       {
         path: "/papers/:pathMatch(.*)",
-        component: () => import("@/views/papers/PaperPage.vue"),
+        component: () => import("./PaperPage.vue"),
         props: (route) => ({
           path: route.params.pathMatch,
         }),

@@ -15,8 +15,8 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue"
-import { RootState } from "@/views/root/root-state"
-import { TranslationState as State } from "@/views/translations/translation-state"
+import { RootState } from "../root/root-state"
+import { TranslationState as State } from "./translation-state"
 
 const props = defineProps<{ rootState: RootState }>()
 

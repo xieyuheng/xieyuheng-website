@@ -10,11 +10,11 @@
 </template>
 
 <script setup lang="ts">
-import { NoteState as State } from "@/views/notes/note-state"
+import { NoteState as State } from "./note-state"
 import { computed, watch } from "vue"
 import { components as Md } from "@xieyuheng/postmark-components-vue3"
-import PageNotFound from "@/views/errors/PageNotFound.vue"
-import NotePageNavbar from "@/views/notes/NotePageNavbar.vue"
+import PageNotFound from "../errors/PageNotFound.vue"
+import NotePageNavbar from "../notes/NotePageNavbar.vue"
 
 const props = defineProps<{ path: string; state: State }>()
 

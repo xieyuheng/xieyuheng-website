@@ -3,20 +3,11 @@ import { RouteRecordRaw } from "vue-router"
 export const routes: Array<RouteRecordRaw> = [
   {
     path: "/resume",
-    component: () => import("@/views/resume/ResumeLayout.vue"),
+    component: () => import("./ResumeLayout.vue"),
     children: [
-      {
-        path: "/resume",
-        component: () => import("@/views/resume/ResumeList.vue"),
-      },
-      {
-        path: "/resume/zh",
-        component: () => import("@/views/resume/ResumeZh.vue"),
-      },
-      {
-        path: "/resume/en",
-        component: () => import("@/views/resume/ResumeEn.vue"),
-      },
+      { path: "/resume", component: () => import("./ResumeList.vue") },
+      { path: "/resume/zh", component: () => import("./ResumeZh.vue") },
+      { path: "/resume/en", component: () => import("./ResumeEn.vue") },
     ],
   },
   { path: "/cv", redirect: "/resume" },

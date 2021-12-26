@@ -22,7 +22,7 @@
 
 <script setup lang="ts">
 import { ResumeState as State } from "./resume-state"
-import IconExternalLink from "@/components/icons/IconExternalLink.vue"
+import IconExternalLink from "../../components/icons/IconExternalLink.vue"
 </script>
 
 <style scoped>

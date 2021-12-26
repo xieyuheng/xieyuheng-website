@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import IconExternalLink from "@/components/icons/IconExternalLink.vue"
+import IconExternalLink from "../../components/icons/IconExternalLink.vue"
 </script>
 
 <style scoped>

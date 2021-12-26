@@ -8,10 +8,10 @@
 </template>
 
 <script setup lang="ts">
-import { PaperState as State } from "@/views/papers/paper-state"
+import { PaperState as State } from "./paper-state"
 import { computed, watch } from "vue"
 import { components as Md } from "@xieyuheng/postmark-components-vue3"
-import PageNotFound from "@/views/errors/PageNotFound.vue"
+import PageNotFound from "../errors/PageNotFound.vue"
 
 const props = defineProps<{ path: string; state: State }>()
 

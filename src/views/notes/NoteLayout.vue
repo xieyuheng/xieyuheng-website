@@ -14,8 +14,8 @@
 </template>
 
 <script setup lang="ts">
-import { NoteState as State } from "@/views/notes/note-state"
-import { RootState } from "@/views/root/root-state"
+import { NoteState as State } from "./note-state"
+import { RootState } from "../root/root-state"
 import { ref, onMounted } from "vue"
 
 const props = defineProps<{ rootState: RootState }>()

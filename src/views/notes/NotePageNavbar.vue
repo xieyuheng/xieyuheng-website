@@ -27,8 +27,8 @@
 </template>
 
 <script setup lang="ts">
-import { NoteState as State } from "@/views/notes/note-state"
 import { computed } from "vue"
+import { NoteState as State } from "./note-state"
 
 const props = defineProps<{ pageName: string; state: State }>()
 

@@ -3,15 +3,12 @@ import { RouteRecordRaw } from "vue-router"
 export const routes: Array<RouteRecordRaw> = [
   {
     path: "/notes",
-    component: () => import("@/views/notes/NoteLayout.vue"),
+    component: () => import("./NoteLayout.vue"),
     children: [
-      {
-        path: "/notes",
-        component: () => import("@/views/notes/NoteList.vue"),
-      },
+      { path: "/notes", component: () => import("./NoteList.vue") },
       {
         path: "/notes/:pathMatch(.*)",
-        component: () => import("@/views/notes/NotePage.vue"),
+        component: () => import("./NotePage.vue"),
         props: (route) => ({
           path: route.params.pathMatch,
         }),

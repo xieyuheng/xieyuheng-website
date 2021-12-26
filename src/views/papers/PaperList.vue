@@ -54,8 +54,8 @@
 <script setup lang="ts">
 import { ref, computed } from "vue"
 import { PaperState as State } from "./paper-state"
-import * as ut from "@/ut"
-import IconExternalLink from "@/components/icons/IconExternalLink.vue"
+import * as ut from "../../ut"
+import IconExternalLink from "../../components/icons/IconExternalLink.vue"
 
 const props = defineProps<{ state: State }>()
 

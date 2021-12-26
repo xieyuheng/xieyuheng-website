@@ -37,7 +37,7 @@
 import { Component, Prop, Vue } from "vue"
 import { ProjectState as State } from "./project-state"
 import { components as Md } from "@xieyuheng/postmark-components-vue3"
-import IconExternalLink from "@/components/icons/IconExternalLink.vue"
+import IconExternalLink from "../../components/icons/IconExternalLink.vue"
 
 defineProps<{ state: State }>()
 </script>

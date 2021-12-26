@@ -1,5 +1,5 @@
-import { Note } from "@/views/notes/note"
 import { GitLink } from "@enchanterjs/enchanter/lib/git-link"
+import { Note } from "../notes/note"
 
 export class NoteState {
   notes: Array<Note>

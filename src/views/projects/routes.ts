@@ -3,12 +3,9 @@ import { RouteRecordRaw } from "vue-router"
 export const routes: Array<RouteRecordRaw> = [
   {
     path: "/projects",
-    component: () => import("@/views/projects/ProjectLayout.vue"),
+    component: () => import("./ProjectLayout.vue"),
     children: [
-      {
-        path: "/projects",
-        component: () => import("@/views/projects/ProjectList.vue"),
-      },
+      { path: "/projects", component: () => import("./ProjectList.vue") },
     ],
   },
 ]
