@@ -1,35 +1,28 @@
 <template>
   <div v-if="document">
-    <md-document :document="document.document" :key="document.id" />
+    <Md.MdDocument :document="document.document" :key="document.id" />
   </div>
   <div v-else>
     <PageNotFound />
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { PaperState as State } from "@/views/papers/paper-state"
-import { Component, Prop, Vue, Watch } from "vue-property-decorator"
+import { computed, watch } from "vue"
+import { components as Md } from "@xieyuheng/postmark-components-vue3"
+import PageNotFound from "@/views/errors/PageNotFound.vue"
 
-@Component({
-  name: "PaperPage",
-  // prettier-ignore
-  components: {
-    ...require("@xieyuheng/postmark-components-vue2").components,
-    "PageNotFound": require("@/views/errors/PageNotFound.vue").default,
-  },
+const props = defineProps<{ path: string; state: State }>()
+
+const document = computed(() => {
+  return props.state.documents.find((document) => document.path === props.path)
 })
-export default class extends Vue {
-  @Prop() path!: string
-  @Prop() state!: State
 
-  get document() {
-    return this.state.documents.find((document) => document.path === this.path)
-  }
-
-  @Watch("path")
-  scrollToTop(): void {
+watch(
+  () => props.path,
+  () => {
     window.scrollTo(0, 0)
   }
-}
+)
 </script>

@@ -1,6 +1,6 @@
-import { RouteConfig } from "vue-router"
+import { RouteRecordRaw } from "vue-router"
 
-export const routes: Array<RouteConfig> = [
+export const routes: Array<RouteRecordRaw> = [
   {
     path: "/resume",
     component: () => import("@/views/resume/ResumeLayout.vue"),

@@ -3,7 +3,7 @@ const colors = require("tailwindcss/colors")
 module.exports = {
   content: [
     "./src/**/*.vue",
-    "./node_modules/@xieyuheng/postmark-components-vue2/src/**/*.vue",
+    "./node_modules/@xieyuheng/postmark-components-vue3/src/**/*.vue",
   ],
   theme: {
     fontFamily: {

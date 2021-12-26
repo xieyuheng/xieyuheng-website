@@ -65,18 +65,9 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator"
+<script setup lang="ts">
 import { TranslationState as State } from "./translation-state"
+import IconExternalLink from "@/components/icons/IconExternalLink.vue"
 
-@Component({
-  name: "TranslationList",
-  // prettier-ignore
-  components: {
-    "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,
-  },
-})
-export default class extends Vue {
-  @Prop() state!: State
-}
+const props = defineProps<{ state: State }>()
 </script>

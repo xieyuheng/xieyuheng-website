@@ -1,6 +1,6 @@
-import { RouteConfig } from "vue-router"
+import { RouteRecordRaw } from "vue-router"
 
-export const routes: Array<RouteConfig> = [
+export const routes: Array<RouteRecordRaw> = [
   {
     path: "/papers",
     component: () => import("@/views/papers/PaperLayout.vue"),
@@ -10,7 +10,7 @@ export const routes: Array<RouteConfig> = [
         component: () => import("@/views/papers/PaperList.vue"),
       },
       {
-        path: "/papers/*",
+        path: "/papers/:pathMatch(.*)",
         component: () => import("@/views/papers/PaperPage.vue"),
         props: (route) => ({
           path: route.params.pathMatch,

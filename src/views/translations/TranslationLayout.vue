@@ -13,31 +13,26 @@
   <router-view v-else :state="state" />
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import { ref, onMounted } from "vue"
 import { RootState } from "@/views/root/root-state"
 import { TranslationState as State } from "@/views/translations/translation-state"
-import { Component, Prop, Vue } from "vue-property-decorator"
 
-@Component({
-  name: "TranslationLayout",
-})
-export default class NoteLayout extends Vue {
-  @Prop() rootState!: RootState
+const props = defineProps<{ rootState: RootState }>()
 
-  state: State | null = null
-  error: unknown | null = null
+const state = ref<State | null>(null)
+const error = ref<unknown | null>(null)
 
-  link = "gitlab.com/xieyuheng/inner/-/translations/zh"
+const link = "gitlab.com/xieyuheng/inner/-/translations/zh"
 
-  async mounted(): Promise<void> {
-    try {
-      this.state = await State.build({
-        link: this.link,
-        cache: this.rootState.cache,
-      })
-    } catch (error) {
-      this.error = error
-    }
+onMounted(async () => {
+  try {
+    state.value = await State.build({
+      link,
+      cache: props.rootState.cache,
+    })
+  } catch (err) {
+    error.value = err
   }
-}
+})
 </script>

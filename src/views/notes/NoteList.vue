@@ -111,78 +111,81 @@
   </div>
 </template>
 
-<script lang="ts">
-import rr from "@xieyuheng/readable-regular-expression"
-import { Component, Prop, Vue, Watch } from "vue-property-decorator"
+<script setup lang="ts">
+import { ref, watch, computed } from "vue"
+import { useRoute, useRouter } from "vue-router"
 import { NoteState as State } from "./note-state"
+import rr from "@xieyuheng/readable-regular-expression"
 
-@Component({
-  name: "NoteList",
-  // prettier-ignore
-  components: {
-    "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,
-    "IconSearch": require("@/components/icons/IconSearch.vue").default,
-    "IconSortAscending": require("@/components/icons/IconSortAscending.vue").default,
-    "IconSortDescending": require("@/components/icons/IconSortDescending.vue").default,
-  },
-})
-export default class extends Vue {
-  @Prop() state!: State
+import IconExternalLink from "@/components/icons/IconExternalLink.vue"
+import IconSearch from "@/components/icons/IconSearch.vue"
+import IconSortAscending from "@/components/icons/IconSortAscending.vue"
+import IconSortDescending from "@/components/icons/IconSortDescending.vue"
 
-  searchInput: string = ""
-  sortDirection: boolean = true
+const props = defineProps<{ state: State }>()
 
-  get notes() {
-    let notes = [...this.state.notes]
+const searchInput = ref<string>("")
+const sortDirection = ref<boolean>(true)
 
-    if (this.sortDirection) {
-      notes = notes.sort((x, y) => (x.id > y.id ? 1 : -1))
-    } else {
-      notes = notes.sort((x, y) => (x.id < y.id ? 1 : -1))
-    }
+const notes = computed(() => {
+  let notes = [...props.state.notes]
 
-    if (this.searchInput) {
-      notes = notes.filter(
-        (note) => note.matchLines(this.searchInput).length > 0
-      )
-    }
-
-    return notes
+  if (sortDirection.value) {
+    notes = notes.sort((x, y) => (x.id > y.id ? 1 : -1))
+  } else {
+    notes = notes.sort((x, y) => (x.id < y.id ? 1 : -1))
   }
 
-  decoratMatchedLine(line: string, word: string): string {
-    return line.replace(
-      rr.escape(word),
-      `<span class="text-amber-500 font-bold">${word}</span>`
+  if (searchInput.value) {
+    notes = notes.filter(
+      (note) => note.matchLines(searchInput.value).length > 0
     )
   }
 
-  toggleSort(): void {
-    this.sortDirection = !this.sortDirection
-  }
+  return notes
+})
 
-  search() {
-    // TODO
-  }
+function decoratMatchedLine(line: string, word: string): string {
+  return line.replace(
+    rr.escape(word),
+    `<span class="text-amber-500 font-bold">${word}</span>`
+  )
+}
 
-  @Watch("$route", { immediate: true })
-  updateSearchInput(): void {
-    const query: any = this.$route.query
-    if (query.search !== this.searchInput) {
-      this.searchInput = query.search
+function toggleSort(): void {
+  sortDirection.value = !sortDirection.value
+}
+
+function search() {
+  // TODO
+}
+
+const router = useRouter()
+const route = useRoute()
+
+watch(
+  () => route.query,
+  () => {
+    const query: any = route.query
+    if (query.search !== searchInput.value) {
+      searchInput.value = query.search
     }
-  }
+  },
+  { immediate: true, deep: true }
+)
 
-  @Watch("searchInput", { immediate: true })
-  updateRoute(): void {
-    const query: any = this.$route.query
-    if (query.search !== this.searchInput) {
-      this.$router
-        .push({ path: "/notes", query: { search: this.searchInput } })
+watch(
+  searchInput,
+  () => {
+    const query: any = route.query
+    if (query.search !== searchInput.value) {
+      router
+        .push({ path: "/notes", query: { search: searchInput.value } })
         .catch((error) => {
           if (error.name !== "NavigationDuplicated") throw error
         })
     }
-  }
-}
+  },
+  { immediate: true }
+)
 </script>

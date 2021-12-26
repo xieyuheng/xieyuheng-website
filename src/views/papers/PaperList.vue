@@ -51,27 +51,19 @@
   </div>
 </template>
 
-<script lang="ts">
-import * as ut from "@/ut"
-import { Component, Prop, Vue } from "vue-property-decorator"
+<script setup lang="ts">
+import { ref, computed } from "vue"
 import { PaperState as State } from "./paper-state"
+import * as ut from "@/ut"
+import IconExternalLink from "@/components/icons/IconExternalLink.vue"
 
-@Component({
-  name: "PaperList",
-  // prettier-ignore
-  components: {
-    "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,
-  },
+const props = defineProps<{ state: State }>()
+
+const documents = computed(() => {
+  return props.state.documents.filter(({ path }) => !path.includes("/"))
 })
-export default class extends Vue {
-  @Prop() state!: State
 
-  get documents() {
-    return this.state.documents.filter(({ path }) => !path.includes("/"))
-  }
-
-  formatDate(date: Date): string {
-    return ut.formatDate(date)
-  }
+function formatDate(date: Date): string {
+  return ut.formatDate(date)
 }
 </script>

@@ -1,6 +1,6 @@
-import { RouteConfig } from "vue-router"
+import { RouteRecordRaw } from "vue-router"
 
-export const routes: Array<RouteConfig> = [
+export const routes: Array<RouteRecordRaw> = [
   {
     path: "/translations",
     component: () => import("@/views/translations/TranslationLayout.vue"),
@@ -10,7 +10,7 @@ export const routes: Array<RouteConfig> = [
         component: () => import("@/views/translations/TranslationList.vue"),
       },
       {
-        path: "/translations/*",
+        path: "/translations/:pathMatch(.*)",
         component: () => import("@/views/translations/TranslationPage.vue"),
         props: (route) => ({
           path: route.params.pathMatch,

@@ -29,23 +29,15 @@
 
     <p><em>Don't merely do a project, dance with it!</em></p>
 
-    <md-document :document="state.readmeDocument" />
+    <Md.MdDocument :document="state.readmeDocument" />
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator"
+<script setup lang="ts">
+import { Component, Prop, Vue } from "vue"
 import { ProjectState as State } from "./project-state"
+import { components as Md } from "@xieyuheng/postmark-components-vue3"
+import IconExternalLink from "@/components/icons/IconExternalLink.vue"
 
-@Component({
-  name: "ProjectList",
-  // prettier-ignore
-  components: {
-    ...require("@xieyuheng/postmark-components-vue2").components,
-    "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,
-  },
-})
-export default class extends Vue {
-  @Prop() state!: State
-}
+defineProps<{ state: State }>()
 </script>

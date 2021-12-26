@@ -1,38 +1,31 @@
 <template>
   <div v-if="note">
-    <NotePage-navbar :pageName="path" :state="state" />
-    <md-document :document="note.document" :key="note.id" />
-    <NotePage-navbar :pageName="path" :state="state" />
+    <NotePageNavbar :pageName="path" :state="state" />
+    <Md.MdDocument :document="note.document" :key="note.id" />
+    <NotePageNavbar :pageName="path" :state="state" />
   </div>
   <div v-else>
     <PageNotFound />
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { NoteState as State } from "@/views/notes/note-state"
-import { Component, Prop, Vue, Watch } from "vue-property-decorator"
+import { computed, watch } from "vue"
+import { components as Md } from "@xieyuheng/postmark-components-vue3"
+import PageNotFound from "@/views/errors/PageNotFound.vue"
+import NotePageNavbar from "@/views/notes/NotePageNavbar.vue"
 
-@Component({
-  name: "NotePage",
-  // prettier-ignore
-  components: {
-    ...require("@xieyuheng/postmark-components-vue2").components,
-    "NotePage-navbar": require("@/views/notes/NotePage-navbar.vue").default,
-    "PageNotFound": require("@/views/errors/PageNotFound.vue").default,
-  },
+const props = defineProps<{ path: string; state: State }>()
+
+const note = computed(() => {
+  return props.state.notes.find((node) => node.path === props.path)
 })
-export default class extends Vue {
-  @Prop() path!: string
-  @Prop() state!: State
 
-  get note() {
-    return this.state.notes.find((node) => node.path === this.path)
-  }
-
-  @Watch("path")
-  scrollToTop(): void {
+watch(
+  () => props.path,
+  () => {
     window.scrollTo(0, 0)
   }
-}
+)
 </script>

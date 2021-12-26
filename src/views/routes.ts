@@ -1,6 +1,6 @@
-import { RouteConfig } from "vue-router"
+import { RouteRecordRaw } from "vue-router"
 
-export const routes: Array<RouteConfig> = [
+export const routes: Array<RouteRecordRaw> = [
   { path: "/", component: () => import("@/views/home/HomePage.vue") },
   ...require("@/views/notes/routes").routes,
   ...require("@/views/projects/routes").routes,
@@ -8,5 +8,8 @@ export const routes: Array<RouteConfig> = [
   ...require("@/views/papers/routes").routes,
   ...require("@/views/live/routes").routes,
   ...require("@/views/resume/routes").routes,
-  { path: "*", component: () => import("@/views/errors/PageNotFound.vue") },
+  {
+    path: "/:pathMatch(.*)",
+    component: () => import("@/views/errors/PageNotFound.vue"),
+  },
 ]

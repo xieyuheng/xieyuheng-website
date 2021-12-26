@@ -26,35 +26,25 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { NoteState as State } from "@/views/notes/note-state"
-import { Component, Prop, Vue } from "vue-property-decorator"
+import { computed } from "vue"
 
-@Component({
-  name: "NotePage-navbar",
-  // prettier-ignore
-  components: {
+const props = defineProps<{ pageName: string; state: State }>()
 
-  },
+const prevPageName = computed(() => {
+  const index = props.state.pageNames.findIndex(
+    (pageName) => pageName === props.pageName
+  )
+  if (index === -1) return undefined
+  return props.state.pageNames[index - 1]
 })
-export default class extends Vue {
-  @Prop() pageName!: string
-  @Prop() state!: State
 
-  get prevPageName(): string | undefined {
-    const index = this.state.pageNames.findIndex(
-      (pageName) => pageName === this.pageName
-    )
-    if (index === -1) return undefined
-    return this.state.pageNames[index - 1]
-  }
-
-  get nextPageName(): string | undefined {
-    const index = this.state.pageNames.findIndex(
-      (pageName) => pageName === this.pageName
-    )
-    if (index === -1) return undefined
-    return this.state.pageNames[index + 1]
-  }
-}
+const nextPageName = computed(() => {
+  const index = props.state.pageNames.findIndex(
+    (pageName) => pageName === props.pageName
+  )
+  if (index === -1) return undefined
+  return props.state.pageNames[index + 1]
+})
 </script>

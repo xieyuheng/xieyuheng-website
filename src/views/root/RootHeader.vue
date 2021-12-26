@@ -64,20 +64,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator"
-
-@Component({
-  name: "RootHeader",
-  // prettier-ignore
-  components: {
-    "RootLogo": require("@/views/root/RootLogo.vue").default,
-    "IconGithub": require("@/components/icons/IconGithub.vue").default,
-    "IconBilibiliLine": require("@/components/icons/IconBilibiliLine.vue").default,
-    "IconMail": require("@/components/icons/IconMail.vue").default,
-  },
-})
-export default class extends Vue {}
+<script setup lang="ts">
+import RootLogo from "@/views/root/RootLogo.vue"
+import IconGithub from "@/components/icons/IconGithub.vue"
+import IconBilibiliLine from "@/components/icons/IconBilibiliLine.vue"
+import IconMail from "@/components/icons/IconMail.vue"
 </script>
 
 <style scoped>

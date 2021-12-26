@@ -1,21 +1,12 @@
 <template>
   <div>
-    <md-document :document="state.documents.zh" />
+    <Md.MdDocument :document="state.documents.zh" />
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator"
+<script setup lang="ts">
 import { ResumeState as State } from "./resume-state"
+import { components as Md } from "@xieyuheng/postmark-components-vue3"
 
-@Component({
-  name: "ResumeZh",
-  // prettier-ignore
-  components: {
-    ...require("@xieyuheng/postmark-components-vue2").components,
-  },
-})
-export default class extends Vue {
-  @Prop() state!: State
-}
+const props = defineProps<{ state: State }>()
 </script>

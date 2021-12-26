@@ -20,21 +20,9 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator"
+<script setup lang="ts">
 import { ResumeState as State } from "./resume-state"
-
-@Component({
-  name: "ResumeList",
-  // prettier-ignore
-  components: {
-    ...require("@xieyuheng/postmark-components-vue2").components,
-    "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,
-  },
-})
-export default class extends Vue {
-  @Prop() state!: State
-}
+import IconExternalLink from "@/components/icons/IconExternalLink.vue"
 </script>
 
 <style scoped>
