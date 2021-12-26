@@ -17,7 +17,7 @@
           class="inline-flex py-px underline"
         >
           -- Wiktionary / project
-          <icon-external-link class="w-5 p-px" />
+          <IconExternalLink class="w-5 p-px" />
         </a>
       </p>
     </div>
@@ -42,7 +42,7 @@ import { ProjectState as State } from "./project-state"
   // prettier-ignore
   components: {
     ...require("@xieyuheng/postmark-components-vue2").components,
-    "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
+    "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,
   },
 })
 export default class extends Vue {

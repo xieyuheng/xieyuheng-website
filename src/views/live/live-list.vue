@@ -13,7 +13,7 @@
           class="inline-flex py-px underline"
         >
           小药壶 @bilibili
-          <icon-external-link class="w-5 p-px" />
+          <IconExternalLink class="w-5 p-px" />
         </a>
       </li>
     </ul>
@@ -27,7 +27,7 @@ import { Component, Vue } from "vue-property-decorator"
   name: "live-list",
   // prettier-ignore
   components: {
-    "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
+    "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,
   },
 })
 export default class extends Vue {}

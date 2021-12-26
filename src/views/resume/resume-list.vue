@@ -29,7 +29,7 @@ import { ResumeState as State } from "./resume-state"
   // prettier-ignore
   components: {
     ...require("@xieyuheng/postmark-components-vue2").components,
-    "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
+    "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,
   },
 })
 export default class extends Vue {

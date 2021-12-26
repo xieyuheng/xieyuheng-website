@@ -12,7 +12,7 @@
           class="inline-flex py-px underline"
         >
           -- 禮記 · 王制
-          <icon-external-link class="w-5 p-px" />
+          <IconExternalLink class="w-5 p-px" />
         </a>
       </p>
     </div>
@@ -73,7 +73,7 @@ import { TranslationState as State } from "./translation-state"
   name: "translation-list",
   // prettier-ignore
   components: {
-    "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
+    "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,
   },
 })
 export default class extends Vue {

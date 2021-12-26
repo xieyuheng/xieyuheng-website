@@ -60,7 +60,7 @@ import { PaperState as State } from "./paper-state"
   name: "paper-list",
   // prettier-ignore
   components: {
-    "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
+    "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,
   },
 })
 export default class extends Vue {

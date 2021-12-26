@@ -18,7 +18,7 @@
           class="inline-flex py-px underline"
         >
           -- Wikipedia / Zettelkasten
-          <icon-external-link class="w-5 p-px" />
+          <IconExternalLink class="w-5 p-px" />
         </a>
       </p>
     </div>
@@ -33,7 +33,7 @@
           spellcheck="false"
         />
         <button class="text-gray-500" type="submit">
-          <icon-search class="w-5 ml-2" />
+          <IconSearch class="w-5 ml-2" />
         </button>
         <div
           v-if="searchInput"
@@ -47,10 +47,10 @@
 
       <div class="flex self-start justify-end pt-2 space-x-2 text-gray-500">
         <button v-if="sortDirection" @click="toggleSort()">
-          <icon-sort-descending class="hover:text-gray-900 w-5" />
+          <IconSortDescending class="hover:text-gray-900 w-5" />
         </button>
         <button v-else @click="toggleSort()">
-          <icon-sort-ascending class="hover:text-gray-900 w-5" />
+          <IconSortAscending class="hover:text-gray-900 w-5" />
         </button>
       </div>
     </div>
@@ -120,10 +120,10 @@ import { NoteState as State } from "./note-state"
   name: "note-list",
   // prettier-ignore
   components: {
-    "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
-    "icon-search": require("@/components/icons/icon-search.vue").default,
-    "icon-sort-ascending": require("@/components/icons/icon-sort-ascending.vue").default,
-    "icon-sort-descending": require("@/components/icons/icon-sort-descending.vue").default,
+    "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,
+    "IconSearch": require("@/components/icons/IconSearch.vue").default,
+    "IconSortAscending": require("@/components/icons/IconSortAscending.vue").default,
+    "IconSortDescending": require("@/components/icons/IconSortDescending.vue").default,
   },
 })
 export default class extends Vue {

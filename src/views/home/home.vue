@@ -18,17 +18,17 @@
     <p>
       Right now I'm working on
       <a href="https://cicada-lang.org" target="_blank"
-        >Cicada Language<icon-external-link class="w-5 p-px" /></a
+        >Cicada Language<IconExternalLink class="w-5 p-px" /></a
       >, and
       <a href="https://readonly.link" target="_blank"
-        >Readonly.Link<icon-external-link class="w-5 p-px" /></a
+        >Readonly.Link<IconExternalLink class="w-5 p-px" /></a
       >.
     </p>
 
     <p>
       Curious? Come to see my
       <a href="http://github.com/xieyuheng/inner" target="_blank"
-        >inner universe<icon-external-link class="w-5 p-px" /></a
+        >inner universe<IconExternalLink class="w-5 p-px" /></a
       >.
     </p>
   </div>
@@ -41,7 +41,7 @@ import { Component, Vue } from "vue-property-decorator"
   name: "home",
   // prettier-ignore
   components: {
-    "icon-external-link": require("@/components/icons/icon-external-link.vue").default,
+    "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,
   },
 })
 export default class extends Vue {}

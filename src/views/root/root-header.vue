@@ -18,17 +18,17 @@
             target="_blank"
             title="bilibili ~ 小药壶"
           >
-            <icon-bilibili-line class="hover:text-gray-900 w-6 text-gray-400" />
+            <IconBilibiliLine class="hover:text-gray-900 w-6 text-gray-400" />
           </a>
           <a
             href="https://github.com/xieyuheng"
             target="_blank"
             title="github ~ xieyuheng"
           >
-            <icon-github class="hover:text-gray-900 w-5 text-gray-400" />
+            <IconGithub class="hover:text-gray-900 w-5 text-gray-400" />
           </a>
           <a href="mailto:xyheme@gmail.com" title="email ~ xyheme@gmail.com">
-            <icon-mail class="hover:text-gray-900 w-6 text-gray-400" />
+            <IconMail class="hover:text-gray-900 w-6 text-gray-400" />
           </a>
         </div>
       </div>
@@ -72,9 +72,9 @@ import { Component, Vue } from "vue-property-decorator"
   // prettier-ignore
   components: {
     "root-logo": require("@/views/root/root-logo.vue").default,
-    "icon-github": require("@/components/icons/icon-github.vue").default,
-    "icon-bilibili-line": require("@/components/icons/icon-bilibili-line.vue").default,
-    "icon-mail": require("@/components/icons/icon-mail.vue").default,
+    "IconGithub": require("@/components/icons/IconGithub.vue").default,
+    "IconBilibiliLine": require("@/components/icons/IconBilibiliLine.vue").default,
+    "IconMail": require("@/components/icons/IconMail.vue").default,
   },
 })
 export default class extends Vue {}
