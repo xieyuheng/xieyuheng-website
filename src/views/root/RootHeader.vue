@@ -2,7 +2,7 @@
   <div>
     <div class="relative flex items-center">
       <router-link :to="{ path: '/' }">
-        <root-logo
+        <RootLogo
           class="2md:absolute 2md:top-0 2md:w-20 lg:-left-32 2md:-left-28 w-10 rounded-full"
         />
       </router-link>
@@ -68,10 +68,10 @@
 import { Component, Vue } from "vue-property-decorator"
 
 @Component({
-  name: "root-header",
+  name: "RootHeader",
   // prettier-ignore
   components: {
-    "root-logo": require("@/views/root/root-logo.vue").default,
+    "RootLogo": require("@/views/root/RootLogo.vue").default,
     "IconGithub": require("@/components/icons/IconGithub.vue").default,
     "IconBilibiliLine": require("@/components/icons/IconBilibiliLine.vue").default,
     "IconMail": require("@/components/icons/IconMail.vue").default,

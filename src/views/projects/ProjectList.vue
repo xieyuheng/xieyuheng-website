@@ -38,7 +38,7 @@ import { Component, Prop, Vue } from "vue-property-decorator"
 import { ProjectState as State } from "./project-state"
 
 @Component({
-  name: "project-list",
+  name: "ProjectList",
   // prettier-ignore
   components: {
     ...require("@xieyuheng/postmark-components-vue2").components,

@@ -4,7 +4,7 @@
   </div>
   <div v-else-if="!state">
     <div class="text-xl text-gray-600">
-      <p>Loading translations ...</p>
+      <p>Loading notes ...</p>
       <p class="py-2 text-base">
         from <span class="font-bold">{{ link }}</span>
       </p>
@@ -14,12 +14,12 @@
 </template>
 
 <script lang="ts">
+import { NoteState as State } from "@/views/notes/note-state"
 import { RootState } from "@/views/root/root-state"
-import { TranslationState as State } from "@/views/translations/translation-state"
 import { Component, Prop, Vue } from "vue-property-decorator"
 
 @Component({
-  name: "translation-layout",
+  name: "NoteLayout",
 })
 export default class NoteLayout extends Vue {
   @Prop() rootState!: RootState
@@ -27,7 +27,7 @@ export default class NoteLayout extends Vue {
   state: State | null = null
   error: unknown | null = null
 
-  link = "gitlab.com/xieyuheng/inner/-/translations/zh"
+  link = "gitlab.com/xieyuheng/inner/-/notes"
 
   async mounted(): Promise<void> {
     try {

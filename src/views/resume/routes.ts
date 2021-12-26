@@ -3,19 +3,19 @@ import { RouteConfig } from "vue-router"
 export const routes: Array<RouteConfig> = [
   {
     path: "/resume",
-    component: () => import("@/views/resume/resume-layout.vue"),
+    component: () => import("@/views/resume/ResumeLayout.vue"),
     children: [
       {
         path: "/resume",
-        component: () => import("@/views/resume/resume-list.vue"),
+        component: () => import("@/views/resume/ResumeList.vue"),
       },
       {
         path: "/resume/zh",
-        component: () => import("@/views/resume/resume-zh.vue"),
+        component: () => import("@/views/resume/ResumeZh.vue"),
       },
       {
         path: "/resume/en",
-        component: () => import("@/views/resume/resume-en.vue"),
+        component: () => import("@/views/resume/ResumeEn.vue"),
       },
     ],
   },

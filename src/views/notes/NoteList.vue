@@ -117,7 +117,7 @@ import { Component, Prop, Vue, Watch } from "vue-property-decorator"
 import { NoteState as State } from "./note-state"
 
 @Component({
-  name: "note-list",
+  name: "NoteList",
   // prettier-ignore
   components: {
     "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,

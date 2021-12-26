@@ -24,7 +24,7 @@
 import { Component, Vue } from "vue-property-decorator"
 
 @Component({
-  name: "live-list",
+  name: "LiveList",
   // prettier-ignore
   components: {
     "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,

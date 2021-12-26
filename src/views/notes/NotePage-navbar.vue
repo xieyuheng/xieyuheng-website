@@ -31,7 +31,7 @@ import { NoteState as State } from "@/views/notes/note-state"
 import { Component, Prop, Vue } from "vue-property-decorator"
 
 @Component({
-  name: "note-page-navbar",
+  name: "NotePage-navbar",
   // prettier-ignore
   components: {
 

@@ -3,20 +3,20 @@
     <md-document :document="document.document" :key="document.id" />
   </div>
   <div v-else>
-    <page-not-found />
+    <PageNotFound />
   </div>
 </template>
 
 <script lang="ts">
-import { TranslationState as State } from "@/views/translations/translation-state"
+import { PaperState as State } from "@/views/papers/paper-state"
 import { Component, Prop, Vue, Watch } from "vue-property-decorator"
 
 @Component({
-  name: "translation-page",
+  name: "PaperPage",
   // prettier-ignore
   components: {
     ...require("@xieyuheng/postmark-components-vue2").components,
-    "page-not-found": require("@/views/errors/page-not-found.vue").default,
+    "PageNotFound": require("@/views/errors/PageNotFound.vue").default,
   },
 })
 export default class extends Vue {

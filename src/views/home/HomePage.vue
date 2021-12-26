@@ -38,7 +38,7 @@
 import { Component, Vue } from "vue-property-decorator"
 
 @Component({
-  name: "home",
+  name: "HomePage",
   // prettier-ignore
   components: {
     "IconExternalLink": require("@/components/icons/IconExternalLink.vue").default,

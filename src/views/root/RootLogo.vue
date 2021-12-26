@@ -6,7 +6,7 @@
 import { Component, Vue } from "vue-property-decorator"
 
 @Component({
-  name: "root-logo",
+  name: "RootLogo",
   // prettier-ignore
   components: {
 
