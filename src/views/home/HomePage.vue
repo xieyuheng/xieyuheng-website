@@ -21,7 +21,7 @@
         >Cicada Language<IconExternalLink class="w-5 p-px" /></a
       >, and
       <a href="https://readonly.link" target="_blank"
-        >readonly.link<IconExternalLink class="w-5 p-px" /></a
+        >Readonly.Link<IconExternalLink class="w-5 p-px" /></a
       >.
     </p>
 
