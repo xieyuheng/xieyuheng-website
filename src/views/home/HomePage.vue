@@ -27,7 +27,9 @@
 
     <p>
       Curious? Come to see my
-      <a href="http://github.com/xieyuheng/inner" target="_blank"
+      <a
+        href="https://readonly.link/articles/github.com/xieyuheng/inner"
+        target="_blank"
         >inner universe<IconExternalLink class="w-5 p-px" /></a
       >.
     </p>
