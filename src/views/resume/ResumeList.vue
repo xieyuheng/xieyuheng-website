@@ -2,14 +2,14 @@
   <div class="flex flex-col space-y-4 font-serif text-xl">
     <h1 class="font-sans text-2xl font-bold">Résumé</h1>
     <ul class="px-6">
-      <li class="py-1 list-disc">
+      <li class="list-disc py-1">
         <router-link class="link" :to="{ path: '/resume/zh' }">
           中文
         </router-link>
         /
         <a class="link" href="/resume/zh.pdf"> .pdf </a>
       </li>
-      <li class="py-1 list-disc">
+      <li class="list-disc py-1">
         <router-link class="link" :to="{ path: '/resume/en' }">
           English
         </router-link>

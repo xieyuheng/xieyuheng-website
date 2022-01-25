@@ -3,12 +3,12 @@
     <div class="relative flex items-center">
       <router-link :to="{ path: '/' }">
         <RootLogo
-          class="2md:absolute 2md:top-0 2md:w-20 lg:-left-32 2md:-left-28 w-10 rounded-full"
+          class="2md:absolute 2md:top-0 2md:w-20 2md:-left-28 w-10 rounded-full lg:-left-32"
         />
       </router-link>
 
       <div
-        class="flex justify-between py-1 text-3xl font-bold 2md:ml-0 ml-3 w-full"
+        class="2md:ml-0 ml-3 flex w-full justify-between py-1 text-3xl font-bold"
       >
         <router-link :to="{ path: '/' }"> Xie Yuheng </router-link>
 
@@ -18,17 +18,17 @@
             target="_blank"
             title="bilibili ~ 小药壶"
           >
-            <IconBilibiliLine class="hover:text-gray-900 w-6 text-gray-400" />
+            <IconBilibiliLine class="w-6 text-gray-400 hover:text-gray-900" />
           </a>
           <a
             href="https://github.com/xieyuheng"
             target="_blank"
             title="github ~ xieyuheng"
           >
-            <IconGithub class="hover:text-gray-900 w-5 text-gray-400" />
+            <IconGithub class="w-5 text-gray-400 hover:text-gray-900" />
           </a>
           <a href="mailto:xyheme@gmail.com" title="email ~ xyheme@gmail.com">
-            <IconMail class="hover:text-gray-900 w-6 text-gray-400" />
+            <IconMail class="w-6 text-gray-400 hover:text-gray-900" />
           </a>
         </div>
       </div>

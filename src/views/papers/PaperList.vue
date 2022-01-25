@@ -9,12 +9,12 @@
         class="flex flex-col pb-10"
       >
         <router-link :to="{ path: `/papers/${path}` }">
-          <h1 class="hover:text-gray-500 font-sans font-bold">
+          <h1 class="font-sans font-bold hover:text-gray-500">
             {{ document.attributes.title }}
           </h1>
         </router-link>
 
-        <div class="self-end py-1 text-xs italic font-bold text-gray-500">
+        <div class="self-end py-1 text-xs font-bold italic text-gray-500">
           {{ path }}
         </div>
 

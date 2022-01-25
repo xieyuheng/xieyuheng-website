@@ -4,7 +4,7 @@
 
     <p>My personal study notes, organized as a <em>zettelkasten</em>.</p>
 
-    <div class="py-2 pl-4 text-gray-600 border-l-4 border-gray-300">
+    <div class="border-l-4 border-gray-300 py-2 pl-4 text-gray-600">
       <p>
         A zettelkasten consists of many individual notes with ideas and other
         short pieces of information that are taken down as they occur or are
@@ -28,12 +28,12 @@
         <input
           v-model.trim="searchInput"
           required
-          class="focus:outline-none focus:ring-2 focus:ring-gray-300 placeholder-opacity-60 px-3 py-1 font-sans text-lg font-bold text-gray-800 placeholder-gray-800 bg-gray-200 rounded-lg"
+          class="rounded-lg bg-gray-200 px-3 py-1 font-sans text-lg font-bold text-gray-800 placeholder-gray-800 placeholder-opacity-60 focus:outline-none focus:ring-2 focus:ring-gray-300"
           placeholder="Search ..."
           spellcheck="false"
         />
         <button class="text-gray-500" type="submit">
-          <IconSearch class="w-5 ml-2" />
+          <IconSearch class="ml-2 w-5" />
         </button>
         <div
           v-if="searchInput"
@@ -45,12 +45,12 @@
         </div>
       </form>
 
-      <div class="flex self-start justify-end pt-2 space-x-2 text-gray-500">
+      <div class="flex justify-end space-x-2 self-start pt-2 text-gray-500">
         <button v-if="sortDirection" @click="toggleSort()">
-          <IconSortDescending class="hover:text-gray-900 w-5" />
+          <IconSortDescending class="w-5 hover:text-gray-900" />
         </button>
         <button v-else @click="toggleSort()">
-          <IconSortAscending class="hover:text-gray-900 w-5" />
+          <IconSortAscending class="w-5 hover:text-gray-900" />
         </button>
       </div>
     </div>
@@ -58,9 +58,9 @@
     <ul class="pb-2">
       <li v-for="note in notes" :key="note.id" class="flex flex-col pb-8">
         <div
-          class="flex items-baseline justify-between py-1 space-x-2 font-sans text-sm"
+          class="flex items-baseline justify-between space-x-2 py-1 font-sans text-sm"
         >
-          <div class="text-xs italic font-bold text-gray-500">
+          <div class="text-xs font-bold italic text-gray-500">
             {{ note.id }}
           </div>
           <div class="text-gray-500" v-if="note.date">
@@ -69,7 +69,7 @@
         </div>
 
         <router-link :to="{ path: `/notes/${note.path}` }">
-          <h1 class="hover:text-gray-500 font-sans font-bold">
+          <h1 class="font-sans font-bold hover:text-gray-500">
             {{ note.document.attributes.title }}
           </h1>
         </router-link>
@@ -94,7 +94,7 @@
           v-if="searchInput && note.matchLines(searchInput).length > 0"
           class="py-2"
         >
-          <div class="text-amber-500 font-sans font-bold text-base">
+          <div class="font-sans text-base font-bold text-amber-500">
             Matched line<span v-if="note.matchLines(searchInput).length > 1"
               >s</span
             >

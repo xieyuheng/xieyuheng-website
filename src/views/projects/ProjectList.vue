@@ -2,7 +2,7 @@
   <div class="flex flex-col space-y-4 font-serif text-xl">
     <h1 class="font-sans text-2xl font-bold">Projects</h1>
 
-    <div class="py-2 pl-4 text-gray-600 border-l-4 border-gray-300">
+    <div class="border-l-4 border-gray-300 py-2 pl-4 text-gray-600">
       <p class="py-2 text-2xl font-bold">proj·ect</p>
 
       <p>

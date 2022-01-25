@@ -2,7 +2,7 @@
   <metainfo>
     <template v-slot:title="{ content }">{{ content }}</template>
   </metainfo>
-  <div v-if="state" class="md:py-10 flex flex-col max-w-2xl px-6 py-6 mx-auto">
+  <div v-if="state" class="mx-auto flex max-w-2xl flex-col px-6 py-6 md:py-10">
     <RootHeader class="my-3" />
     <router-view class="my-6" :rootState="state" />
   </div>

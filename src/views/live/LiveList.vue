@@ -6,7 +6,7 @@
     <p>和朋友们分享最近学到的东西和感想。</p>
 
     <ul class="px-6">
-      <li class="py-1 list-disc">
+      <li class="list-disc py-1">
         <a
           href="https://live.bilibili.com/23825595"
           target="_blank"

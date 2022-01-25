@@ -2,7 +2,7 @@
   <div class="flex flex-col space-y-4 font-serif text-xl">
     <h1 class="font-sans text-2xl font-bold">Translations</h1>
 
-    <div class="py-2 pl-4 text-gray-600 border-l-4 border-gray-300">
+    <div class="border-l-4 border-gray-300 py-2 pl-4 text-gray-600">
       <p>達其志，通其欲：東方曰寄，南方曰象，西方曰狄鞮，北方曰譯。</p>
 
       <p class="flex justify-end py-3">
@@ -29,12 +29,12 @@
         class="flex flex-col pb-8"
       >
         <router-link :to="{ path: `/translations/${path}` }">
-          <h1 class="hover:text-gray-500 font-sans font-bold">
+          <h1 class="font-sans font-bold hover:text-gray-500">
             {{ document.attributes.title }}
           </h1>
         </router-link>
 
-        <div class="self-end text-xs italic font-bold text-gray-500">
+        <div class="self-end text-xs font-bold italic text-gray-500">
           {{ path }}
         </div>
 
