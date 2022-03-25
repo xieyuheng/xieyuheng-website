@@ -30,6 +30,13 @@
           <a href="mailto:xyheme@gmail.com" title="email ~ xyheme@gmail.com">
             <IconMail class="w-6 text-gray-400 hover:text-gray-900" />
           </a>
+          <a
+            href="https://readonly.link/authors/xieyuheng"
+            target="_blank"
+            title="readonly.link ~ xieyuheng"
+          >
+            <IconReadonly class="w-6 text-gray-400 hover:text-gray-900" />
+          </a>
         </div>
       </div>
     </div>
@@ -69,6 +76,7 @@ import RootLogo from "./RootLogo.vue"
 import IconGithub from "../../components/icons/IconGithub.vue"
 import IconBilibiliLine from "../../components/icons/IconBilibiliLine.vue"
 import IconMail from "../../components/icons/IconMail.vue"
+import IconReadonly from "../../components/icons/IconReadonly.vue"
 </script>
 
 <style scoped>
