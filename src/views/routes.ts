@@ -6,7 +6,6 @@ export const routes: Array<RouteRecordRaw> = [
   ...require("./projects/routes").routes,
   ...require("./translations/routes").routes,
   ...require("./papers/routes").routes,
-  ...require("./live/routes").routes,
   ...require("./resume/routes").routes,
   {
     path: "/:pathMatch(.*)",

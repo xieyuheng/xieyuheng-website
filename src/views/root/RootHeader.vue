@@ -14,13 +14,6 @@
 
         <div class="flex items-center space-x-2">
           <a
-            href="https://space.bilibili.com/550104600"
-            target="_blank"
-            title="bilibili ~ 小药壶"
-          >
-            <IconBilibiliLine class="w-6 text-gray-400 hover:text-gray-900" />
-          </a>
-          <a
             href="https://github.com/xieyuheng"
             target="_blank"
             title="github ~ xieyuheng"
@@ -58,12 +51,6 @@
       <li>
         <router-link :to="{ path: '/papers' }"> PAPERS </router-link>
       </li>
-      <!-- <li>
-           <router-link :to="{ path: '/courses' }"> COURSES </router-link>
-           </li> -->
-      <li>
-        <router-link :to="{ path: '/live' }"> LIVE </router-link>
-      </li>
       <li>
         <router-link :to="{ path: '/resume' }"> RESUME </router-link>
       </li>
@@ -74,7 +61,6 @@
 <script setup lang="ts">
 import RootLogo from "./RootLogo.vue"
 import IconGithub from "../../components/icons/IconGithub.vue"
-import IconBilibiliLine from "../../components/icons/IconBilibiliLine.vue"
 import IconMail from "../../components/icons/IconMail.vue"
 import IconReadonly from "../../components/icons/IconReadonly.vue"
 </script>
