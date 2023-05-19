@@ -1,3 +1,2 @@
-link to bilibili
-link to email
+link hover color
 link to telegram

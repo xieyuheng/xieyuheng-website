@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import { EnvelopeIcon } from '@heroicons/vue/24/outline'
 import { Head } from '@vueuse/head'
 import GithubIcon from '../../components/icons/GithubIcon.vue'
 import ReadonlyIcon from '../../components/icons/ReadonlyIcon.vue'
+import TwitterIcon from '../../components/icons/TwitterIcon.vue'
 import { useGlobalLang } from '../../components/lang/useGlobalLang'
 
 const lang = useGlobalLang()
@@ -30,7 +32,7 @@ const lang = useGlobalLang()
           <a
             href="https://readonly.link/authors/https://inner.xieyuheng.com/author.json"
             target="_blank"
-            class="flex overflow-auto hover:underline"
+            class="flex items-center overflow-auto hover:underline"
           >
             <ReadonlyIcon class="mr-3 h-6 w-6 shrink-0" />
             <div class="overflow-x-auto whitespace-pre">
@@ -41,12 +43,34 @@ const lang = useGlobalLang()
 
         <li>
           <a
-            href="https://readonly.link/authors/https://inner.xieyuheng.com/author.json"
+            href="https://github.com/xieyuheng"
             target="_blank"
-            class="flex overflow-auto hover:underline"
+            class="flex items-center overflow-auto hover:underline"
           >
             <GithubIcon class="mr-3 h-6 w-6 shrink-0" />
             <div class="overflow-x-auto whitespace-pre">xieyuheng</div>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="mailto:xyheme@gmail.com"
+            target="_blank"
+            class="flex items-center overflow-auto hover:underline"
+          >
+            <EnvelopeIcon class="mr-3 h-6 w-6 shrink-0" />
+            <div class="overflow-x-auto whitespace-pre">xyheme@gmail.com</div>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://twitter.com/CicadaLanguage"
+            target="_blank"
+            class="flex items-center overflow-auto hover:underline"
+          >
+            <TwitterIcon class="mr-3 h-6 w-6 shrink-0" />
+            <div class="overflow-x-auto whitespace-pre">CicadaLanguage</div>
           </a>
         </li>
       </ul>
