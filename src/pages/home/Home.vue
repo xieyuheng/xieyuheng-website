@@ -28,7 +28,7 @@ const lang = useGlobalLang()
       <div class="text-2xl">A programmer.</div>
 
       <ul class="flex flex-col space-y-1 py-6 text-xl">
-        <li>
+        <li class="max-w-max hover:text-orange-500">
           <a
             href="https://readonly.link/authors/https://inner.xieyuheng.com/author.json"
             target="_blank"
@@ -41,7 +41,7 @@ const lang = useGlobalLang()
           </a>
         </li>
 
-        <li>
+        <li class="max-w-max hover:text-orange-500">
           <a
             href="https://github.com/xieyuheng"
             target="_blank"
@@ -52,7 +52,7 @@ const lang = useGlobalLang()
           </a>
         </li>
 
-        <li>
+        <li class="max-w-max hover:text-orange-500">
           <a
             href="mailto:xyheme@gmail.com"
             target="_blank"
@@ -63,7 +63,7 @@ const lang = useGlobalLang()
           </a>
         </li>
 
-        <li>
+        <li class="max-w-max hover:text-orange-500">
           <a
             href="https://twitter.com/CicadaLanguage"
             target="_blank"
