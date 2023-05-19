@@ -33,6 +33,7 @@ const lang = useGlobalLang()
             href="https://readonly.link/authors/https://inner.xieyuheng.com/author.json"
             target="_blank"
             class="flex items-center overflow-auto hover:underline"
+            title="my readonly.link author homepage"
           >
             <ReadonlyIcon class="mr-3 h-6 w-6 shrink-0" />
             <div class="overflow-x-auto whitespace-pre">
@@ -46,6 +47,7 @@ const lang = useGlobalLang()
             href="https://github.com/xieyuheng"
             target="_blank"
             class="flex items-center overflow-auto hover:underline"
+            title="my github homepage"
           >
             <GithubIcon class="mr-3 h-6 w-6 shrink-0" />
             <div class="overflow-x-auto whitespace-pre">xieyuheng</div>
@@ -57,6 +59,7 @@ const lang = useGlobalLang()
             href="mailto:xyheme@gmail.com"
             target="_blank"
             class="flex items-center overflow-auto hover:underline"
+            title="my email"
           >
             <EnvelopeIcon class="mr-3 h-6 w-6 shrink-0" />
             <div class="overflow-x-auto whitespace-pre">xyheme@gmail.com</div>
@@ -68,6 +71,7 @@ const lang = useGlobalLang()
             href="https://twitter.com/CicadaLanguage"
             target="_blank"
             class="flex items-center overflow-auto hover:underline"
+            title="my twitter account"
           >
             <TwitterIcon class="mr-3 h-6 w-6 shrink-0" />
             <div class="overflow-x-auto whitespace-pre">CicadaLanguage</div>
