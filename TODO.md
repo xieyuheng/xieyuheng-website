@@ -1,6 +1,3 @@
 use vite
-[maybe] use readonlylink
-add projects -- mimor and pomodoro
+link to readonly.link and github
 add telegram link
-scroll to top in `papers/` and `translations/` and so on
-x series projects
