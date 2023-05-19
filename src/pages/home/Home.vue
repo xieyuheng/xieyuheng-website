@@ -38,9 +38,9 @@ const lang = useGlobalLang()
             title="my readonly.link author homepage"
           >
             <ReadonlyIcon class="mr-3 h-6 w-6 shrink-0" />
-            <div class="overflow-x-auto whitespace-pre">
-              inner.xieyuheng.com/author.json
-            </div>
+            <span class="overflow-x-auto whitespace-pre"
+              >inner.xieyuheng.com/author.json</span
+            >
           </a>
         </li>
 
@@ -52,7 +52,7 @@ const lang = useGlobalLang()
             title="my github homepage"
           >
             <GithubIcon class="mr-3 h-6 w-6 shrink-0" />
-            <div class="overflow-x-auto whitespace-pre">xieyuheng</div>
+            <span class="overflow-x-auto whitespace-pre">xieyuheng</span>
           </a>
         </li>
 
@@ -64,7 +64,7 @@ const lang = useGlobalLang()
             title="my email"
           >
             <EnvelopeIcon class="mr-3 h-6 w-6 shrink-0" />
-            <div class="overflow-x-auto whitespace-pre">xyheme@gmail.com</div>
+            <span class="overflow-x-auto whitespace-pre">xyheme@gmail.com</span>
           </a>
         </li>
 
@@ -76,7 +76,7 @@ const lang = useGlobalLang()
             title="my twitter account"
           >
             <TwitterIcon class="mr-3 h-6 w-6 shrink-0" />
-            <div class="overflow-x-auto whitespace-pre">CicadaLanguage</div>
+            <span class="overflow-x-auto whitespace-pre">CicadaLanguage</span>
           </a>
         </li>
       </ul>
