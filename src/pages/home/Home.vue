@@ -18,16 +18,18 @@ const lang = useGlobalLang()
       <title v-else>Xie Yuheng</title>
     </Head>
 
-    <div class="flex flex-col space-y-2 px-6 py-20">
+    <div class="flex flex-col space-y-4 px-6 py-20">
       <div class="flex flex-wrap text-2xl font-bold">
         <div class="pr-2">谢宇恒</div>
         <div class="pr-2">/</div>
         <div class="pr-2">Xie Yuheng</div>
       </div>
 
-      <div class="text-2xl">A programmer.</div>
+      <div class="flex flex-wrap text-2xl">
+        <div>A programmer.</div>
+      </div>
 
-      <ul class="flex flex-col space-y-1 py-6 text-xl">
+      <ul class="flex flex-col space-y-2 py-6 text-xl">
         <li class="max-w-max hover:text-orange-500">
           <a
             href="https://readonly.link/authors/https://inner.xieyuheng.com/author.json"
