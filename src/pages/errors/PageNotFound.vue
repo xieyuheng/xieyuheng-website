@@ -12,13 +12,9 @@ const route = useRoute()
 <template>
   <div>
     <Head>
-      <title v-if="lang.isZh()">404 | 谜墨</title>
-      <title v-else>404 | Mimor</title>
+      <title v-if="lang.isZh()">404 | 谢宇恒</title>
+      <title v-else>404 | Xie Yuheng</title>
     </Head>
-
-    <template #title>
-      <div class="font-logo">404</div>
-    </template>
 
     <div class="flex flex-col space-y-2 p-3">
       <div class="text-xl font-bold">

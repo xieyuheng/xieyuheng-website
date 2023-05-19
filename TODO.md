@@ -1,2 +1,3 @@
-link to readonly.link and github
-add telegram link
+link to bilibili
+link to email
+link to telegram
