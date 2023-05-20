@@ -2,6 +2,7 @@
 import { EnvelopeIcon } from '@heroicons/vue/24/outline'
 import { Head } from '@vueuse/head'
 import GithubIcon from '../../components/icons/GithubIcon.vue'
+import MimorIcon from '../../components/icons/MimorIcon.vue'
 import ReadonlyIcon from '../../components/icons/ReadonlyIcon.vue'
 import TwitterIcon from '../../components/icons/TwitterIcon.vue'
 import { useGlobalLang } from '../../components/lang/useGlobalLang'
@@ -41,6 +42,18 @@ const lang = useGlobalLang()
             <span class="overflow-x-auto whitespace-pre"
               >inner.xieyuheng.com/author.json</span
             >
+          </a>
+        </li>
+
+        <li class="max-w-max hover:text-orange-500">
+          <a
+            href="https://mimor.app/authors/xieyuheng"
+            target="_blank"
+            class="flex items-center overflow-auto hover:underline"
+            title="My mimor author page"
+          >
+            <MimorIcon class="mr-3 h-6 w-6 shrink-0" />
+            <span class="overflow-x-auto whitespace-pre">xieyuheng</span>
           </a>
         </li>
 
