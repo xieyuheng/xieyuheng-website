@@ -27,7 +27,7 @@ const lang = useGlobalLang()
       </div>
 
       <div class="flex flex-wrap text-2xl">
-        <div>A programmer.</div>
+        <div>A programmer. A studio.</div>
       </div>
 
       <ul class="flex flex-col space-y-2 py-6 text-xl">
@@ -71,18 +71,6 @@ const lang = useGlobalLang()
 
         <li class="max-w-max hover:text-orange-500">
           <a
-            href="mailto:xyheme@gmail.com"
-            target="_blank"
-            class="flex items-center overflow-auto hover:underline"
-            title="my email"
-          >
-            <EnvelopeIcon class="mr-3 h-6 w-6 shrink-0" />
-            <span class="overflow-x-auto whitespace-pre">xyheme@gmail.com</span>
-          </a>
-        </li>
-
-        <li class="max-w-max hover:text-orange-500">
-          <a
             href="https://twitter.com/CicadaLanguage"
             target="_blank"
             class="flex items-center overflow-auto hover:underline"
@@ -90,6 +78,18 @@ const lang = useGlobalLang()
           >
             <TwitterIcon class="mr-3 h-6 w-6 shrink-0" />
             <span class="overflow-x-auto whitespace-pre">CicadaLanguage</span>
+          </a>
+        </li>
+
+        <li class="max-w-max hover:text-orange-500">
+          <a
+            href="mailto:xyheme@gmail.com"
+            target="_blank"
+            class="flex items-center overflow-auto hover:underline"
+            title="my email"
+          >
+            <EnvelopeIcon class="mr-3 h-6 w-6 shrink-0" />
+            <span class="overflow-x-auto whitespace-pre">xyheme@gmail.com</span>
           </a>
         </li>
       </ul>
