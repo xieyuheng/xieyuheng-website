@@ -47,7 +47,7 @@ const lang = useGlobalLang()
 
         <li class="max-w-max hover:text-orange-500">
           <a
-            href="https://mimor.app/authors/xieyuheng"
+            href="https://mimor.app/@xieyuheng"
             target="_blank"
             class="flex items-center overflow-auto hover:underline"
             title="My mimor author page"
