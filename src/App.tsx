@@ -1,7 +1,16 @@
+import { Head } from '@vueuse/head'
+import { useGlobalLang } from './components/lang/useGlobalLang'
+
 export function App() {
+  const lang = useGlobalLang()
+
   return (
     <>
-      <div class="text-3xl text-red-500">hello world</div>
+      <Head>
+        {lang.isZh() ? <title>谢宇恒</title> : <title>Xie Yuheng</title>}
+      </Head>
+
+      <RouterView />
     </>
   )
 }
