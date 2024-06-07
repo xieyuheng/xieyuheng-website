@@ -1,4 +1,5 @@
 import { Head } from '@vueuse/head'
+import { RouterView } from 'vue-router'
 import { useGlobalLang } from './components/lang/useGlobalLang'
 
 export function App() {
