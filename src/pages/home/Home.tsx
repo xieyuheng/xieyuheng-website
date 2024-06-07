@@ -8,7 +8,7 @@ import { useGlobalLang } from '../../components/lang/useGlobalLang'
 
 const lang = useGlobalLang()
 
-export function Home() {
+export default function Home() {
   return (
     <>
       <div class="h-screen-dynamic m-auto flex w-screen max-w-3xl flex-col overflow-auto">

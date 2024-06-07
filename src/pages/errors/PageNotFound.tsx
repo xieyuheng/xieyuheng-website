@@ -1,9 +1,9 @@
 import { Head } from '@vueuse/head'
 import { useRoute } from 'vue-router'
-import Lang from '../../components/lang/Lang.vue'
+import Lang from '../../components/lang/Lang.tsx'
 import { useGlobalLang } from '../../components/lang/useGlobalLang'
 
-export function PageNotFound() {
+export default function PageNotFound() {
   const lang = useGlobalLang()
   const route = useRoute()
 
