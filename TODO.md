@@ -1,5 +1,3 @@
-`errors/` -- use tsx
-
 `components/icons/` -- use tsx
 `components/lang/` -- use tsx
 ./components/utils/Hyperlink.vue
