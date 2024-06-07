@@ -1,4 +1,3 @@
-`home/` -- use tsx
 `errors/` -- use tsx
 
 `components/icons/` -- use tsx
