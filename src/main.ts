@@ -1,6 +1,7 @@
 import { createHead } from '@vueuse/head'
 import { createApp } from 'vue'
 import App from './App.vue'
+// import { App } from './App.tsx'
 import { happyHacking } from './console/happyHacking'
 import router from './router'
 import './styles/fonts.css'
