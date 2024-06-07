@@ -1,6 +1,7 @@
 {
   "name": "xieyuheng-website",
   "version": "0.0.1",
+  "type": "module",
   "engines": {
     "node": ">=18"
   },
