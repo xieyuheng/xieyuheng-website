@@ -5,12 +5,11 @@ import Lang from '../../components/lang/Lang.vue'
 import { useGlobalLang } from '../../components/lang/useGlobalLang'
 
 const lang = useGlobalLang()
-
 const route = useRoute()
 </script>
 
 <template>
-  <div>
+  <div class="h-screen-dynamic bg-black dark:text-white">
     <Head>
       <title v-if="lang.isZh()">404 | 谢宇恒</title>
       <title v-else>404 | Xie Yuheng</title>
