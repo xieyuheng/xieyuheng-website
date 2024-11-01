@@ -12,7 +12,7 @@ const lang = useGlobalLang()
 
 <template>
   <div
-    class="h-screen-dynamic m-auto flex w-screen max-w-3xl flex-col overflow-auto"
+    class="h-screen-dynamic m-auto flex w-screen max-w-3xl flex-col "
   >
     <Head>
       <title v-if="lang.isZh()">谢宇恒</title>
@@ -35,11 +35,11 @@ const lang = useGlobalLang()
           <a
             href="https://readonly.link/authors/https://inner.xieyuheng.com/author.json"
             target="_blank"
-            class="flex items-center overflow-auto hover:underline"
+            class="flex items-center  hover:underline"
             title="my readonly.link author homepage"
           >
             <ReadonlyIcon class="mr-3 h-6 w-6 shrink-0" />
-            <span class="overflow-x-auto whitespace-pre"
+            <span class=" whitespace-pre"
               >inner.xieyuheng.com/author.json</span
             >
           </a>
@@ -49,11 +49,11 @@ const lang = useGlobalLang()
           <a
             href="https://mimor.app/@xieyuheng"
             target="_blank"
-            class="flex items-center overflow-auto hover:underline"
+            class="flex items-center  hover:underline"
             title="My mimor author page"
           >
             <MimorIcon class="mr-3 h-6 w-6 shrink-0" />
-            <span class="overflow-x-auto whitespace-pre">xieyuheng</span>
+            <span class=" whitespace-pre">xieyuheng</span>
           </a>
         </li>
 
@@ -61,11 +61,11 @@ const lang = useGlobalLang()
           <a
             href="https://github.com/xieyuheng"
             target="_blank"
-            class="flex items-center overflow-auto hover:underline"
+            class="flex items-center  hover:underline"
             title="my github homepage"
           >
             <GithubIcon class="mr-3 h-6 w-6 shrink-0" />
-            <span class="overflow-x-auto whitespace-pre">xieyuheng</span>
+            <span class=" whitespace-pre">xieyuheng</span>
           </a>
         </li>
 
@@ -73,11 +73,11 @@ const lang = useGlobalLang()
           <a
             href="https://twitter.com/CicadaLanguage"
             target="_blank"
-            class="flex items-center overflow-auto hover:underline"
+            class="flex items-center  hover:underline"
             title="my twitter account"
           >
             <TwitterIcon class="mr-3 h-6 w-6 shrink-0" />
-            <span class="overflow-x-auto whitespace-pre">CicadaLanguage</span>
+            <span class=" whitespace-pre">CicadaLanguage</span>
           </a>
         </li>
 
@@ -85,11 +85,11 @@ const lang = useGlobalLang()
           <a
             href="mailto:xyheme@gmail.com"
             target="_blank"
-            class="flex items-center overflow-auto hover:underline"
+            class="flex items-center  hover:underline"
             title="my email"
           >
             <EnvelopeIcon class="mr-3 h-6 w-6 shrink-0" />
-            <span class="overflow-x-auto whitespace-pre">xyheme@gmail.com</span>
+            <span class=" whitespace-pre">xyheme@gmail.com</span>
           </a>
         </li>
       </ul>
