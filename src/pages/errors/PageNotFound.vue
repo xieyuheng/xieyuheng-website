@@ -9,7 +9,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <div class="h-screen-dynamic bg-black dark:text-white">
+  <div class="h-screen-dynamic dark:bg-black dark:text-white">
     <Head>
       <title v-if="lang.isZh()">404 | 谢宇恒</title>
       <title v-else>404 | Xie Yuheng</title>
