@@ -9,7 +9,7 @@ const lang = useGlobalLang()
 </script>
 
 <template>
-  <div class="h-screen-dynamic flex flex-col bg-black dark:text-white">
+  <div class="h-screen-dynamic flex flex-col dark:bg-black dark:text-white">
     <Head>
       <title v-if="lang.isZh()">谢宇恒</title>
       <title v-else>Xie Yuheng</title>
