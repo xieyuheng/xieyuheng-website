@@ -3,17 +3,13 @@ import { EnvelopeIcon } from '@heroicons/vue/24/outline'
 import { Head } from '@vueuse/head'
 import GithubIcon from '../../components/icons/GithubIcon.vue'
 import MimorIcon from '../../components/icons/MimorIcon.vue'
-import ReadonlyIcon from '../../components/icons/ReadonlyIcon.vue'
-import TwitterIcon from '../../components/icons/TwitterIcon.vue'
 import { useGlobalLang } from '../../components/lang/useGlobalLang'
 
 const lang = useGlobalLang()
 </script>
 
 <template>
-  <div
-    class="h-screen-dynamic m-auto flex w-screen max-w-3xl flex-col "
-  >
+  <div class="h-screen-dynamic m-auto flex w-screen max-w-3xl flex-col">
     <Head>
       <title v-if="lang.isZh()">谢宇恒</title>
       <title v-else>Xie Yuheng</title>
@@ -35,11 +31,11 @@ const lang = useGlobalLang()
           <a
             href="https://mimor.app/@xieyuheng"
             target="_blank"
-            class="flex items-center  hover:underline"
+            class="flex items-center hover:underline"
             title="My mimor author page"
           >
             <MimorIcon class="mr-3 h-6 w-6 shrink-0" />
-            <span class=" whitespace-pre">xieyuheng</span>
+            <span class="whitespace-pre">xieyuheng</span>
           </a>
         </li>
 
@@ -47,11 +43,11 @@ const lang = useGlobalLang()
           <a
             href="https://github.com/xieyuheng"
             target="_blank"
-            class="flex items-center  hover:underline"
+            class="flex items-center hover:underline"
             title="my github homepage"
           >
             <GithubIcon class="mr-3 h-6 w-6 shrink-0" />
-            <span class=" whitespace-pre">xieyuheng</span>
+            <span class="whitespace-pre">xieyuheng</span>
           </a>
         </li>
 
@@ -59,11 +55,11 @@ const lang = useGlobalLang()
           <a
             href="mailto:xyheme@gmail.com"
             target="_blank"
-            class="flex items-center  hover:underline"
+            class="flex items-center hover:underline"
             title="my email"
           >
             <EnvelopeIcon class="mr-3 h-6 w-6 shrink-0" />
-            <span class=" whitespace-pre">xyheme@gmail.com</span>
+            <span class="whitespace-pre">xyheme@gmail.com</span>
           </a>
         </li>
       </ul>
