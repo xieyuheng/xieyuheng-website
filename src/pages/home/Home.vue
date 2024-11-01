@@ -33,20 +33,6 @@ const lang = useGlobalLang()
       <ul class="flex flex-col space-y-2 py-6 text-xl">
         <li class="max-w-max hover:text-orange-500">
           <a
-            href="https://readonly.link/authors/https://inner.xieyuheng.com/author.json"
-            target="_blank"
-            class="flex items-center  hover:underline"
-            title="my readonly.link author homepage"
-          >
-            <ReadonlyIcon class="mr-3 h-6 w-6 shrink-0" />
-            <span class=" whitespace-pre"
-              >inner.xieyuheng.com/author.json</span
-            >
-          </a>
-        </li>
-
-        <li class="max-w-max hover:text-orange-500">
-          <a
             href="https://mimor.app/@xieyuheng"
             target="_blank"
             class="flex items-center  hover:underline"
@@ -66,18 +52,6 @@ const lang = useGlobalLang()
           >
             <GithubIcon class="mr-3 h-6 w-6 shrink-0" />
             <span class=" whitespace-pre">xieyuheng</span>
-          </a>
-        </li>
-
-        <li class="max-w-max hover:text-orange-500">
-          <a
-            href="https://twitter.com/CicadaLanguage"
-            target="_blank"
-            class="flex items-center  hover:underline"
-            title="my twitter account"
-          >
-            <TwitterIcon class="mr-3 h-6 w-6 shrink-0" />
-            <span class=" whitespace-pre">CicadaLanguage</span>
           </a>
         </li>
 
