@@ -9,7 +9,11 @@ export function poll<A>(options: {
 }): { stop: () => void } {
   let polling: TimerId | null = null
 
-  const stop = () => polling && clearInterval(polling)
+  const stop = () => {
+    if (polling !== null) {
+      clearInterval(polling)
+    }
+  }
 
   polling = setInterval(async () => {
     try {

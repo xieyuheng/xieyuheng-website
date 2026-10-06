@@ -5,10 +5,11 @@
 ## Development
 
 ```sh
-npm install     # Install dependencies
-npm run dev     # Start the dev server
-npm run check   # Type check
-npm run format  # Format the code
+./scripts/check.sh
+./scripts/clean.sh
+./scripts/build.sh
+./scripts/dev.sh
+./scripts/format.sh
 ```
 
 ## License

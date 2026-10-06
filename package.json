@@ -2,33 +2,28 @@
   "name": "xieyuheng-website",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@12.9.1",
+  "engines": {
+    "node": ">=24.3.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "check": "vue-tsc --noEmit",
-    "check:watch": "vue-tsc --noEmit --watch",
-    "check:ts": "tsc --noEmit",
-    "check:ts:watch": "tsc --noEmit --watch",
-    "format": "prettier src --write"
+    "preview": "vite preview",
+    "check": "tsc --noEmit",
+    "check:watch": "tsc --noEmit --watch",
+    "format": "prettier . --write"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.7.23",
-    "@heroicons/vue": "^2.1.5",
-    "@vueuse/core": "^11.2.0",
-    "@vueuse/head": "^2.0.0",
-    "tailwindcss": "^3.4.14",
-    "vue": "^3.5.12",
-    "vue-router": "^4.4.5"
+    "remix": "^3.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "prettier": "^3.3.3",
-    "prettier-plugin-organize-imports": "^4.1.0",
-    "prettier-plugin-tailwindcss": "^0.6.8",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.10",
-    "@vitejs/plugin-vue": "^5.1.4",
-    "vue-tsc": "^2.1.10"
+    "@tailwindcss/vite": "^4.3.3",
+    "prettier": "^3.9.9",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3"
   }
 }

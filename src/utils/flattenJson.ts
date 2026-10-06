@@ -5,7 +5,7 @@ export type JsonObject = { [x: string]: Json }
 export type LeafJson = string | number | boolean | null | Array<Json>
 
 export function flattenJson(json: JsonObject): Record<string, LeafJson> {
-  const record = {}
+  const record: Record<string, LeafJson> = {}
   flattenJsonCollect(json, [], record)
   return record
 }
