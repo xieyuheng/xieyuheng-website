@@ -3,7 +3,7 @@ import { GithubIcon } from '../components/icons/GithubIcon'
 
 export function HomePage() {
   return () => (
-    <div class="h-screen flex flex-col dark:bg-black dark:text-white">
+    <div class="flex h-screen flex-col dark:bg-black dark:text-white">
       <div class="flex h-full flex-col space-y-4 p-6 sm:px-10 sm:py-10">
         <div class="flex flex-wrap text-2xl font-bold">
           <div class="pr-2">谢宇恒</div>

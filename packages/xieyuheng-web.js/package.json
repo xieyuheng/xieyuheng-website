@@ -1,6 +1,8 @@
 {
-  "name": "xieyuheng-website",
+  "name": "@xieyuheng/xieyuheng-web.js",
+  "version": "0.1.0",
   "private": true,
+  "license": "GPL-3.0-or-later",
   "type": "module",
   "dependencies": {
     "remix": "^3.0.0"
@@ -13,5 +15,14 @@
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2",
     "vite": "^8.3.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all",
+    "plugins": [
+      "prettier-plugin-organize-imports",
+      "prettier-plugin-tailwindcss"
+    ]
   }
 }

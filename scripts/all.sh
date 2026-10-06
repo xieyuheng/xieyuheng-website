@@ -2,4 +2,4 @@
 
 set -e
 
-npx prettier src --write
+./scripts/stage1.sh

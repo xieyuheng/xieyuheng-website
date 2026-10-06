@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -e
 
 cd "$(dirname "$0")/.."
 
-pnpm exec vite
+npx vite
