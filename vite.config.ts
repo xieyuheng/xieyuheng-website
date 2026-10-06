@@ -1,6 +1,8 @@
 import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vite'
 
+import { remixComponentHmr } from './vite/remix-component-hmr.ts'
+
 export default defineConfig({
   server: { host: '0.0.0.0' },
   build: {
@@ -11,5 +13,5 @@ export default defineConfig({
     jsx: 'automatic',
     jsxImportSource: 'remix/component',
   },
-  plugins: [tailwindcss()],
+  plugins: [remixComponentHmr(), tailwindcss()],
 })
