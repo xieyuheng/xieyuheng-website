@@ -1,6 +1,5 @@
 import { EnvelopeIcon } from '../components/icons/EnvelopeIcon'
 import { GithubIcon } from '../components/icons/GithubIcon'
-import { MimorIcon } from '../components/icons/MimorIcon'
 
 export function HomePage() {
   return () => (
@@ -17,19 +16,6 @@ export function HomePage() {
         </div>
 
         <ul class="flex flex-col space-y-2 py-6 text-xl">
-          <li class="max-w-fit hover:text-orange-500 dark:hover:text-orange-300">
-            <a
-              href="https://mimor.app/@xieyuheng"
-              target="_blank"
-              rel="noreferrer"
-              class="flex items-center hover:underline"
-              title="My mimor author page"
-            >
-              <MimorIcon class="mr-3 h-6 w-6 shrink-0" />
-              <span>xieyuheng</span>
-            </a>
-          </li>
-
           <li class="max-w-fit hover:text-orange-500 dark:hover:text-orange-300">
             <a
               href="https://github.com/xieyuheng"
