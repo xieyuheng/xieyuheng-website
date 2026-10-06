@@ -11,7 +11,3 @@ Xie Yuheng's homepage SPA.
 ./scripts/dev.sh
 ./scripts/format.sh
 ```
-
-## License
-
-[GPLv3](../../LICENSE)
